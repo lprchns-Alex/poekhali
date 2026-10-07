@@ -1,0 +1,539 @@
+[
+  {
+    "id": "sabaduri-sioni",
+    "title": "Лес, тишина и Сиони",
+    "subtitle": "Сабадури → озеро Сиони",
+    "description": "Погулять среди буков, устроить неспешный пикник и закончить день у воды.",
+    "tags": [
+      "Природа",
+      "Лес",
+      "У воды",
+      "Пикник"
+    ],
+    "photo": {
+      "id": "sioni",
+      "title": "Sioni Reservoir",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sioni_Reservoir.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sioni_Reservoir.jpg",
+      "author": "Paata Vardanashvili",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "credit": "Paata Vardanashvili / Wikimedia Commons / CC BY 2.0",
+      "takenAt": "2008-04-06",
+      "size": [
+        799,
+        533
+      ],
+      "urlStatus": "image_opened_successfully",
+      "reuse": "Указать автора, источник, ссылку на лицензию и изменения/кадрирование.",
+      "note": "Это озеро Сиони, не Сабадурский лес. Commons фиксирует действующую CC-лицензию, опубликованную при загрузке."
+    },
+    "durationHours": [
+      7,
+      9
+    ],
+    "driveMinutes": [
+      180,
+      240
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      60,
+      100
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      35,
+      65
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + еда с собой, без аренды машины.",
+    "stops": [
+      {
+        "name": "Сабадури",
+        "kind": "forest",
+        "latitude": 41.902916,
+        "longitude": 44.910564,
+        "coordinateKind": "Sabaduri_Pass_area_anchor",
+        "coordinateSource": "https://www.geonames.org/search.html?q=Pass&startRow=150",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Короткая прогулка по лесу. Точку парковки и доступную тропу нужно подтвердить."
+      },
+      {
+        "name": "Озеро Сиони",
+        "kind": "lake",
+        "latitude": 42.00999,
+        "longitude": 44.99863,
+        "coordinateKind": "reservoir_center_not_access_point",
+        "coordinateSource": "https://mapcarta.com/13569452",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Отдых у воды. Конкретный подъезд к берегу ещё не выбран."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Сабадурский лес — часть Тбилисского национального парка; на официальной странице указаны места для пикника.",
+        "source": "https://georgia.travel/sabaduri-forest"
+      },
+      {
+        "text": "Сиони — водохранилище на реке Иори в регионе Мцхета-Мтианети.",
+        "source": "https://georgia.travel/villages/sioni"
+      }
+    ],
+    "mealLabel": "Пикник у озера",
+    "foodSearchQuery": "restaurants Sioni Georgia",
+    "foodNote": "Для варианта «кафе» показать поиск на картах, без выдуманного заведения или часов работы.",
+    "preferredMeal": "picnic",
+    "weatherNote": "После дождя учитывать состояние лесной тропы; ветер у озера оценивать отдельно.",
+    "shortVariant": {
+      "name": "Только лес",
+      "description": "Убрать озеро и сократить поездку примерно на 2–3 часа."
+    },
+    "verifiedAt": "2026-10-06"
+  },
+  {
+    "id": "mtskheta-jvari",
+    "title": "Выше двух рек",
+    "subtitle": "Джвари → Мцхета",
+    "description": "Панорама с холма, старые улицы и долгий обед — для дня без раннего подъёма.",
+    "tags": [
+      "Близко",
+      "История",
+      "Город",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "mtskheta",
+      "title": "Svetitskhoveli Cathedral - Mtskheta – 03",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Svetitskhoveli_Cathedral_-_Mtskheta_%E2%80%93_03.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svetitskhoveli_Cathedral_-_Mtskheta_%E2%80%93_03.jpg",
+      "author": "Maesi64",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "credit": "Maesi64 / Wikimedia Commons / CC0",
+      "takenAt": "2016-05-25",
+      "size": [
+        3984,
+        2656
+      ],
+      "urlStatus": "image_opened_successfully",
+      "reuse": "CC0: разрешены копирование, изменение и коммерческое использование. Указание источника сохранено для прозрачности."
+    },
+    "durationHours": [
+      4,
+      6
+    ],
+    "driveMinutes": [
+      80,
+      120
+    ],
+    "walkingKm": [
+      2,
+      3
+    ],
+    "walkingMinutes": [
+      60,
+      90
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      35,
+      65
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + обед; без аренды машины.",
+    "stops": [
+      {
+        "name": "Джвари",
+        "kind": "viewpoint",
+        "latitude": 41.838612,
+        "longitude": 44.733891,
+        "coordinateKind": "monument_center",
+        "coordinateSource": "https://dbpedia.org/page/Jvari_Monastery",
+        "navigationReady": false,
+        "durationMinutesEstimate": 45,
+        "text": "Вид на Мцхету и долины рек."
+      },
+      {
+        "name": "Светицховели и старые улицы",
+        "kind": "town",
+        "latitude": 41.84228,
+        "longitude": 44.72105,
+        "coordinateKind": "cathedral_center",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q1152972",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Пешая прогулка по центру Мцхеты."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Джвари стоит на скалистом холме к востоку от Мцхеты.",
+        "source": "https://georgia.travel/jvari-monastery"
+      },
+      {
+        "text": "В Мцхете находятся Светицховели и другие исторические памятники.",
+        "source": "https://georgia.travel/cities-towns/mtskheta"
+      }
+    ],
+    "mealLabel": "Обед в Мцхете",
+    "foodSearchQuery": "restaurants Mtskheta Georgia",
+    "foodNote": "Конкретное место и часы работы выбираются в картах.",
+    "preferredMeal": "cafe",
+    "weatherNote": "При сильном ветре сократить остановку на холме; во время дождя выделить больше времени на обед.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-06"
+  },
+  {
+    "id": "ananuri",
+    "title": "Крепость у бирюзовой воды",
+    "subtitle": "Ананури → Жинвальское водохранилище",
+    "description": "Крепостные стены, горы вокруг воды и спокойная поездка по Военно-Грузинской дороге.",
+    "tags": [
+      "У воды",
+      "История",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "ananuri",
+      "title": "Ananuri Fortress 01",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ananuri_Fortress_01.jpg/1280px-Ananuri_Fortress_01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "Bernard Gagnon / Wikimedia Commons / CC BY 4.0",
+      "takenAt": "2024-05-18",
+      "size": [
+        1280,
+        737
+      ],
+      "urlStatus": "image_opened_successfully",
+      "reuse": "Указать автора, источник, ссылку на лицензию и изменения/кадрирование."
+    },
+    "durationHours": [
+      5,
+      7
+    ],
+    "driveMinutes": [
+      160,
+      210
+    ],
+    "walkingKm": [
+      1,
+      2
+    ],
+    "walkingMinutes": [
+      45,
+      75
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      40,
+      75
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + обед; без аренды и активностей на воде.",
+    "stops": [
+      {
+        "name": "Крепость Ананури",
+        "kind": "fortress",
+        "latitude": 42.163794,
+        "longitude": 44.703106,
+        "coordinateKind": "verified_photo_location_inside_complex",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_01.jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Осмотреть комплекс и панораму водохранилища."
+      },
+      {
+        "name": "Вид на Жинвальское водохранилище",
+        "kind": "viewpoint",
+        "latitude": 42.163794,
+        "longitude": 44.703106,
+        "coordinateKind": "same_complex_viewpoint_not_separate_parking",
+        "coordinateSource": "https://georgia.travel/ananuri-fortified-castle-ensemble",
+        "navigationReady": false,
+        "durationMinutesEstimate": 30,
+        "text": "Дополнительное время на виды с территории Ананури; отдельный подъезд не заявлен."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Ананури находится у Жинвальского водохранилища; из крепости открывается вид на воду.",
+        "source": "https://georgia.travel/villages/ananuri"
+      },
+      {
+        "text": "В комплекс входят оборонительные, религиозные и светские постройки.",
+        "source": "https://georgia.travel/ananuri-fortified-castle-ensemble"
+      }
+    ],
+    "mealLabel": "Обед по дороге обратно",
+    "foodSearchQuery": "restaurants Ananuri Georgia",
+    "foodNote": "Ресторан выбирается в картах; часы работы не подтверждены.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Ветер и дождь важны для открытых участков крепости; прогноз не означает подтверждение состояния дороги.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-06"
+  },
+  {
+    "id": "sighnaghi-bodbe",
+    "title": "Маленький отпуск в Кахетии",
+    "subtitle": "Бодбе → Сигнахи",
+    "description": "Красные крыши, стены над долиной и обед без спешки. День, чтобы сменить ритм.",
+    "tags": [
+      "Город",
+      "Еда",
+      "История",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "sighnaghi",
+      "title": "Sighnaghi (Signagi)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sighnaghi_%28Signagi%29.JPG/1280px-Sighnaghi_%28Signagi%29.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sighnaghi_(Signagi).JPG",
+      "author": "პაატა შ",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit": "პაატა შ / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2010-12-19",
+      "size": [
+        1280,
+        960
+      ],
+      "urlStatus": "linked_from_verified_commons_page_image_fetch_cache_miss",
+      "reuse": "Атрибуция + ссылка на лицензию. Кадрированный/изменённый вариант изображения распространять под совместимой ShareAlike лицензией."
+    },
+    "durationHours": [
+      8,
+      10
+    ],
+    "driveMinutes": [
+      240,
+      300
+    ],
+    "walkingKm": [
+      3,
+      5
+    ],
+    "walkingMinutes": [
+      90,
+      150
+    ],
+    "difficulty": "Есть подъёмы",
+    "easy": false,
+    "budgetGel": [
+      60,
+      100
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + обед и кофе; без аренды, дегустаций и проживания.",
+    "stops": [
+      {
+        "name": "Бодбе",
+        "kind": "monastery",
+        "latitude": 41.606461,
+        "longitude": 45.933436,
+        "coordinateKind": "verified_photo_location_in_complex",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Bodbe_Monastery,_Sighnaghi_09.23.jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 50,
+        "text": "Прогулка по территории монастыря."
+      },
+      {
+        "name": "Сигнахи",
+        "kind": "town",
+        "latitude": 41.618611,
+        "longitude": 45.921667,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Sighnaghi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 120,
+        "text": "Улицы, крепостные стены и виды на долину."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Стены Сигнахи следуют рельефу; с них видны Алазанская долина и Кавказские горы.",
+        "source": "https://georgia.travel/sighnaghi-fortress"
+      },
+      {
+        "text": "Монастырь Бодбе расположен рядом с Сигнахи и связан со святой Нино.",
+        "source": "https://georgia.travel/villages/bodbe"
+      }
+    ],
+    "mealLabel": "Долгий обед в Сигнахи",
+    "foodSearchQuery": "restaurants Sighnaghi Georgia",
+    "foodNote": "Меню, цены, бронирование и часы работы в seed отсутствуют.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В ясную погоду лучше видна долина; летом прогулку можно сместить на утро и поздний день.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-06"
+  },
+  {
+    "id": "dashbashi",
+    "title": "Вниз, к водопадам",
+    "subtitle": "Каньон Дашбаши / Цалка",
+    "description": "Прогулка в каньоне и вода, стекающая по зелёным стенам. Для дня с движением.",
+    "tags": [
+      "Природа",
+      "Водопады",
+      "Погулять"
+    ],
+    "photo": {
+      "id": "dashbashi",
+      "title": "Dashbashi Canyon Natural Monument2",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dashbashi_Canyon_Natural_Monument2.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dashbashi_Canyon_Natural_Monument2.jpg",
+      "author": "Paata vardanashvili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Paata vardanashvili / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2017-08-04",
+      "size": [
+        1600,
+        900
+      ],
+      "urlStatus": "file_and_license_verified_via_search_image_fetch_unverified",
+      "reuse": "Атрибуция + ссылка на лицензию. Кадрированный/изменённый вариант изображения распространять под совместимой ShareAlike лицензией."
+    },
+    "durationHours": [
+      7,
+      9
+    ],
+    "driveMinutes": [
+      240,
+      300
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      90,
+      150
+    ],
+    "difficulty": "Спуск и подъём",
+    "easy": false,
+    "budgetGel": [
+      60,
+      95
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + еда. Входные билеты и мост не включены — актуальные тарифы не проверены.",
+    "stops": [
+      {
+        "name": "Визит-центр / начало каньона",
+        "kind": "trailhead",
+        "latitude": 41.603917,
+        "longitude": 44.111417,
+        "coordinateKind": "official_start_coordinate_converted_from_degrees_decimal_minutes",
+        "coordinateSource": "https://apa.gov.ge/en/protected-areas/Naturalmonument/dashbashis-kanionis-bunebis-dzegli",
+        "navigationReady": false,
+        "durationMinutesEstimate": 150,
+        "text": "Проверить доступ и билет, затем пройти к водопаду. Координаты исходной страницы имеют неоднозначную пунктуацию и перед навигацией требуют сверки."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Официальное агентство указывает тропу 1,8 км от визит-центра к долине и водопаду.",
+        "source": "https://apa.gov.ge/en/protected-areas/Naturalmonument/dashbashis-kanionis-bunebis-dzegli"
+      },
+      {
+        "text": "Дашбаши также известен как каньон Цалка.",
+        "source": "https://georgia.travel/tsalka-canyon"
+      }
+    ],
+    "mealLabel": "Перерыв на обед",
+    "foodSearchQuery": "restaurants Tsalka Georgia",
+    "foodNote": "Можно взять еду с собой либо выбрать кафе в Цалке. Не заявлять возможность пикника внутри платной территории без проверки правил.",
+    "preferredMeal": "picnic",
+    "weatherNote": "При дожде учитывать скользкие участки. Доступ к мосту и тропе подтверждается оператором, а не прогнозом.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-06"
+  },
+  {
+    "id": "uplistsikhe",
+    "title": "Город, вырезанный в скале",
+    "subtitle": "Уплисцихе",
+    "description": "Каменные залы, древние улицы и открытая долина Мтквари. Несколько часов среди необычных форм.",
+    "tags": [
+      "История",
+      "Необычное",
+      "Погулять"
+    ],
+    "photo": {
+      "id": "uplistsikhe",
+      "title": "Uplistsikhe - Uplistsikhe8141",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Uplistsikhe_-_Uplistsikhe8141.jpg/1280px-Uplistsikhe_-_Uplistsikhe8141.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uplistsikhe_-_Uplistsikhe8141.jpg",
+      "author": "lumoplank",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "credit": "lumoplank / Wikimedia Commons / CC0",
+      "takenAt": "2026-05-05",
+      "size": [
+        1280,
+        853
+      ],
+      "urlStatus": "linked_from_verified_commons_page_image_fetch_cache_miss",
+      "reuse": "CC0. Указание источника сохранено для прозрачности. Лицензия Flickr подтверждена Commons 2026-07-21."
+    },
+    "durationHours": [
+      6,
+      8
+    ],
+    "driveMinutes": [
+      200,
+      250
+    ],
+    "walkingKm": [
+      2,
+      3
+    ],
+    "walkingMinutes": [
+      90,
+      120
+    ],
+    "difficulty": "Неровный камень",
+    "easy": false,
+    "budgetGel": [
+      50,
+      85
+    ],
+    "budgetBasis": "Ориентир на человека: топливо при поездке вдвоём + обед. Билет музея-заповедника не включён — тариф не проверен.",
+    "stops": [
+      {
+        "name": "Уплисцихе",
+        "kind": "cave_town",
+        "latitude": 41.966845,
+        "longitude": 44.20767,
+        "coordinateKind": "verified_photo_location_inside_site",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Uplistsikhe_-_Uplistsikhe8141.jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 120,
+        "text": "Пройти по каменным залам и улицам; часы работы и билет проверить отдельно."
+      }
+    ],
+    "sources": [
+      {
+        "text": "Уплисцихе — древний комплекс, вырубленный в скале рядом с Гори.",
+        "source": "https://georgia.travel/uplistsikhe-cave-town"
+      },
+      {
+        "text": "Комплекс находится в Предварительном списке ЮНЕСКО; его нельзя называть уже включённым объектом Всемирного наследия.",
+        "source": "https://whc.unesco.org/en/tentativelists/5234/"
+      }
+    ],
+    "mealLabel": "Обед в Гори",
+    "foodSearchQuery": "restaurants Gori Georgia",
+    "foodNote": "Заезд в Гори и выбор конкретного ресторана должны войти в расчёт поездки после подключения маршрутизации.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Открытая местность: учитывать солнце, жару и ветер; мокрый камень может быть скользким.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-06"
+  }
+]
