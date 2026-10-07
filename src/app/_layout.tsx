@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useSyncExternalStore } from 'react';
 import { ActivityIndicator, Platform, Text, View } from 'react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
@@ -6,6 +6,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AppProvider, useApp } from '../ui/AppProvider';
 
 export const unstable_settings = { initialRouteName: '(tabs)' };
+const subscribeToClient = () => () => {};
 
 function Navigation() {
   const { colors, isDark } = useApp();
@@ -13,8 +14,7 @@ function Navigation() {
 }
 
 export default function RootLayout() {
-  const [ready, setReady] = useState(Platform.OS !== 'web');
-  useEffect(() => setReady(true), []);
+  const ready = useSyncExternalStore(subscribeToClient, () => true, () => Platform.OS !== 'web');
   // Dates, preferences and the map origin belong to the visitor, not the static build.
   if (!ready) return <View style={{ flex: 1, backgroundColor: '#CECECA', justifyContent: 'center', alignItems: 'center', gap: 16 }}><ActivityIndicator color="#161713" /><Text style={{ fontSize: 24, fontWeight: '700', color: '#161713' }}>Поехали</Text></View>;
   return <SafeAreaProvider><AppProvider><Navigation /></AppProvider></SafeAreaProvider>;
