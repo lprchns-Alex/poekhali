@@ -47,11 +47,21 @@ function documentKey(value: string): string {
   return (hash >>> 0).toString(36);
 }
 
+function overviewStop(route: Route, routes: Route[]) {
+  const first = route.stops[0];
+  const isUnique = (stop: Route['stops'][number]) => routes.every(other => other.id === route.id ||
+    other.stops[0]?.latitude !== stop.latitude || other.stops[0]?.longitude !== stop.longitude);
+  // An overnight extension can start at the same place as a day trip (Ananuri).
+  // Give it a distinct destination pin so both routes remain tappable in the overview.
+  if (route.days > 1 && !isUnique(first)) return [...route.stops].reverse().find(isUnique) ?? first;
+  return first;
+}
+
 function routePoints(routes: Route[], selectedRouteId?: string): MapPoint[] {
   const points: MapPoint[] = [];
   routes.forEach((route, routeIndex) => {
     const selected = route.id === selectedRouteId;
-    const stops = selected ? route.stops : route.stops.slice(0, 1);
+    const stops = selected ? route.stops : [overviewStop(route, routes)];
     stops.forEach((stop, stopIndex) => {
       if (!Number.isFinite(stop.latitude) || !Number.isFinite(stop.longitude) || Math.abs(stop.latitude) > 85 || Math.abs(stop.longitude) > 180) return;
       const title = selected ? stop.name : route.subtitle;
@@ -70,9 +80,9 @@ function routePoints(routes: Route[], selectedRouteId?: string): MapPoint[] {
 }
 
 function mapHtml(points: MapPoint[], channel: string, dark: boolean, parentOrigin: string): string {
-  const background = dark ? '#182620' : '#E8EDE5';
-  const foreground = dark ? '#ECF3E9' : '#183D30';
-  const surface = dark ? '#26382F' : '#FFFFFF';
+  const background = dark ? '#242621' : '#DDDED4';
+  const foreground = dark ? '#F1F0E7' : '#171813';
+  const surface = dark ? '#32352E' : '#FFFFFF';
   return `<!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,13 +100,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow
 .leaflet-bottom .leaflet-control-attribution{margin-bottom:4px}
 .leaflet-control-attribution a{color:${foreground}!important}
 .map-pin{border:0!important;background:transparent!important;display:grid!important;place-items:center!important}
-.pin-face{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:2px solid white;background:#315B48;color:white;font-weight:750;font-size:13px;box-shadow:0 3px 10px #14382b40}
-.selected .pin-face{width:38px;height:38px;background:#DBE998;color:#233E2F;border:3px solid #203E30;font-size:14px}
+.pin-face{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:2px solid white;background:#42483A;color:white;font-weight:750;font-size:13px;box-shadow:0 3px 10px #14382b40}
+.selected .pin-face{width:38px;height:38px;background:#FFDF55;color:#171813;border:3px solid #171813;font-size:14px}
 .map-pin:focus-visible .pin-face{outline:3px solid #1B80CB;outline-offset:3px}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:${surface};color:${foreground}}
 .leaflet-popup-content{font-size:14px;line-height:20px;margin:14px 20px 14px 14px;max-width:220px}
 .place-name{font-weight:700;margin-bottom:4px}.place-note{font-size:12px;line-height:17px;opacity:.76}
-.map-caption{position:absolute;z-index:700;top:12px;left:12px;background:${surface};color:${foreground};border:1px solid ${dark ? '#425549' : '#E1E7DE'};border-radius:20px;padding:7px 11px;font-size:11px;font-weight:650;pointer-events:none;box-shadow:0 2px 8px #14382b0a}
+.map-caption{position:absolute;z-index:700;top:12px;left:12px;background:${surface};color:${foreground};border:1px solid ${dark ? '#52564B' : '#B1B2AA'};border-radius:20px;padding:7px 11px;font-size:11px;font-weight:650;pointer-events:none;box-shadow:0 2px 8px #14382b0a}
 </style></head><body>
 <div id="map" role="region" aria-label="Места поездок по Грузии"></div>
 <div class="map-caption">Места поездки · обзорная карта</div>
@@ -232,8 +242,8 @@ export function RouteMap({ routes, selectedRouteId, onSelectRoute, dark = false,
   const setStatus = useCallback((next: MapStatus) => setLoadState({ channel, status: next }), [channel]);
   const parentOrigin = Platform.OS === 'web' && typeof window !== 'undefined' && /^https?:$/.test(window.location.protocol) ? window.location.origin : '*';
   const html = useMemo(() => mapHtml(JSON.parse(pointsJson) as MapPoint[], channel, dark, parentOrigin), [pointsJson, channel, dark, parentOrigin]);
-  const background = dark ? '#182620' : '#EFF2E9';
-  const foreground = dark ? '#ECF3E9' : '#244336';
+  const background = dark ? '#242621' : '#CECECA';
+  const foreground = dark ? '#F1F0E7' : '#171813';
   const mapHeight = Number.isFinite(height) ? Math.max(180, height) : 320;
 
   const handleMessage = useCallback((value: unknown) => {

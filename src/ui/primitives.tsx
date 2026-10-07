@@ -12,26 +12,26 @@ export function Txt({ style, muted, ...props }: TextProps & { muted?: boolean })
   const { colors } = useApp(); return <Text {...props} style={[{ fontSize: 16, lineHeight: 24, color: muted ? colors.muted : colors.text, flexShrink: 1 }, style]} />;
 }
 export function Title({ children, style }: { children: React.ReactNode; style?: StyleProp<TextStyle> }) {
-  return <Txt accessibilityRole="header" style={[{ fontSize: 27, lineHeight: 33, fontWeight: '700', letterSpacing: -0.7 }, style]}>{children}</Txt>;
+  return <Txt accessibilityRole="header" style={[{ fontSize: 30, lineHeight: 33, fontWeight: '700', letterSpacing: -1.1 }, style]}>{children}</Txt>;
 }
 export function IconButton({ name, label, onPress, active, inverse, disabled }: { name: IconName; label: string; onPress: () => void; active?: boolean; inverse?: boolean; disabled?: boolean }) {
   const { colors } = useApp();
-  return <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityState={{ selected: active, disabled }} disabled={disabled} onPress={onPress} style={({ pressed }) => [{ width: 48, height: 48, borderRadius: 24, alignItems: 'center', justifyContent: 'center', backgroundColor: inverse ? 'rgba(255,255,255,0.96)' : active ? colors.soft : colors.surface, opacity: pressed || disabled ? 0.65 : 1 }]}><Icon name={name} color={inverse ? '#183A2D' : active ? colors.primary : colors.text} /></Pressable>;
+  return <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityState={{ selected: active, disabled }} disabled={disabled} onPress={onPress} style={({ pressed }) => [{ width: 48, height: 48, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: inverse ? '#F4F3EB' : active ? colors.accent : colors.surface, opacity: disabled ? 0.3 : pressed ? 0.65 : 1 }]}><Icon name={name} color={inverse || active ? '#141511' : colors.text} /></Pressable>;
 }
 export function Button({ children, onPress, icon, secondary, disabled, style, accessibilityLabel }: { children: React.ReactNode; onPress: () => void; icon?: IconName; secondary?: boolean; disabled?: boolean; style?: StyleProp<ViewStyle>; accessibilityLabel?: string }) {
   const { colors } = useApp();
-  return <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityState={{ disabled }} style={({ pressed }) => [{ minHeight: 54, borderRadius: 16, paddingHorizontal: 18, paddingVertical: 13, flexDirection: 'row', gap: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: secondary ? colors.soft : colors.primary, opacity: pressed || disabled ? 0.65 : 1 }, style]}>
+  return <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityState={{ disabled }} style={({ pressed }) => [{ minHeight: 54, borderRadius: 10, paddingHorizontal: 18, paddingVertical: 13, flexDirection: 'row', gap: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: secondary ? colors.surface : colors.primary, opacity: disabled ? 0.35 : pressed ? 0.7 : 1 }, style]}>
     {icon && <Icon name={icon} color={secondary ? colors.text : colors.onPrimary} size={20} />}
     <Txt style={{ fontWeight: '600', color: secondary ? colors.text : colors.onPrimary, textAlign: 'center' }}>{children}</Txt>
   </Pressable>;
 }
 export function Chip({ label, selected, onPress, icon, small }: { label: string; selected?: boolean; onPress: () => void; icon?: IconName; small?: boolean }) {
   const { colors } = useApp();
-  return <Pressable accessibilityRole="button" accessibilityState={{ selected }} onPress={onPress} style={({ pressed }) => [{ minHeight: 48, borderRadius: 24, paddingHorizontal: small ? 14 : 18, paddingVertical: 10, flexDirection: 'row', gap: 7, alignItems: 'center', justifyContent: 'center', backgroundColor: selected ? colors.primary : colors.surface, opacity: pressed ? 0.7 : 1 }]}>{icon && <Icon name={icon} size={18} color={selected ? colors.onPrimary : colors.muted} />}<Txt style={{ fontWeight: selected ? '600' : '500', color: selected ? colors.onPrimary : colors.text }}>{label}</Txt></Pressable>;
+  return <Pressable accessibilityRole="button" accessibilityState={{ selected }} onPress={onPress} style={({ pressed }) => [{ minHeight: 48, borderRadius: 8, paddingHorizontal: small ? 12 : 15, paddingVertical: 10, flexDirection: 'row', gap: 7, alignItems: 'center', justifyContent: 'center', backgroundColor: selected ? colors.primary : colors.surface, opacity: pressed ? 0.7 : 1 }]}>{icon && <Icon name={icon} size={18} color={selected ? colors.onPrimary : colors.muted} />}<Txt style={{ fontWeight: selected ? '600' : '500', color: selected ? colors.onPrimary : colors.text }}>{label}</Txt></Pressable>;
 }
 export function Info({ children, icon = 'information-circle-outline', warm = false }: { children: React.ReactNode; icon?: IconName; warm?: boolean }) {
   const { colors } = useApp();
-  return <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 10, padding: 16, borderRadius: 16, backgroundColor: warm ? colors.amberSoft : colors.surface }}><Icon name={icon} color={warm ? colors.amber : colors.muted} size={21} /><Txt style={{ flex: 1, fontSize: 14, lineHeight: 21, color: warm ? colors.amber : colors.muted }}>{children}</Txt></View>;
+  return <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 10, padding: 16, borderRadius: 10, backgroundColor: warm ? colors.amberSoft : colors.surface }}><Icon name={icon} color={warm ? colors.amber : colors.muted} size={21} /><Txt style={{ flex: 1, fontSize: 14, lineHeight: 21, color: warm ? colors.amber : colors.muted }}>{children}</Txt></View>;
 }
 type PhotoProps = { uri?: string; source?: ImageSourcePropType; caption: string; height?: number; style?: StyleProp<ViewStyle> };
 export function Photo(props: PhotoProps) { return <PhotoContent key={JSON.stringify(props.source ?? props.uri)} {...props} />; }
@@ -57,13 +57,13 @@ export function Sheet({ visible, title, onClose, children, footer }: { visible: 
   const { colors } = useApp();
   const insets = useSafeAreaInsets();
   return <Modal transparent visible={visible} animationType="slide" onRequestClose={onClose} statusBarTranslucent>
-    <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={{ flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(9,25,18,0.45)' }}>
+    <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={{ flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(20,21,17,0.5)' }}>
       <Pressable accessibilityRole="button" accessibilityLabel="Закрыть панель" onPress={onClose} style={StyleSheet.absoluteFill} />
-      <View accessibilityViewIsModal style={{ maxHeight: '91%', backgroundColor: colors.background, borderTopLeftRadius: 28, borderTopRightRadius: 28, width: '100%', maxWidth: 520, alignSelf: 'center', paddingBottom: Math.max(insets.bottom, 16) }}>
-        <View style={{ width: 36, height: 4, borderRadius: 4, backgroundColor: colors.border, alignSelf: 'center', marginTop: 10 }} />
-        <View style={{ paddingHorizontal: 22, paddingTop: 12, paddingBottom: 12, flexDirection: 'row', alignItems: 'center', gap: 12 }}><Title style={{ flex: 1, fontSize: 24 }}>{title}</Title><IconButton name="close" label="Закрыть" onPress={onClose} /></View>
-        <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingHorizontal: 22, paddingBottom: 14 }}>{children}</ScrollView>
-        {footer && <View style={{ paddingHorizontal: 22, paddingTop: 10, borderTopWidth: 1, borderColor: colors.border }}>{footer}</View>}
+      <View accessibilityViewIsModal style={{ maxHeight: '92%', backgroundColor: colors.background, borderTopLeftRadius: 12, borderTopRightRadius: 12, width: '100%', maxWidth: 520, alignSelf: 'center', paddingBottom: Math.max(insets.bottom, 16) }}>
+        <View style={{ width: 40, height: 3, borderRadius: 2, backgroundColor: colors.muted, alignSelf: 'center', marginTop: 10 }} />
+        <View style={{ marginHorizontal: 16, paddingTop: 14, paddingBottom: 16, marginBottom: 18, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', gap: 10 }}><Title style={{ flex: 1, fontSize: 32, lineHeight: 34, letterSpacing: -1.2 }}>{title}</Title><IconButton name="close" label="Закрыть" onPress={onClose} /></View>
+        <ScrollView showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}>{children}</ScrollView>
+        {footer && <View style={{ paddingHorizontal: 16, paddingTop: 14, borderTopWidth: StyleSheet.hairlineWidth, borderColor: colors.border }}>{footer}</View>}
       </View>
     </KeyboardAvoidingView>
   </Modal>;

@@ -61,7 +61,8 @@
         "coordinateSource": "https://www.geonames.org/search.html?q=Pass&startRow=150",
         "navigationReady": false,
         "durationMinutesEstimate": 90,
-        "text": "Короткая прогулка по лесу. Точку парковки и доступную тропу нужно подтвердить."
+        "text": "Короткая прогулка по лесу. Точку парковки и доступную тропу нужно подтвердить.",
+        "day": 1
       },
       {
         "name": "Озеро Сиони",
@@ -72,7 +73,8 @@
         "coordinateSource": "https://mapcarta.com/13569452",
         "navigationReady": false,
         "durationMinutesEstimate": 75,
-        "text": "Отдых у воды. Конкретный подъезд к берегу ещё не выбран."
+        "text": "Отдых у воды. Конкретный подъезд к берегу ещё не выбран.",
+        "day": 1
       }
     ],
     "sources": [
@@ -94,7 +96,9 @@
       "name": "Только лес",
       "description": "Убрать озеро и сократить поездку примерно на 2–3 часа."
     },
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
   },
   {
     "id": "mtskheta-jvari",
@@ -157,7 +161,8 @@
         "coordinateSource": "https://dbpedia.org/page/Jvari_Monastery",
         "navigationReady": false,
         "durationMinutesEstimate": 45,
-        "text": "Вид на Мцхету и долины рек."
+        "text": "Вид на Мцхету и долины рек.",
+        "day": 1
       },
       {
         "name": "Светицховели и старые улицы",
@@ -168,7 +173,8 @@
         "coordinateSource": "https://www.wikidata.org/wiki/Q1152972",
         "navigationReady": false,
         "durationMinutesEstimate": 90,
-        "text": "Пешая прогулка по центру Мцхеты."
+        "text": "Пешая прогулка по центру Мцхеты.",
+        "day": 1
       }
     ],
     "sources": [
@@ -187,7 +193,9 @@
     "preferredMeal": "cafe",
     "weatherNote": "При сильном ветре сократить остановку на холме; во время дождя выделить больше времени на обед.",
     "shortVariant": null,
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
   },
   {
     "id": "ananuri",
@@ -249,7 +257,8 @@
         "coordinateSource": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_01.jpg",
         "navigationReady": false,
         "durationMinutesEstimate": 75,
-        "text": "Осмотреть комплекс и панораму водохранилища."
+        "text": "Осмотреть комплекс и панораму водохранилища.",
+        "day": 1
       },
       {
         "name": "Вид на Жинвальское водохранилище",
@@ -260,7 +269,8 @@
         "coordinateSource": "https://georgia.travel/ananuri-fortified-castle-ensemble",
         "navigationReady": false,
         "durationMinutesEstimate": 30,
-        "text": "Дополнительное время на виды с территории Ананури; отдельный подъезд не заявлен."
+        "text": "Дополнительное время на виды с территории Ананури; отдельный подъезд не заявлен.",
+        "day": 1
       }
     ],
     "sources": [
@@ -279,7 +289,9 @@
     "preferredMeal": "cafe",
     "weatherNote": "Ветер и дождь важны для открытых участков крепости; прогноз не означает подтверждение состояния дороги.",
     "shortVariant": null,
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
   },
   {
     "id": "sighnaghi-bodbe",
@@ -342,7 +354,8 @@
         "coordinateSource": "https://commons.wikimedia.org/wiki/File:Bodbe_Monastery,_Sighnaghi_09.23.jpg",
         "navigationReady": false,
         "durationMinutesEstimate": 50,
-        "text": "Прогулка по территории монастыря."
+        "text": "Прогулка по территории монастыря.",
+        "day": 1
       },
       {
         "name": "Сигнахи",
@@ -353,7 +366,8 @@
         "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Sighnaghi",
         "navigationReady": false,
         "durationMinutesEstimate": 120,
-        "text": "Улицы, крепостные стены и виды на долину."
+        "text": "Улицы, крепостные стены и виды на долину.",
+        "day": 1
       }
     ],
     "sources": [
@@ -372,7 +386,9 @@
     "preferredMeal": "cafe",
     "weatherNote": "В ясную погоду лучше видна долина; летом прогулку можно сместить на утро и поздний день.",
     "shortVariant": null,
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
   },
   {
     "id": "dashbashi",
@@ -434,7 +450,8 @@
         "coordinateSource": "https://apa.gov.ge/en/protected-areas/Naturalmonument/dashbashis-kanionis-bunebis-dzegli",
         "navigationReady": false,
         "durationMinutesEstimate": 150,
-        "text": "Проверить доступ и билет, затем пройти к водопаду. Координаты исходной страницы имеют неоднозначную пунктуацию и перед навигацией требуют сверки."
+        "text": "Проверить доступ и билет, затем пройти к водопаду. Координаты исходной страницы имеют неоднозначную пунктуацию и перед навигацией требуют сверки.",
+        "day": 1
       }
     ],
     "sources": [
@@ -453,7 +470,9 @@
     "preferredMeal": "picnic",
     "weatherNote": "При дожде учитывать скользкие участки. Доступ к мосту и тропе подтверждается оператором, а не прогнозом.",
     "shortVariant": null,
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
   },
   {
     "id": "uplistsikhe",
@@ -515,7 +534,8 @@
         "coordinateSource": "https://commons.wikimedia.org/wiki/File:Uplistsikhe_-_Uplistsikhe8141.jpg",
         "navigationReady": false,
         "durationMinutesEstimate": 120,
-        "text": "Пройти по каменным залам и улицам; часы работы и билет проверить отдельно."
+        "text": "Пройти по каменным залам и улицам; часы работы и билет проверить отдельно.",
+        "day": 1
       }
     ],
     "sources": [
@@ -534,6 +554,262 @@
     "preferredMeal": "cafe",
     "weatherNote": "Открытая местность: учитывать солнце, жару и ветер; мокрый камень может быть скользким.",
     "shortVariant": null,
-    "verifiedAt": "2026-10-06"
+    "verifiedAt": "2026-10-06",
+    "days": 1,
+    "overnight": null
+  },
+  {
+    "id": "kakheti-weekend",
+    "title": "Кахетия на два дня",
+    "subtitle": "Цинандали → Телави → Сигнахи",
+    "description": "Первый день — сад Цинандали и вечер в Телави. После ночёвки — Бодбе, улицы Сигнахи и возвращение в Тбилиси.",
+    "tags": [
+      "Город",
+      "Еда",
+      "История",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "sighnaghi",
+      "title": "Sighnaghi (Signagi)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sighnaghi_%28Signagi%29.JPG/1280px-Sighnaghi_%28Signagi%29.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sighnaghi_(Signagi).JPG",
+      "author": "პაატა შ",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "credit": "პაატა შ / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2010-12-19",
+      "size": [
+        1280,
+        960
+      ],
+      "urlStatus": "linked_from_verified_commons_page_image_fetch_cache_miss",
+      "reuse": "Атрибуция + ссылка на лицензию. Кадрированный/изменённый вариант изображения распространять под совместимой ShareAlike лицензией.",
+      "note": "На фотографии Сигнахи — остановка второго дня. Цинандали и Телави на снимке не показаны."
+    },
+    "durationHours": [
+      30,
+      36
+    ],
+    "driveMinutes": [
+      330,
+      420
+    ],
+    "walkingKm": [
+      5,
+      8
+    ],
+    "walkingMinutes": [
+      150,
+      240
+    ],
+    "difficulty": "Городские подъёмы",
+    "easy": false,
+    "budgetGel": [
+      150,
+      260
+    ],
+    "budgetBasis": "Ориентир на человека за два дня: топливо при поездке вдвоём, еда и доля простого двухместного номера на одну ночь. Без аренды машины, билетов и дегустаций. Жильё не выбрано; цену нужно проверить.",
+    "stops": [
+      {
+        "name": "Цинандали — усадьба Чавчавадзе",
+        "kind": "museum",
+        "latitude": 41.893148,
+        "longitude": 45.571288,
+        "coordinateKind": "village_center_not_estate_entrance",
+        "coordinateSource": "https://www.geonames.org/611492",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Сад и дом-музей. Координата обозначает село; вход, билеты и часы работы уточнить у усадьбы.",
+        "day": 1
+      },
+      {
+        "name": "Телави",
+        "kind": "town",
+        "latitude": 41.919566,
+        "longitude": 45.470023,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://www.geonames.org/search.html?country=GE&q=Thelavi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Прогулка по центру и ужин. Здесь удобно искать жильё на ночь.",
+        "day": 1
+      },
+      {
+        "name": "Бодбе",
+        "kind": "monastery",
+        "latitude": 41.606461,
+        "longitude": 45.933436,
+        "coordinateKind": "verified_photo_location_in_complex",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Bodbe_Monastery,_Sighnaghi_09.23.jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 50,
+        "text": "Прогулка по территории монастыря.",
+        "day": 2
+      },
+      {
+        "name": "Сигнахи",
+        "kind": "town",
+        "latitude": 41.618611,
+        "longitude": 45.921667,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Sighnaghi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 120,
+        "text": "Улицы, крепостные стены и виды на долину.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "В Цинандали находятся дом-музей Александра Чавчавадзе, сад и исторический винный погреб.",
+        "source": "https://georgia.travel/the-aleksandre-chavchavadze-house-museum-in-tsinandali"
+      },
+      {
+        "text": "Телави — город Кахетии с историческим центром; Цинандали находится рядом с ним.",
+        "source": "https://georgia.travel/cities-towns/telavi"
+      },
+      {
+        "text": "Стены Сигнахи следуют рельефу; с них видны Алазанская долина и Кавказские горы.",
+        "source": "https://georgia.travel/sighnaghi-fortress"
+      },
+      {
+        "text": "Монастырь Бодбе расположен рядом с Сигнахи и связан со святой Нино.",
+        "source": "https://georgia.travel/villages/bodbe"
+      }
+    ],
+    "mealLabel": "Обеды в Телави и Сигнахи",
+    "foodSearchQuery": "restaurants Telavi Sighnaghi Georgia",
+    "foodNote": "Еда планируется на оба дня. Выбор кафе, часы работы и бронирование проверяются в картах.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Прогноз смотрим отдельно для Цинандали и Телави в первый день, Бодбе и Сигнахи — во второй. Время включает дорогу обратно и ночёвку.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-07",
+    "days": 2,
+    "overnight": {
+      "location": "Телави",
+      "note": "Одна ночь. Выберите жильё заранее; конкретный отель и наличие номеров не подтверждены."
+    }
+  },
+  {
+    "id": "kazbegi-weekend",
+    "title": "Проснуться у Казбека",
+    "subtitle": "Ананури → Степанцминда → Гергети",
+    "description": "По пути в горы — крепость Ананури. Вечер и ночь в Степанцминде, на следующий день — Гергети и возвращение в Тбилиси.",
+    "tags": [
+      "Природа",
+      "История",
+      "Панорамы",
+      "Горы"
+    ],
+    "photo": {
+      "id": "ananuri",
+      "title": "Ananuri Fortress 01",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ananuri_Fortress_01.jpg/1280px-Ananuri_Fortress_01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "Bernard Gagnon / Wikimedia Commons / CC BY 4.0",
+      "takenAt": "2024-05-18",
+      "size": [
+        1280,
+        737
+      ],
+      "urlStatus": "image_opened_successfully",
+      "reuse": "Указать автора, источник, ссылку на лицензию и изменения/кадрирование.",
+      "note": "На фотографии крепость Ананури — остановка первого дня, а не Казбек или Гергети."
+    },
+    "durationHours": [
+      31,
+      37
+    ],
+    "driveMinutes": [
+      420,
+      540
+    ],
+    "walkingKm": [
+      3,
+      5
+    ],
+    "walkingMinutes": [
+      100,
+      180
+    ],
+    "difficulty": "Горная дорога",
+    "easy": false,
+    "budgetGel": [
+      180,
+      300
+    ],
+    "budgetBasis": "Ориентир на человека за два дня: топливо при поездке вдвоём, еда и доля простого двухместного номера на одну ночь. Без аренды машины и местного такси к Гергети. Цена жилья и трансфера требует проверки.",
+    "stops": [
+      {
+        "name": "Крепость Ананури",
+        "kind": "fortress",
+        "latitude": 42.163794,
+        "longitude": 44.703106,
+        "coordinateKind": "verified_photo_location_inside_complex",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_01.jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Осмотреть комплекс и панораму водохранилища.",
+        "day": 1
+      },
+      {
+        "name": "Степанцминда",
+        "kind": "town",
+        "latitude": 42.65691,
+        "longitude": 44.64311,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://www.geonames.org/614087/stepantsminda.html",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Прогулка по посёлку, ужин и ночёвка. Для второго дня договориться о подъезде к Гергети.",
+        "day": 1
+      },
+      {
+        "name": "Гергетская Троицкая церковь",
+        "kind": "monastery",
+        "latitude": 42.662668,
+        "longitude": 44.620576,
+        "coordinateKind": "verified_photo_location_inside_complex",
+        "coordinateSource": "https://commons.wikimedia.org/wiki/File:Gergeti_Trinity_Church_(25).jpg",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Виды с территории церкви. В план заложен подъезд на машине или местном такси; пеший подъём из Степанцминды добавит время и нагрузку.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Ананури находится у Жинвальского водохранилища; из крепости открывается вид на воду.",
+        "source": "https://georgia.travel/villages/ananuri"
+      },
+      {
+        "text": "В комплекс входят оборонительные, религиозные и светские постройки.",
+        "source": "https://georgia.travel/ananuri-fortified-castle-ensemble"
+      },
+      {
+        "text": "Степанцминда находится на Военно-Грузинской дороге. Рядом расположена Гергетская Троицкая церковь; к ней можно подъехать на такси.",
+        "source": "https://georgia.travel/cities-towns/stepantsminda"
+      },
+      {
+        "text": "Гергетская Троицкая церковь расположена над Степанцминдой, на высоте около 2200 метров.",
+        "source": "https://georgia.travel/gergeti-trinity-church"
+      }
+    ],
+    "mealLabel": "Обеды в Степанцминде",
+    "foodSearchQuery": "restaurants Stepantsminda Georgia",
+    "foodNote": "Еда на оба дня. Конкретное кафе и часы работы выбираются в картах; стоимость местного такси к Гергети не включена.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В горах прогноз может быстро меняться. До выезда проверьте проезд по Военно-Грузинской дороге и подъезд к Гергети. Прогноз не подтверждает состояние дороги.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-07",
+    "days": 2,
+    "overnight": {
+      "location": "Степанцминда",
+      "note": "Одна ночь. Жильё бронируется отдельно; конкретный отель и наличие номеров не подтверждены."
+    }
   }
 ]

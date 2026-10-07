@@ -1,11 +1,25 @@
 export const light = {
-  background: '#FFFFFF', surface: '#F3F5F1', elevated: '#FFFFFF', text: '#162E27', muted: '#68756F',
-  primary: '#18533F', onPrimary: '#FFFFFF', soft: '#E6EEE7', border: '#E1E7E0',
-  accent: '#DDF28D', amber: '#956117', amberSoft: '#FFF4DD', page: '#E9EEE8',
+  background: '#CECECA', surface: '#E1E1DB', elevated: '#F2F1E9', text: '#161713', muted: '#56574F',
+  primary: '#171813', onPrimary: '#FAF9EF', soft: '#DDDED4', border: '#B1B2AA',
+  accent: '#FFDF55', amber: '#584313', amberSoft: '#E7DCA9', page: '#BDBDB8',
 };
 export const dark: typeof light = {
-  background: '#10251D', surface: '#193128', elevated: '#203B30', text: '#EDF3EB', muted: '#A5B8AC',
-  primary: '#DDF28D', onPrimary: '#143324', soft: '#2D4A36', border: '#365044',
-  accent: '#DDF28D', amber: '#F0CE8C', amberSoft: '#403825', page: '#0B1C15',
+  background: '#242621', surface: '#32352E', elevated: '#3C4036', text: '#F1F0E7', muted: '#B5B8AC',
+  primary: '#FFDF55', onPrimary: '#171813', soft: '#414539', border: '#52564B',
+  accent: '#FFDF55', amber: '#EFDC9C', amberSoft: '#48422B', page: '#181A16',
 };
 export type Palette = typeof light;
+
+const routeColors: Record<string, string> = {
+  'sabaduri-sioni': '#AEB59E',
+  'mtskheta-jvari': '#FFDF55',
+  ananuri: '#CEC4B3',
+  'sighnaghi-bodbe': '#EAE9E0',
+  dashbashi: '#EAB098',
+  uplistsikhe: '#B5C7BD',
+  'kakheti-weekend': '#EAB098',
+  'kazbegi-weekend': '#B5C7BD',
+};
+export function routePanel(id: string) {
+  return { background: routeColors[id] ?? '#EAE9E0', ink: '#151610', muted: '#414638' };
+}
