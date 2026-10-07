@@ -1,9 +1,24 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { TRIP_EVENTS, eventsForDates, eventsForTrip, upcomingEvents, type TripEvent } from '../src/events';
+import { TRIP_EVENTS, eventsForDates, eventsForTrip, filterEvents, upcomingEvents, type TripEvent } from '../src/events';
 
 const today = '2026-10-07';
 const festival = TRIP_EVENTS.find(event => event.id === 'jazz-wine-kakheti-2026')!;
+
+test('event search finds names, locations and categories, ignoring case and outer whitespace', () => {
+  assert.deepEqual(filterEvents(TRIP_EVENTS, '  JAZZ  ').map(event => event.id), [festival.id]);
+  assert.deepEqual(filterEvents(TRIP_EVENTS, 'МЦХЕТА').map(event => event.id), ['kitesa-cooking']);
+  assert.deepEqual(filterEvents(TRIP_EVENTS, 'еда').map(event => event.id), ['kitesa-cooking', 'pheasants-tears-tasting']);
+  assert.deepEqual(filterEvents(TRIP_EVENTS, 'несуществующее событие'), []);
+  assert.deepEqual(filterEvents(TRIP_EVENTS, '  '), TRIP_EVENTS);
+});
+
+test('search preserves exact-date and upcoming groups without reintroducing seasonal activities', () => {
+  const selection = eventsForDates('2026-10-09', 1, today);
+  assert.deepEqual(filterEvents(selection.dated, 'jazz'), []);
+  assert.deepEqual(filterEvents(upcomingEvents(today), 'jazz').map(event => event.id), [festival.id]);
+  assert.deepEqual(filterEvents(eventsForDates('2026-11-01', 1, today).byArrangement, 'рафтинг'), []);
+});
 
 test('a festival on the second calendar day is included in global trip-date discovery', () => {
   assert.equal(eventsForDates('2026-10-09', 1, today).dated.length, 0);

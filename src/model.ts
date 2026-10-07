@@ -70,13 +70,14 @@ export function filterRoutes(filters: Filters, query = '', meal?: Meal): Route[]
   );
 }
 
-export function foodSearchUrl(route: Route): string {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(route.foodSearchQuery)}`;
+export function foodSearchUrl(route: Route, short = false): string {
+  const query = short && route.shortVariant ? `restaurants near ${route.stops[0].mapSearchQuery}` : route.foodSearchQuery;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
 export function placeSearchUrl(stop: Stop): string {
-  // Destination search only: catalog coordinates are overview anchors, not verified parking entrances.
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${stop.name} Georgia`)}`;
+  // Use the explicit landmark and locality, never an ambiguous display label or overview coordinate.
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.mapSearchQuery)}`;
 }
 
 export function validSavedIds(value: unknown): string[] {

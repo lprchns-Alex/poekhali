@@ -1,0 +1,15 @@
+/* Pointer activation should not leave a browser focus ring on app controls. */
+:is(button, a, [role='button'], [role='tab'], [role='checkbox']) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:is(button, a, [role='button'], [role='tab'], [role='checkbox']):focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+/* Keep keyboard focus visible against both palettes and colored route cards. */
+:is(button, a, [role='button'], [role='tab'], [role='checkbox']):focus-visible {
+  outline: 2px solid #171813;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #ffdf55;
+}

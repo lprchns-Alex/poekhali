@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AppProvider, useApp } from '../ui/AppProvider';
+import '../ui/web-controls.css';
 
 export const unstable_settings = { initialRouteName: '(tabs)' };
 const subscribeToClient = () => () => {};

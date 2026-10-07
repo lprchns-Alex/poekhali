@@ -41,7 +41,7 @@ function TimelineStep({ icon, title, subtitle, body, last = false, link }: { ico
       <Txt style={{ fontWeight: '700', fontSize: 18, lineHeight: 22, letterSpacing: -0.4 }}>{title}</Txt>
       {subtitle && <Txt muted style={{ fontSize: 13, lineHeight: 19, marginTop: 4 }}>{subtitle}</Txt>}
       {body && <Txt style={{ fontSize: 15, lineHeight: 22, marginTop: 9 }}>{body}</Txt>}
-      {link && <ExternalLink url={link}>Найти место в картах</ExternalLink>}
+      {link && <ExternalLink url={link}>Открыть в Google Maps</ExternalLink>}
     </View>
   </View>;
 }
@@ -124,7 +124,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
   const foodTitle = meal === 'picnic' ? (short ? 'Перерыв с едой с собой' : route.preferredMeal === 'picnic' ? route.mealLabel : 'Обед с собой') : route.preferredMeal === 'cafe' ? route.mealLabel : 'Обед в кафе по пути';
   const openCafe = () => {
     setLinkError(false);
-    const url = short ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('restaurants Sabaduri Georgia')}` : foodSearchUrl(route);
+    const url = foodSearchUrl(route, short);
     Linking.openURL(url).catch(() => setLinkError(true));
   };
   return <View style={{ flex: 1, backgroundColor: colors.background }}>
@@ -174,7 +174,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
           </React.Fragment>;
         })}
         <TimelineStep icon="home-outline" title="Возвращаемся домой" subtitle={`${hoursLabel(duration)} на всю поездку`} last />
-        <Info icon="trail-sign-outline">Точки показывают места в целом. Парковки и входы ещё требуют проверки — открываем поиск места, чтобы выбрать подходящий подъезд.</Info>
+        <Info icon="trail-sign-outline">Откроется Google Maps: проверь место и подъезд, затем нажми «Маршрут». Парковки и входы здесь пока не отмечены.</Info>
         <View style={{ marginTop: 28 }}><EventsSection route={route} /></View>
         <View style={{ marginTop: 28 }}>
           <SectionLabel>ПЕРЕД ПОЕЗДКОЙ</SectionLabel>

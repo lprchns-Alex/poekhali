@@ -13,10 +13,9 @@ import { routePanel } from './theme';
 import { EventsSection } from './EventsSection';
 
 export function AppHeader() {
-  const { colors, isDark, toggleTheme } = useApp();
-  return <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingTop: 2, paddingBottom: 4 }}>
+  const { colors } = useApp();
+  return <View style={{ minHeight: 54, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingTop: 2, paddingBottom: 4 }}>
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}><Icon name="navigate" size={22} color={colors.text} /><Txt style={{ fontSize: 20, lineHeight: 26, letterSpacing: -0.8, fontWeight: '700' }}>поехали.</Txt></View>
-    <IconButton name={isDark ? 'sunny-outline' : 'moon-outline'} label={isDark ? 'Включить светлую тему' : 'Включить тёмную тему'} onPress={toggleTheme} />
   </View>;
 }
 
@@ -33,7 +32,7 @@ export function ExploreScreen() {
   const { width } = useWindowDimensions();
   const compact = width < 360;
   const routes = filterRoutes(filters, query, meal);
-  const activeCount = Number(filters.maxHours < (filters.days === 2 ? 48 : 12)) + Number(filters.easyOnly) + Number(filters.mood !== 'Все');
+  const activeCount = Number(filters.days !== DEFAULT_FILTERS.days) + Number(filters.maxHours < (filters.days === 2 ? 48 : 12)) + Number(filters.easyOnly) + Number(filters.mood !== 'Все');
   return <SafeAreaView edges={['top', 'left', 'right']} style={{ flex: 1, backgroundColor: colors.background }}>
     <ScrollView showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" contentContainerStyle={{ paddingBottom: 24 }}>
       <AppHeader />
@@ -42,19 +41,15 @@ export function ExploreScreen() {
           <View style={{ flex: 1 }}><Title style={{ fontSize: compact || filters.days === 2 ? 30 : 39, lineHeight: compact || filters.days === 2 ? 33 : 39, letterSpacing: -1.8 }}>За город.{ '\n' }{filters.days === 2 ? 'На два дня.' : 'На день.'}</Title><Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 12 }}>Грузия / из Тбилиси</Txt></View>
           <Compass size={compact ? 104 : 132} color={colors.text} mutedColor={colors.border} />
         </View>
-        <View style={{ flexDirection: 'row', gap: 6, marginTop: 12 }}>
-          {([1, 2] as const).map(days => <Chip key={days} label={days === 1 ? '1 день' : '2 дня'} selected={filters.days === days} onPress={() => setFilters({ ...filters, days, maxHours: days === 1 ? 12 : 48 })} />)}
-          <Chip label="До 6 часов" selected={filters.days === 1 && filters.maxHours === 6} onPress={() => setFilters({ ...filters, days: 1, maxHours: 6 })} />
-        </View>
         <View style={{ flexDirection: 'row', gap: 12, marginTop: 9, marginBottom: 8 }}>
           <DateButton onPress={() => { Keyboard.dismiss(); setSheet('calendar'); }} />
           <Pressable accessibilityRole="button" accessibilityLabel={`Открыть фильтры${activeCount ? `, активно ${activeCount}` : ''}`} onPress={() => { Keyboard.dismiss(); setSheet('filters'); }} style={({ pressed }) => ({ minHeight: 52, minWidth: 52, borderRadius: 8, backgroundColor: activeCount ? colors.accent : colors.surface, paddingHorizontal: compact ? 14 : 15, flexDirection: 'row', gap: 8, alignItems: 'center', justifyContent: 'center', opacity: pressed ? 0.6 : 1 })}><Icon name="options-outline" size={22} color={activeCount ? '#171813' : colors.text} />{(!compact || activeCount > 0) && <Txt style={{ color: activeCount ? '#171813' : colors.text, fontSize: 14, fontWeight: '600' }}>{compact ? activeCount : `Фильтры${activeCount ? ` · ${activeCount}` : ''}`}</Txt>}</Pressable>
         </View>
-        {content === 'routes' && <View style={{ minHeight: 52, flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderColor: focused ? colors.text : colors.border, backgroundColor: focused ? colors.surface : 'transparent', paddingLeft: 1 }}>
+        <View style={{ minHeight: 52, flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderColor: focused ? colors.text : colors.border, backgroundColor: focused ? colors.surface : 'transparent', paddingLeft: 1 }}>
           <Icon name="search-outline" size={21} color={colors.text} />
-          <TextInput accessibilityLabel="Поиск места или маршрута" placeholder="Найти место или маршрут" placeholderTextColor={colors.muted} value={query} onChangeText={setQuery} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onSubmitEditing={Keyboard.dismiss} returnKeyType="search" autoCorrect={false} style={{ flex: 1, minWidth: 0, minHeight: 52, paddingVertical: 13, paddingHorizontal: 10, fontSize: 16, color: colors.text }} />
+          <TextInput accessibilityLabel={content === 'events' ? 'Поиск события или занятия' : 'Поиск места или маршрута'} placeholder={content === 'events' ? 'Найти событие или занятие' : 'Найти место или маршрут'} placeholderTextColor={colors.muted} value={query} onChangeText={setQuery} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onSubmitEditing={Keyboard.dismiss} returnKeyType="search" autoCorrect={false} style={{ flex: 1, minWidth: 0, minHeight: 52, paddingVertical: 13, paddingHorizontal: 10, fontSize: 16, color: colors.text }} />
           {query.length > 0 && <IconButton name="close" label="Очистить поиск" onPress={() => setQuery('')} />}
-        </View>}
+        </View>
         <View style={{ flexDirection: 'row', gap: 24, marginTop: 10 }}>{([{ key: 'routes', label: 'Маршруты' }, { key: 'events', label: 'События и занятия' }] as const).map(item => <Pressable key={item.key} accessibilityRole="button" accessibilityState={{ selected: content === item.key }} onPress={() => setContent(item.key)} style={{ minHeight: 48, justifyContent: 'center', borderBottomWidth: 2, borderColor: content === item.key ? colors.text : 'transparent' }}><Txt style={{ fontWeight: content === item.key ? '700' : '400', fontSize: 15 }}>{item.label}</Txt></Pressable>)}</View>
       </View>
       {content === 'routes' ? <>

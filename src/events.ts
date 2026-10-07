@@ -30,6 +30,13 @@ export type ArrangedTripEvent = EventBase & {
 export type TripEvent = DatedTripEvent | ArrangedTripEvent;
 export type TripEventSelection = { dated: DatedTripEvent[]; byArrangement: ArrangedTripEvent[] };
 
+/** Apply search after date selection, preserving each event's scheduling semantics. */
+export function filterEvents<T extends TripEvent>(events: readonly T[], query: string): T[] {
+  const normalize = (value: string) => value.toLocaleLowerCase('ru-RU').replaceAll('ё', 'е');
+  const search = normalize(query.trim());
+  return events.filter(event => !search || normalize(`${event.title} ${event.location} ${event.category} ${event.description}`).includes(search));
+}
+
 // Editorial selection checked against the linked organizer / tourism pages.
 // Adding an activity is not part of the base route's time estimate.
 export const TRIP_EVENTS: readonly TripEvent[] = [

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { router } from 'expo-router';
-import { eventsForDates, eventsForTrip, TripEvent, upcomingEvents } from '../events';
+import { eventsForDates, eventsForTrip, filterEvents, TripEvent, upcomingEvents } from '../events';
 import { addDays, formatDate, Route, ROUTES, TripDays } from '../model';
 import { useApp } from './AppProvider';
 import { Button, ExternalLink, Icon, Title, Txt } from './primitives';
@@ -28,18 +28,23 @@ function EventCard({ event, route, suggestDate = false }: { event: TripEvent; ro
 }
 
 export function EventsSection({ route }: { route?: Route }) {
-  const { date, filters, colors } = useApp();
+  const { date, filters, colors, query, setQuery } = useApp();
   const days = (route?.days ?? filters.days) as TripDays;
   const selection = route ? eventsForTrip(route.id, date, days) : eventsForDates(date, days);
-  const next = route ? [] : upcomingEvents().filter(event => !selection.dated.some(item => item.id === event.id));
-  const hasAny = selection.dated.length + selection.byArrangement.length > 0;
+  const search = route ? '' : query.trim();
+  const dated = filterEvents(selection.dated, search);
+  const byArrangement = filterEvents(selection.byArrangement, search);
+  const next = route ? [] : filterEvents(upcomingEvents().filter(event => !selection.dated.some(item => item.id === event.id)), search);
+  const hasAny = dated.length + byArrangement.length > 0;
+  const noSearchResults = search.length > 0 && !hasAny && next.length === 0;
   return <View>
     <Title style={{ fontSize: 29, lineHeight: 33, marginBottom: 8 }}>{route ? 'Ещё по пути' : 'Повод поехать.'}</Title>
     <Txt muted style={{ fontSize: 14, lineHeight: 21, marginBottom: 19 }}>{formatDate(date, true)}{days === 2 ? ` — ${formatDate(addDays(date, 1), true)}` : ''}{'\n'}{route ? 'Занятия рядом с маршрутом. Их время и стоимость добавляются отдельно.' : 'События на выбранные даты и занятия рядом с нашими маршрутами. Фильтры времени и прогулок относятся к маршрутам.'}</Txt>
-    {selection.dated.map(event => <EventCard key={event.id} event={event} route={route} />)}
-    {selection.dated.length === 0 && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginBottom: 18 }}>Подтверждённых событий на эти даты{route ? ' по этому маршруту' : ''} пока нет.</Txt>}
-    {selection.byArrangement.length > 0 && <><Txt style={{ fontSize: 12, fontWeight: '700', letterSpacing: 1, marginTop: 12, marginBottom: 12 }}>ЗАНЯТИЯ ПО ЗАПИСИ</Txt>{selection.byArrangement.map(event => <EventCard key={event.id} event={event} route={route} />)}</>}
-    {!hasAny && <View style={{ backgroundColor: colors.surface, borderRadius: 10, padding: 16 }}><Txt muted>Новые события появятся после проверки дат у организаторов.</Txt></View>}
+    {dated.map(event => <EventCard key={event.id} event={event} route={route} />)}
+    {dated.length === 0 && !search && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginBottom: 18 }}>Подтверждённых событий на эти даты{route ? ' по этому маршруту' : ''} пока нет.</Txt>}
+    {byArrangement.length > 0 && <><Txt style={{ fontSize: 12, fontWeight: '700', letterSpacing: 1, marginTop: 12, marginBottom: 12 }}>ЗАНЯТИЯ ПО ЗАПИСИ</Txt>{byArrangement.map(event => <EventCard key={event.id} event={event} route={route} />)}</>}
+    {noSearchResults && <View style={{ backgroundColor: colors.surface, borderRadius: 10, padding: 16, gap: 14 }}><Title style={{ fontSize: 25, lineHeight: 29 }}>Ничего не нашлось.</Title><Txt muted>Попробуй другое название, место или занятие.</Txt><Button onPress={() => setQuery('')}>Сбросить поиск</Button></View>}
+    {!hasAny && !search && <View style={{ backgroundColor: colors.surface, borderRadius: 10, padding: 16 }}><Txt muted>Новые события появятся после проверки дат у организаторов.</Txt></View>}
     {next.length > 0 && <><Txt style={{ fontSize: 12, fontWeight: '700', letterSpacing: 1, marginTop: 20, marginBottom: 12 }}>БЛИЖАЙШИЕ ДАТЫ</Txt>{next.map(event => <EventCard key={event.id} event={event} suggestDate />)}</>}
     <Txt muted style={{ fontSize: 11, lineHeight: 17, marginTop: 10 }}>Подборка проверена 7 октября 2026. Наличие билетов и мест уточняется у организатора.</Txt>
   </View>;
