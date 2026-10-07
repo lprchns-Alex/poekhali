@@ -1,5 +1,5 @@
-import React from 'react';
-import { Platform, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, Platform, Text, View } from 'react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -13,5 +13,9 @@ function Navigation() {
 }
 
 export default function RootLayout() {
+  const [ready, setReady] = useState(Platform.OS !== 'web');
+  useEffect(() => setReady(true), []);
+  // Dates, preferences and the map origin belong to the visitor, not the static build.
+  if (!ready) return <View style={{ flex: 1, backgroundColor: '#CECECA', justifyContent: 'center', alignItems: 'center', gap: 16 }}><ActivityIndicator color="#161713" /><Text style={{ fontSize: 24, fontWeight: '700', color: '#161713' }}>Поехали</Text></View>;
   return <SafeAreaProvider><AppProvider><Navigation /></AppProvider></SafeAreaProvider>;
 }
