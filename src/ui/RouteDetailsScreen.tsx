@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Linking, Pressable, ScrollView, View } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { foodSearchUrl, formatDate, getStopDate, getTripEndDate, getTripHours, hoursLabel, placeSearchUrl, ROUTES } from '../model';
-import { routePhoto } from '../photos';
+import { formatDate, getStopDate, getTripEndDate, getTripHours, hoursLabel, placeSearchUrl, ROUTES } from '../model';
+import { routeGallery } from '../photos';
+import { routeCafes } from '../cafes';
+import { PhotoGallery } from './PhotoGallery';
+import { CafeSelection } from './CafeSelection';
 import { weatherAdvice, weatherSummary } from '../services/weather';
 import { useApp } from './AppProvider';
 import { DotWeather } from './InstrumentGraphics';
-import { Button, Chip, ExternalLink, Icon, IconButton, IconName, Info, Photo, Title, Txt } from './primitives';
+import { Button, Chip, ExternalLink, Icon, IconButton, IconName, Info, Title, Txt } from './primitives';
 import { CalendarSheet } from './sheets';
 import { useForecast } from './RouteCard';
 import { routePanel } from './theme';
@@ -113,7 +116,6 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
   const [short, setShort] = useState(shortParam === '1' && Boolean(route.shortVariant));
   const [credits, setCredits] = useState(false);
   const [retry, setRetry] = useState(0);
-  const [linkError, setLinkError] = useState(false);
   const result = useForecast(route, date, short, retry);
   const stops = short ? route.stops.slice(0, 1) : route.stops;
   const favorite = saved.includes(route.id);
@@ -122,11 +124,6 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
   const number = String(ROUTES.findIndex(item => item.id === route.id) + 1).padStart(2, '0');
   const durationValue = duration.map(value => String(value).replace('.', ',')).join('–');
   const foodTitle = meal === 'picnic' ? (short ? 'Перерыв с едой с собой' : route.preferredMeal === 'picnic' ? route.mealLabel : 'Обед с собой') : route.preferredMeal === 'cafe' ? route.mealLabel : 'Обед в кафе по пути';
-  const openCafe = () => {
-    setLinkError(false);
-    const url = foodSearchUrl(route, short);
-    Linking.openURL(url).catch(() => setLinkError(true));
-  };
   return <View style={{ flex: 1, backgroundColor: colors.background }}>
     <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingTop: Math.max(insets.top, 8), paddingHorizontal: 14, paddingBottom: 22 }}>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
@@ -146,18 +143,17 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
         {route.shortVariant && <View style={{ marginBottom: 25 }}><SectionLabel>ТВОЙ ТЕМП</SectionLabel><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}><Chip label="Лес + озеро" selected={!short} onPress={() => setShort(false)} /><Chip label="Только лес" selected={short} onPress={() => setShort(true)} /></View>{short && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginTop: 10 }}>{route.shortVariant.description}</Txt>}</View>}
       </View>
       <ForecastPanel endDate={getTripEndDate(date, route)} result={result} onCalendar={() => setCalendar(true)} onRetry={() => setRetry(value => value + 1)} />
-      <View style={{ marginBottom: 28 }}><Photo source={routePhoto(route)} caption={route.photoCaption} height={150} style={{ borderRadius: 12 }} /><Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 7, paddingHorizontal: 4 }}>{short ? 'На фото — Сиони, часть полного маршрута.' : `На фото — ${route.photoCaption}.`}</Txt></View>
+      <PhotoGallery route={route} short={short} />
       <View style={{ paddingHorizontal: 4 }}>
         <SectionLabel>ПЕРЕРЫВ НА ОБЕД</SectionLabel>
         <Title style={{ fontSize: 29, lineHeight: 33, marginBottom: 15 }}>Где поедим?</Title>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}><Chip label="В кафе" icon="restaurant-outline" selected={meal === 'cafe'} onPress={() => setMeal('cafe')} /><Chip label="Еда с собой" icon="basket-outline" selected={meal === 'picnic'} onPress={() => setMeal('picnic')} /></View>
-        <View style={{ backgroundColor: colors.surface, padding: 16, borderRadius: 12, marginBottom: 32 }}>
-          <Txt style={{ fontWeight: '700', fontSize: 20, lineHeight: 24, letterSpacing: -0.5, marginBottom: 10 }}>{foodTitle}</Txt>
-          <Txt style={{ fontSize: 15, lineHeight: 22, marginBottom: 16 }}>{meal === 'cafe' ? `Заложим около часа на обед${route.days === 2 ? ' каждый день' : ''}. Выбери кафе на карте — там можно проверить меню и часы работы перед выездом.` : 'Заложим около 30–45 минут на перерыв. Возьми воду и перекус, а место для обеда выбери по условиям на месте.'}</Txt>
-          <Txt muted style={{ fontSize: 13, lineHeight: 20, marginBottom: 16 }}>{route.foodNote}</Txt>
-          {meal === 'cafe' ? <Button icon="open-outline" onPress={openCafe}>Найти кафе в картах</Button> : <View style={{ flexDirection: 'row', gap: 7, alignItems: 'center' }}><Icon name="checkmark" size={18} /><Txt style={{ fontSize: 13, lineHeight: 19, flex: 1 }}>{route.days === 2 ? 'Обед каждого дня включён в расчёт времени' : 'Перерыв уже включён в план дня'}</Txt></View>}
-          {linkError && <Txt muted style={{ fontSize: 13, marginTop: 10 }}>Не удалось открыть карты. Попробуй ещё раз.</Txt>}
-        </View>
+        {meal === 'cafe' ? <CafeSelection route={route} short={short} /> : <View style={{ backgroundColor: colors.surface, padding: 16, borderRadius: 12, marginBottom: 32, gap: 14 }}>
+          <Txt style={{ fontWeight: '700', fontSize: 20, lineHeight: 24 }}>{foodTitle}</Txt>
+          <Txt style={{ fontSize: 15, lineHeight: 22 }}>Заложим около 30–45 минут на перерыв. Возьми воду и перекус, а место для обеда выбери по условиям на месте.</Txt>
+          {route.preferredMeal === 'picnic' && <Txt muted style={{ fontSize: 13, lineHeight: 20 }}>{route.foodNote}</Txt>}
+          <View style={{ flexDirection: 'row', gap: 7, alignItems: 'center' }}><Icon name="checkmark" size={18} /><Txt style={{ fontSize: 13, lineHeight: 19, flex: 1 }}>{route.days === 2 ? 'Обед каждого дня включён в расчёт времени' : 'Перерыв уже включён в план дня'}</Txt></View>
+        </View>}
         <SectionLabel>ПЛАН ПОЕЗДКИ</SectionLabel>
         <Title style={{ fontSize: 29, lineHeight: 33, marginBottom: 10 }}>{route.days === 2 ? 'Два дня без спешки' : 'Как пройдёт день'}</Title>
         <Txt muted style={{ fontSize: 14, lineHeight: 21, marginBottom: 24 }}>Порядок остановок можно взять за основу. Время — примерное, подстрой его под себя.</Txt>
@@ -187,11 +183,11 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
           </View>
         </View>
         <Pressable accessibilityRole="button" accessibilityState={{ expanded: credits }} onPress={() => setCredits(value => !value)} style={{ flexDirection: 'row', alignItems: 'center', gap: 12, minHeight: 58, paddingVertical: 18, marginTop: 23, borderTopWidth: 1, borderTopColor: colors.border }}><Txt style={{ flex: 1, fontSize: 14, fontWeight: '600' }}>Источники и фотографии</Txt><Icon name={credits ? 'remove' : 'add'} size={20} /></Pressable>
-        {credits && <View style={{ paddingBottom: 10 }}><Txt muted style={{ fontSize: 13, lineHeight: 20 }}>Идея поездки собрана по открытым источникам. Остановки не проверены на месте. Источники просмотрены {route.verifiedAt}.</Txt>{route.sources.map(source => <ExternalLink key={source.source} url={source.source}>{source.text}</ExternalLink>)}<View style={{ borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 14, marginTop: 8 }}><Txt muted style={{ fontSize: 13, lineHeight: 20 }}>{route.photo.credit}. Фото кадрируется для отображения; условия лицензии распространяются на изображение.</Txt><ExternalLink url={route.photo.sourceUrl}>Оригинал на Wikimedia Commons</ExternalLink><ExternalLink url={route.photo.licenseUrl}>Лицензия {route.photo.license}</ExternalLink></View></View>}
+        {credits && <View style={{ paddingBottom: 10 }}><Txt muted style={{ fontSize: 13, lineHeight: 20 }}>Идея поездки собрана по открытым источникам. Остановки не проверены на месте. Источники просмотрены {route.verifiedAt}.</Txt>{route.sources.map(source => <ExternalLink key={source.source} url={source.source}>{source.text}</ExternalLink>)}{routeGallery(route).map(photo => <View key={photo.id} style={{ borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 14, marginTop: 8 }}><Txt style={{ fontSize: 14, fontWeight: '600' }}>{photo.caption}</Txt><Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 5 }}>{photo.credit}. Фото масштабируется и может кадрироваться для отображения; лицензия относится к изображению.</Txt><ExternalLink url={photo.sourceUrl}>Оригинал на Wikimedia Commons</ExternalLink><ExternalLink url={photo.licenseUrl}>Лицензия {photo.license}</ExternalLink></View>)}<Txt style={{ marginTop: 18, fontWeight: '600' }}>Места для обеда · источники</Txt>{routeCafes(route).places.map(cafe => <ExternalLink key={cafe.id} url={cafe.sourceUrl}>{cafe.name}</ExternalLink>)}</View>}
       </View>
     </ScrollView>
     <View style={{ paddingHorizontal: 14, paddingTop: 10, paddingBottom: Math.max(insets.bottom, 10), borderTopWidth: 1, borderTopColor: colors.border, backgroundColor: colors.background, flexDirection: 'row', gap: 8, alignItems: 'center' }}>
-      <Button secondary icon={favorite ? 'heart' : 'heart-outline'} style={{ width: 54, paddingHorizontal: 12 }} accessibilityLabel={favorite ? 'Удалить из сохранённого' : 'Сохранить маршрут'} disabled={!storageReady} onPress={() => toggleSaved(route.id)}>{null}</Button>
+      <IconButton size={54} name={favorite ? 'heart' : 'heart-outline'} label={favorite ? 'Удалить из сохранённого' : 'Сохранить маршрут'} active={favorite} disabled={!storageReady} onPress={() => toggleSaved(route.id)} />
       <Button icon="map-outline" style={{ flex: 1 }} accessibilityLabel="Посмотреть маршрут на карте" onPress={() => router.push({ pathname: '/map', params: { route: route.id, short: short ? '1' : undefined } })}>Открыть карту</Button>
     </View>
     <CalendarSheet tripDays={route.days} visible={calendar} onClose={() => setCalendar(false)} />

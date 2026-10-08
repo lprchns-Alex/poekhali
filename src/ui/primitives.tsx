@@ -14,15 +14,15 @@ export function Txt({ style, muted, ...props }: TextProps & { muted?: boolean })
 export function Title({ children, style }: { children: React.ReactNode; style?: StyleProp<TextStyle> }) {
   return <Txt accessibilityRole="header" style={[{ fontSize: 30, lineHeight: 33, fontWeight: '700', letterSpacing: -1.1 }, style]}>{children}</Txt>;
 }
-export function IconButton({ name, label, onPress, active, inverse, disabled }: { name: IconName; label: string; onPress: () => void; active?: boolean; inverse?: boolean; disabled?: boolean }) {
+export function IconButton({ name, label, onPress, active, inverse, disabled, size = 48 }: { name: IconName; label: string; onPress: () => void; active?: boolean; inverse?: boolean; disabled?: boolean; size?: number }) {
   const { colors } = useApp();
-  return <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityState={{ selected: active, disabled }} disabled={disabled} onPress={onPress} style={({ pressed }) => [{ width: 48, height: 48, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: inverse ? '#F4F3EB' : active ? colors.accent : colors.surface, opacity: disabled ? 0.3 : pressed ? 0.65 : 1 }]}><Icon name={name} color={inverse || active ? '#141511' : colors.text} /></Pressable>;
+  return <Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityState={{ selected: active, disabled }} disabled={disabled} onPress={onPress} style={({ pressed }) => [{ width: size, height: size, flexShrink: 0, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: inverse ? '#F4F3EB' : active ? colors.accent : colors.surface, opacity: disabled ? 0.3 : pressed ? 0.65 : 1 }]}><Icon name={name} color={inverse || active ? '#141511' : colors.text} /></Pressable>;
 }
 export function Button({ children, onPress, icon, secondary, disabled, style, accessibilityLabel }: { children: React.ReactNode; onPress: () => void; icon?: IconName; secondary?: boolean; disabled?: boolean; style?: StyleProp<ViewStyle>; accessibilityLabel?: string }) {
   const { colors } = useApp();
   return <Pressable onPress={onPress} disabled={disabled} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityState={{ disabled }} style={({ pressed }) => [{ minHeight: 54, borderRadius: 10, paddingHorizontal: 18, paddingVertical: 13, flexDirection: 'row', gap: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: secondary ? colors.surface : colors.primary, opacity: disabled ? 0.35 : pressed ? 0.7 : 1 }, style]}>
     {icon && <Icon name={icon} color={secondary ? colors.text : colors.onPrimary} size={20} />}
-    <Txt style={{ fontWeight: '600', color: secondary ? colors.text : colors.onPrimary, textAlign: 'center' }}>{children}</Txt>
+    {children !== null && children !== undefined && children !== false && children !== '' && <Txt style={{ fontWeight: '600', color: secondary ? colors.text : colors.onPrimary, textAlign: 'center' }}>{children}</Txt>}
   </Pressable>;
 }
 export function Chip({ label, selected, onPress, icon, small }: { label: string; selected?: boolean; onPress: () => void; icon?: IconName; small?: boolean }) {
@@ -33,9 +33,9 @@ export function Info({ children, icon = 'information-circle-outline', warm = fal
   const { colors } = useApp();
   return <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 10, padding: 16, borderRadius: 10, backgroundColor: warm ? colors.amberSoft : colors.surface }}><Icon name={icon} color={warm ? colors.amber : colors.muted} size={21} /><Txt style={{ flex: 1, fontSize: 14, lineHeight: 21, color: warm ? colors.amber : colors.muted }}>{children}</Txt></View>;
 }
-type PhotoProps = { uri?: string; source?: ImageSourcePropType; caption: string; height?: number; style?: StyleProp<ViewStyle> };
+type PhotoProps = { uri?: string; source?: ImageSourcePropType; caption: string; height?: number; resizeMode?: 'cover' | 'contain'; style?: StyleProp<ViewStyle> };
 export function Photo(props: PhotoProps) { return <PhotoContent key={JSON.stringify(props.source ?? props.uri)} {...props} />; }
-function PhotoContent({ uri, source, caption, height = 215, style }: PhotoProps) {
+function PhotoContent({ uri, source, caption, height = 215, resizeMode = 'cover', style }: PhotoProps) {
   const { colors } = useApp();
   const [failed, setFailed] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -45,7 +45,7 @@ function PhotoContent({ uri, source, caption, height = 215, style }: PhotoProps)
       {failed && <Txt muted style={{ textAlign: 'center', fontSize: 14 }}>Фото не загрузилось{ '\n' }{caption}</Txt>}
       {loading && !failed && <ActivityIndicator color={colors.primary} size="small" />}
     </View>
-    {!failed && (source || uri) && <Image source={source ?? { uri }} accessibilityLabel={caption} resizeMode="cover" onLoad={() => setLoading(false)} onError={() => { setFailed(true); setLoading(false); }} style={[StyleSheet.absoluteFill, { width: '100%', height: '100%' }]} />}
+    {!failed && (source || uri) && <Image source={source ?? { uri }} accessibilityLabel={caption} resizeMode={resizeMode} onLoad={() => setLoading(false)} onError={() => { setFailed(true); setLoading(false); }} style={[StyleSheet.absoluteFill, { width: '100%', height: '100%' }]} />}
   </View>;
 }
 export function ExternalLink({ url, children }: { url: string; children: React.ReactNode }) {

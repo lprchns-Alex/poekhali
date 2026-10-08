@@ -1,0 +1,828 @@
+{
+  "places": {
+    "kudigora": {
+      "id": "kudigora",
+      "name": "Kudigora",
+      "locality": "Кварели · у озера Ильи",
+      "mapQuery": "Kudigora restaurant, Ilia Lake, Kvareli, Georgia",
+      "description": "Совместить обед с прогулкой у озера. Грузинские блюда и вид на окрестности.",
+      "tag": "Обед у озера",
+      "sourceUrl": "https://kudigora.ge/",
+      "checkedAt": "2026-10-08"
+    },
+    "saperavi": {
+      "id": "saperavi",
+      "name": "Saperavi · Khareba",
+      "locality": "Кварели · территория Khareba",
+      "mapQuery": "Saperavi Restaurant Winery Khareba, Kvareli, Georgia",
+      "description": "Ресторан при винодельне: вариант для неспешного обеда после прогулки. Посещение винного тоннеля — отдельно.",
+      "tag": "При винодельне",
+      "sourceUrl": "https://www.tripadvisor.co.uk/Restaurant_Review-g2507599-d8408758-Reviews-Saperavi_Restaurant-Kvareli_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "chateau-kvareli": {
+      "id": "chateau-kvareli",
+      "name": "Chateau Kvareli",
+      "locality": "Кварели · центр",
+      "mapQuery": "Chateau Kvareli Restaurant, Kudigora Street, Kvareli, Georgia",
+      "description": "Поесть в городе перед возвращением в Тбилиси. Удобная альтернатива ресторану у озера.",
+      "tag": "В городе",
+      "sourceUrl": "https://madloba.info/kvareli/cafe/",
+      "checkedAt": "2026-10-08"
+    },
+    "ornament": {
+      "id": "ornament",
+      "name": "Ornament Express",
+      "locality": "Мцхета · рядом со Светицховели",
+      "mapQuery": "Ornament Express, 14 Erekle II Street, Mtskheta, Georgia",
+      "description": "Грузинское меню и вид на собор. Хорошо сочетается с прогулкой по старому центру.",
+      "tag": "У достопримечательности",
+      "sourceUrl": "https://places.georgia.travel/en/establishments/ornament-express",
+      "checkedAt": "2026-10-08"
+    },
+    "checkin": {
+      "id": "checkin",
+      "name": "Check-In Garden",
+      "locality": "Мцхета · улица Гамсахурдия",
+      "mapQuery": "Check-In Garden, Gamsakhurdia Street, Mtskheta, Georgia",
+      "description": "Обед в саду или на террасе в старой Мцхете. В меню грузинские и европейские блюда.",
+      "tag": "Сад и терраса",
+      "sourceUrl": "https://www.tripadvisor.co.uk/Restaurant_Review-g1598759-d12610280-Reviews-Check_In_Garden-Mtskheta_Mtskheta_Mtianeti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "tsiskvili-mtskheta": {
+      "id": "tsiskvili-mtskheta",
+      "name": "Tsiskvili Mtskheta",
+      "locality": "Мцхета · Гамсахурдия, 7",
+      "mapQuery": "Tsiskvili Mtskheta, 7 Gamsakhurdia Street, Mtskheta, Georgia",
+      "description": "Вариант для полноценного грузинского обеда в Мцхете. Меню можно посмотреть на сайте сети.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://tsiskvili.ge/en",
+      "checkedAt": "2026-10-08"
+    },
+    "ananuri-cafe": {
+      "id": "ananuri-cafe",
+      "name": "Restaurant Ananuri",
+      "locality": "Ананури · рядом с крепостью",
+      "mapQuery": "Restaurant Ananuri, Ananuri, Georgia",
+      "description": "Обед поблизости от остановки у крепости и водохранилища. Перед выездом уточни работу кухни.",
+      "tag": "Рядом с остановкой",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g1598758-Ananuri_Mtskheta_Mtianeti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "okros": {
+      "id": "okros",
+      "name": "Okro’s Wine",
+      "locality": "Сигнахи",
+      "mapQuery": "Okros Wine restaurant, Sighnaghi, Georgia",
+      "description": "Винный ресторан для обеда в Сигнахи. Подойдёт, если хочется познакомиться с местной кухней.",
+      "tag": "Кухня Кахетии",
+      "sourceUrl": "https://georgia.travel/cities-towns/sighnaghi",
+      "checkedAt": "2026-10-08"
+    },
+    "pheasant": {
+      "id": "pheasant",
+      "name": "Pheasant’s Tears",
+      "locality": "Сигнахи",
+      "mapQuery": "Pheasants Tears restaurant, Sighnaghi, Georgia",
+      "description": "Небольшой ресторан известной винодельни. Столик и меню на день лучше уточнить заранее.",
+      "tag": "При винодельне",
+      "sourceUrl": "https://georgia.travel/cities-towns/sighnaghi",
+      "checkedAt": "2026-10-08"
+    },
+    "lost-ridge": {
+      "id": "lost-ridge",
+      "name": "Lost Ridge",
+      "locality": "Кедели · рядом с Сигнахи",
+      "mapQuery": "Lost Ridge Inn Brewery Ranch, Kedeli, Sighnaghi, Georgia",
+      "description": "Загородная остановка с кухней и собственной пивоварней. Потребуется заезд в Кедели.",
+      "tag": "Загородный обед",
+      "sourceUrl": "https://georgia.travel/your-essential-guide-to-kakheti-the-napa-valley-of-georgia-the-country",
+      "checkedAt": "2026-10-08"
+    },
+    "doli-telavi": {
+      "id": "doli-telavi",
+      "name": "Doli",
+      "locality": "Телави · старый город",
+      "mapQuery": "Doli restaurant, 11 Cholokashvili Street, Telavi, Georgia",
+      "description": "Ресторан при Communal Hotel на прогулочной улице. Подойдёт для спокойного обеда в Телави.",
+      "tag": "Старый город",
+      "sourceUrl": "https://georgia.travel/your-essential-guide-to-kakheti-the-napa-valley-of-georgia-the-country",
+      "checkedAt": "2026-10-08"
+    },
+    "kapiloni": {
+      "id": "kapiloni",
+      "name": "Kapiloni",
+      "locality": "Телави",
+      "mapQuery": "Kapiloni restaurant, Telavi, Georgia",
+      "description": "Грузинская кухня для сытной остановки во время прогулки по Телави.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/RestaurantsNear-g1596952-d23695111-Doli-Telavi_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "bravo": {
+      "id": "bravo",
+      "name": "Bravo",
+      "locality": "Телави",
+      "mapQuery": "Bravo restaurant, Telavi, Georgia",
+      "description": "Кафе-ресторан как альтернатива долгому обеду при винодельне. Проверь актуальное меню перед визитом.",
+      "tag": "Кафе-ресторан",
+      "sourceUrl": "https://www.tripadvisor.com/RestaurantsNear-g1596952-d23695111-Doli-Telavi_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "maisi": {
+      "id": "maisi",
+      "name": "Maisi",
+      "locality": "Степанцминда · Гергети",
+      "mapQuery": "Maisi restaurant, 18 Betlemi Street, Stepantsminda, Georgia",
+      "description": "Грузинская кухня с современными блюдами в Гергети. Можно запланировать после спуска от Троицкой церкви.",
+      "tag": "После прогулки",
+      "sourceUrl": "https://restaurantguru.com/Maisi-maisi-Stepantsminda",
+      "checkedAt": "2026-10-08"
+    },
+    "rooms-kazbegi": {
+      "id": "rooms-kazbegi",
+      "name": "Rooms Kazbegi",
+      "locality": "Степанцминда",
+      "mapQuery": "Rooms Hotel Kazbegi restaurant, Stepantsminda, Georgia",
+      "description": "Ресторан при отеле с видами на горы. Уточни доступ для гостей без проживания и наличие столиков.",
+      "tag": "Вид на горы",
+      "sourceUrl": "https://www.altimeracollection.com/journal/where-to-eat-in-kazbegi",
+      "checkedAt": "2026-10-08"
+    },
+    "qondari": {
+      "id": "qondari",
+      "name": "Qondari",
+      "locality": "Степанцминда",
+      "mapQuery": "Qondari restaurant, Stepantsminda, Georgia",
+      "description": "Ещё один вариант обеда в Степанцминде после дороги. Режим работы проверь на дату поездки.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.altimeracollection.com/journal/where-to-eat-in-kazbegi",
+      "checkedAt": "2026-10-08"
+    },
+    "kassland": {
+      "id": "kassland",
+      "name": "Kass Land · ресторан",
+      "locality": "Дашбаши · комплекс у каньона",
+      "mapQuery": "Kass Land restaurant, Dashbashi, Tsalka, Georgia",
+      "description": "Обед на территории комплекса. Уточни, какой ресторан работает и нужен ли билет для доступа.",
+      "tag": "У каньона",
+      "sourceUrl": "https://kassland.com/",
+      "checkedAt": "2026-10-08"
+    },
+    "pontia": {
+      "id": "pontia",
+      "name": "Pontia",
+      "locality": "Цалка",
+      "mapQuery": "Pontia restaurant, Tsalka, Georgia",
+      "description": "Альтернатива обеду в туристическом комплексе: остановка в городе после каньона.",
+      "tag": "В городе",
+      "sourceUrl": "https://www.tripadvisor.com/RestaurantsNear-g13152851-d24130272-Kass_Land-Dashbashi_Kvemo_Kartli_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "dzmebi": {
+      "id": "dzmebi",
+      "name": "Dzmebi · ძმები",
+      "locality": "Манглиси",
+      "mapQuery": "ძმები restaurant, M8GX+R3G, Manglisi, Georgia",
+      "description": "Придорожная остановка с блюдами на гриле. Подойдёт для перерыва по дороге через Манглиси.",
+      "tag": "По дороге",
+      "sourceUrl": "https://restaurantguru.com/RESTORANI-WYARO-Georgia",
+      "checkedAt": "2026-10-08"
+    },
+    "kera": {
+      "id": "kera",
+      "name": "KE&RA",
+      "locality": "Гори",
+      "mapQuery": "KE&RA restaurant, Gori, Georgia",
+      "description": "Небольшое место для обеда в Гори. Можно совместить с остановкой в городе по пути.",
+      "tag": "В городе",
+      "sourceUrl": "https://wanderlog.com/list/geoCategory/201943/where-to-eat-best-restaurants-in-gori",
+      "checkedAt": "2026-10-08"
+    },
+    "shin": {
+      "id": "shin",
+      "name": "Shin da Gori",
+      "locality": "Гори",
+      "mapQuery": "Shin da Gori restaurant, Gori, Georgia",
+      "description": "Грузинский обед во дворе. Вариант для неспешного перерыва в Гори.",
+      "tag": "Дворик",
+      "sourceUrl": "https://wanderlog.com/list/geoCategory/201943/where-to-eat-best-restaurants-in-gori",
+      "checkedAt": "2026-10-08"
+    },
+    "cafe22": {
+      "id": "cafe22",
+      "name": "Cafe 22",
+      "locality": "Гори · проспект Сталина, 22",
+      "mapQuery": "Cafe 22, 22 Stalin Avenue, Gori, Georgia",
+      "description": "Кафе с горячими блюдами и десертами. Подойдёт и для обеда, и для короткой остановки на кофе.",
+      "tag": "Кафе и десерты",
+      "sourceUrl": "https://wolt.com/en/geo/gori/restaurant/cafe-22",
+      "checkedAt": "2026-10-08"
+    },
+    "station": {
+      "id": "station",
+      "name": "Bahnhof Station",
+      "locality": "Асурети",
+      "mapQuery": "Bahnhof Station restaurant, Asureti, Georgia",
+      "description": "Обед в духе истории немецкого поселения: немецкая и грузинская кухня в пространстве старой станции.",
+      "tag": "Немецкая и грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g14773937-d24180160-Reviews-Station-Asureti_Kvemo_Kartli_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "native": {
+      "id": "native",
+      "name": "Native · Kiketi Farm",
+      "locality": "Кикети",
+      "mapQuery": "Native restaurant Kiketi Farm, Kiketi, Georgia",
+      "description": "Загородный ресторан на ферме. Уточни столик заранее; заезд в Кикети планируется отдельно.",
+      "tag": "На ферме",
+      "sourceUrl": "https://kiketi.farm/food-and-wine",
+      "checkedAt": "2026-10-08"
+    },
+    "kolkheti": {
+      "id": "kolkheti",
+      "name": "Kolkheti",
+      "locality": "Окрокана · Коджорское шоссе",
+      "mapQuery": "Kolkheti restaurant, Kojori Highway 7th km, Tbilisi, Georgia",
+      "description": "Грузинский ресторан на Коджорском шоссе. Вариант обеда на обратном пути через Коджори.",
+      "tag": "На обратном пути",
+      "sourceUrl": "https://www.yell.ge/company.php?id=107881&lan=eng",
+      "checkedAt": "2026-10-08"
+    },
+    "tsiskvili-tskneti": {
+      "id": "tsiskvili-tskneti",
+      "name": "Tsiskvili Tskneti",
+      "locality": "Цкнети · Руставели, 106",
+      "mapQuery": "Tsiskvili Tskneti, 106 Rustaveli Street, Tskneti, Georgia",
+      "description": "Грузинский обед в Цкнети, если решишь вернуться через этот посёлок. Это дополнительный заезд.",
+      "tag": "С дополнительным заездом",
+      "sourceUrl": "https://tsiskvili.ge/en",
+      "checkedAt": "2026-10-08"
+    },
+    "lulus": {
+      "id": "lulus",
+      "name": "Lulu’s Cafe",
+      "locality": "Манглиси",
+      "mapQuery": "Lulus Cafe, Manglisi, Georgia",
+      "description": "Кафе в посёлке для перерыва после прогулки. Перед выездом уточни, готовят ли горячий обед.",
+      "tag": "Кафе",
+      "sourceUrl": "https://restaurantguru.com/Manglisi",
+      "checkedAt": "2026-10-08"
+    },
+    "pesvebi": {
+      "id": "pesvebi",
+      "name": "Pesvebi",
+      "locality": "Боржоми · улица Ираклия",
+      "mapQuery": "Pesvebi restaurant, Erekle Street, Borjomi, Georgia",
+      "description": "Грузинская кухня для обеда после Центрального парка. В выходной столик лучше уточнить заранее.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Borjomi",
+      "checkedAt": "2026-10-08"
+    },
+    "myhouse": {
+      "id": "myhouse",
+      "name": "My House",
+      "locality": "Боржоми · Костава, 31",
+      "mapQuery": "My House restaurant, 31 Kostava Street, Borjomi, Georgia",
+      "description": "Кафе-ресторан в центре Боржоми, удобный для перерыва между прогулками.",
+      "tag": "В центре",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Borjomi",
+      "checkedAt": "2026-10-08"
+    },
+    "oldbar": {
+      "id": "oldbar",
+      "name": "Old Bar-Restaurant",
+      "locality": "Ахалцихе · Костава, 3",
+      "mapQuery": "Old Bar-Restaurant, 3 Kostava Street, Akhaltsikhe, Georgia",
+      "description": "Остановка в Ахалцихе с местной месхетинской кухней. Подойдёт для дня с посещением Рабати.",
+      "tag": "Месхетинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g3316797-d33109241-Reviews-Old_Bar_restaurant-Akhaltsikhe_Samtskhe_Javakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "tsiskvili": {
+      "id": "tsiskvili",
+      "name": "Ethno Tsiskvili",
+      "locality": "Тбилиси · Белиашвили, 99",
+      "mapQuery": "Ethno Tsiskvili, 99 Beliashvili Street, Tbilisi, Georgia",
+      "description": "Грузинский ресторан для обеда уже в городе. Можно оставить на возвращение с загородной прогулки.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://tsiskvili.ge/en",
+      "checkedAt": "2026-10-08"
+    },
+    "kakhelebi": {
+      "id": "kakhelebi",
+      "name": "Kakhelebi на Белиашвили",
+      "locality": "Тбилиси · Белиашвили, 41",
+      "mapQuery": "Kakhelebi, 41 Beliashvili Street, Tbilisi, Georgia",
+      "description": "Кахетинская кухня на севере Тбилиси. Вариант поесть после возвращения, если у природной остановки нет кафе.",
+      "tag": "Кахетинская кухня",
+      "sourceUrl": "https://www.yell.ge/company.php?id=135840&lan=eng",
+      "checkedAt": "2026-10-08"
+    },
+    "ethnographer": {
+      "id": "ethnographer",
+      "name": "Ethnographer",
+      "locality": "Тбилиси · Белиашвили, 105",
+      "mapQuery": "Ethnographer restaurant, 105 Beliashvili Street, Tbilisi, Georgia",
+      "description": "Грузинская кухня и традиционный интерьер. Подойдёт для завершения поездки обедом в Тбилиси.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g294195-d18187901-Reviews-Ethnographer-Tbilisi.html",
+      "checkedAt": "2026-10-08"
+    },
+    "germanmill": {
+      "id": "germanmill",
+      "name": "Deutsche Mühle",
+      "locality": "Болниси · Сиони, 4",
+      "mapQuery": "Deutsche Muhle German Mill restaurant, Bolnisi, Georgia",
+      "description": "Грузинская и немецкая кухня в бывшей мельнице у реки. Подходит к исторической теме поездки.",
+      "tag": "Немецкая мельница",
+      "sourceUrl": "https://muehle-bolnisi.com/index.php/en/",
+      "checkedAt": "2026-10-08"
+    },
+    "bolnisi-marani": {
+      "id": "bolnisi-marani",
+      "name": "Marani",
+      "locality": "Болниси · Орбелиани, 25а",
+      "mapQuery": "Marani restaurant, 25a Sulkhan Saba Orbeliani Street, Bolnisi, Georgia",
+      "description": "Грузинский ресторан в городе. Вариант для обеда между остановками в Болниси и Дманиси.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://madloba.info/en/bolnisi/restaurants/marani/",
+      "checkedAt": "2026-10-08"
+    },
+    "bolnisi-khinkali": {
+      "id": "bolnisi-khinkali",
+      "name": "Bolnisi Khinkali House",
+      "locality": "Болниси",
+      "mapQuery": "Bolnisi Khinkali House, Bolnisi, Georgia",
+      "description": "Хинкальная для простой сытной остановки в Болниси. Актуальное меню проверь на картах.",
+      "tag": "Хинкальная",
+      "sourceUrl": "https://restaurantguru.com/Bolnisi",
+      "checkedAt": "2026-10-08"
+    },
+    "oasis": {
+      "id": "oasis",
+      "name": "Oasis Club",
+      "locality": "Удабно",
+      "mapQuery": "Oasis Club restaurant, Udabno, Georgia",
+      "description": "Грузинская и европейская кухня в посёлке на пути к Давид-Гареджи. Есть место для спокойного отдыха после дороги.",
+      "tag": "После монастыря",
+      "sourceUrl": "https://www.oasisclubudabno.com/",
+      "checkedAt": "2026-10-08"
+    },
+    "udabno-terrace": {
+      "id": "udabno-terrace",
+      "name": "Udabno Terrace",
+      "locality": "Удабно",
+      "mapQuery": "Udabno Terrace restaurant, Udabno, Georgia",
+      "description": "Небольшое место с террасой и видом на степь. Заранее проверь, работает ли кухня в день поездки.",
+      "tag": "Вид на степь",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g4224054-Udabno_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "blackhorse": {
+      "id": "blackhorse",
+      "name": "Black Horse",
+      "locality": "Удабно",
+      "mapQuery": "Black Horse restaurant, Udabno, Georgia",
+      "description": "Ещё один вариант грузинского обеда в Удабно. Лучше связаться заранее: выбор заведений в посёлке небольшой.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g4224054-Udabno_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "wald": {
+      "id": "wald",
+      "name": "Wald Hotel · ресторан",
+      "locality": "Лагодехи · у заповедника",
+      "mapQuery": "Wald Hotel restaurant, Lagodekhi, Georgia",
+      "description": "Грузинские и европейские блюда при отеле у леса. Уточни приём гостей без проживания.",
+      "tag": "У заповедника",
+      "sourceUrl": "https://waldhotellagodekhi.com/",
+      "checkedAt": "2026-10-08"
+    },
+    "givisi": {
+      "id": "givisi",
+      "name": "Givisi",
+      "locality": "Лагодехи",
+      "mapQuery": "Givisi restaurant, Lagodekhi, Georgia",
+      "description": "Вариант обеда в городе после пешего дня. Работу кухни и столик стоит проверить до выхода на тропу.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com.tr/Restaurants-g6276855-Lagodekhi_Kakheti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "wisqvili": {
+      "id": "wisqvili",
+      "name": "Wisqvili",
+      "locality": "Лагодехи · Батуми, 64",
+      "mapQuery": "Wisqvili restaurant, 64 Batumi Street, Lagodekhi, Georgia",
+      "description": "Ресторан в Лагодехи для обеда или ужина после возвращения из заповедника.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://restaurantguru.com/Lagodekhi",
+      "checkedAt": "2026-10-08"
+    },
+    "vardzia-resort": {
+      "id": "vardzia-resort",
+      "name": "Vardzia Resort · ресторан",
+      "locality": "Долина Вардзии · Гогашени",
+      "mapQuery": "Vardzia Resort restaurant, Gogasheni, Vardzia, Georgia",
+      "description": "Грузинская и месхетинская кухня на террасе с видом на пещерный город. Ресторан принимает и гостей без проживания.",
+      "tag": "Вид на Вардзию",
+      "sourceUrl": "https://www.vardziaresort.com/en/bar-and-restaurant/BAR_RESTAURANT",
+      "checkedAt": "2026-10-08"
+    },
+    "valodia": {
+      "id": "valodia",
+      "name": "Valodia’s Cottage",
+      "locality": "Кориcхеви · рядом с Вардзией",
+      "mapQuery": "Valodias Cottage, Koriskhevi, Vardzia, Georgia",
+      "description": "Семейная остановка в долине. Обед для гостей без проживания договорись заранее.",
+      "tag": "По договорённости",
+      "sourceUrl": "https://beyondarts.at/app/georgia.samtskhe-javakheti/hotels-and-restaurants/aspindza---vardzia-%7C-hotel-valodias-cottage/",
+      "checkedAt": "2026-10-08"
+    },
+    "chiko": {
+      "id": "chiko",
+      "name": "Chiko",
+      "locality": "Аспиндза · дорога S11",
+      "mapQuery": "Chiko restaurant, Aspindza, Georgia",
+      "description": "Остановка на дороге в долину Вардзии или обратно. Подойдёт, если удобнее поесть до приезда к пещерам.",
+      "tag": "По дороге",
+      "sourceUrl": "https://madloba.info/en/reviews/where-to-eat/gde-vkusno-poest-v-gorodah-gruzii/top-mest-gde-poest-v-vardzia-aspindza/",
+      "checkedAt": "2026-10-08"
+    },
+    "palaty": {
+      "id": "palaty",
+      "name": "Palaty",
+      "locality": "Кутаиси · Пушкина, 2",
+      "mapQuery": "Palaty restaurant, 2 Pushkin Street, Kutaisi, Georgia",
+      "description": "Грузинская кухня рядом с Белым мостом. Удобно включить в прогулку по старому Кутаиси.",
+      "tag": "У Белого моста",
+      "sourceUrl": "https://palaty.ge/",
+      "checkedAt": "2026-10-08"
+    },
+    "doli-kutaisi": {
+      "id": "doli-kutaisi",
+      "name": "Doli Kutaisi",
+      "locality": "Кутаиси · улица Табидзе",
+      "mapQuery": "Doli restaurant, Tabidze Street, Kutaisi, Georgia",
+      "description": "Ресторан в старинном городском доме для неспешного обеда. Для выходных лучше уточнить столик.",
+      "tag": "Неспешный обед",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g815359-d26496697-Reviews-Doli-Kutaisi_Imereti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "bikentia": {
+      "id": "bikentia",
+      "name": "Bikentia’s Saqababe",
+      "locality": "Кутаиси · улица Цисперканцелеби",
+      "mapQuery": "Bikentias Saqababe, Tsisperi Kantselebi Street, Kutaisi, Georgia",
+      "description": "Небольшая кебабная: вариант короткого сытного перерыва во время прогулки.",
+      "tag": "Кебабная",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g815359-d17334771-Reviews-Bikentias_Saqababe-Kutaisi_Imereti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "oda": {
+      "id": "oda",
+      "name": "Oda Family Marani",
+      "locality": "Мартвили",
+      "mapQuery": "Oda Family Marani, Martvili, Georgia",
+      "description": "Семейная кухня Самегрело при винном погребе. Визит и обед согласуй заранее.",
+      "tag": "По договорённости",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g8674116-d13157784-Reviews-Oda_Family_Marani-Martvili_Samegrelo_Zemo_Svaneti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "odo": {
+      "id": "odo",
+      "name": "Odo’s Winery",
+      "locality": "Мартвили",
+      "mapQuery": "Odos Winery, Martvili, Georgia",
+      "description": "Семейное место с традиционной едой. Подойдёт для неспешного обеда по предварительной договорённости.",
+      "tag": "Семейная кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g8674116-d25224329-Reviews-Odo_s_Winery-Martvili_Samegrelo_Zemo_Svaneti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "sanapiro": {
+      "id": "sanapiro",
+      "name": "Sanapiro",
+      "locality": "Мартвили",
+      "mapQuery": "Sanapiro restaurant, Martvili, Georgia",
+      "description": "Ресторан как альтернатива семейным винодельням. Проверь точку и режим работы перед выездом.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g8674116-zfp58-Martvili_Samegrelo_Zemo_Svaneti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "diaroni": {
+      "id": "diaroni",
+      "name": "Diaroni",
+      "locality": "Зугдиди",
+      "mapQuery": "Diaroni restaurant, Zugdidi, Georgia",
+      "description": "Мегрельская кухня: место для знакомства с блюдами региона после прогулки по Зугдиди.",
+      "tag": "Мегрельская кухня",
+      "sourceUrl": "https://restaurantguru.com/Diaroni-Zugdidi",
+      "checkedAt": "2026-10-08"
+    },
+    "pancake": {
+      "id": "pancake",
+      "name": "Pancake House",
+      "locality": "Зугдиди",
+      "mapQuery": "Pancake House, Zugdidi, Georgia",
+      "description": "Кафе для лёгкого обеда, завтрака или сладкого перерыва.",
+      "tag": "Кафе",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g2156155-Zugdidi_Samegrelo_Zemo_Svaneti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "iberia": {
+      "id": "iberia",
+      "name": "Iberia Restaurant & Bar",
+      "locality": "Зугдиди",
+      "mapQuery": "Iberia Restaurant Bar, Zugdidi, Georgia",
+      "description": "Грузинское меню и терраса: альтернатива для обеда в городе.",
+      "tag": "Терраса",
+      "sourceUrl": "https://www.tripadvisor.com/Restaurants-g2156155-Zugdidi_Samegrelo_Zemo_Svaneti_Region.html",
+      "checkedAt": "2026-10-08"
+    },
+    "metekhara": {
+      "id": "metekhara",
+      "name": "Metekhara",
+      "locality": "Амбролаури",
+      "mapQuery": "Metekhara cafe restaurant, Ambrolauri, Georgia",
+      "description": "Кафе-ресторан в Амбролаури для остановки между прогулками по Раче.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://yandex.com.ge/maps/122068/ambrolauri/search/Restaurants/",
+      "checkedAt": "2026-10-08"
+    },
+    "cafe-racha": {
+      "id": "cafe-racha",
+      "name": "Cafe Racha",
+      "locality": "Амбролаури",
+      "mapQuery": "Cafe Racha, Ambrolauri, Georgia",
+      "description": "Кафе в городе: вариант поесть до обратной дороги. Проверь меню на выбранную дату.",
+      "tag": "Кафе",
+      "sourceUrl": "https://yandex.com.ge/maps/122068/ambrolauri/search/Restaurants/",
+      "checkedAt": "2026-10-08"
+    },
+    "nobar": {
+      "id": "nobar",
+      "name": "No Bar Racha",
+      "locality": "Амбролаури",
+      "mapQuery": "No Bar Racha, Ambrolauri, Georgia",
+      "description": "Ещё один вариант для обеда в Амбролаури. Сверь часы кухни перед поездкой.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://yandex.com.ge/maps/122068/ambrolauri/search/Restaurants/",
+      "checkedAt": "2026-10-08"
+    },
+    "kartli": {
+      "id": "kartli",
+      "name": "Kartli · ქართლი",
+      "locality": "Сурами",
+      "mapQuery": "ქართლი restaurant, Surami, Georgia",
+      "description": "Грузинский ресторан для полноценного обеда в Сурами.",
+      "tag": "Грузинская кухня",
+      "sourceUrl": "https://restaurantguru.com/Kartli-Surami",
+      "checkedAt": "2026-10-08"
+    },
+    "chalet": {
+      "id": "chalet",
+      "name": "Park Hotel Surami Chalet",
+      "locality": "Сурами",
+      "mapQuery": "Park Hotel Surami Chalet restaurant, Surami, Georgia",
+      "description": "Ресторан при отеле. Перед визитом уточни, принимают ли на обед гостей без проживания.",
+      "tag": "При отеле",
+      "sourceUrl": "https://restaurantguru.com/Surami",
+      "checkedAt": "2026-10-08"
+    },
+    "ifani": {
+      "id": "ifani",
+      "name": "Ifani",
+      "locality": "Абастумани · Eikon Apartments",
+      "mapQuery": "Ifani restaurant Eikon, Abastumani, Georgia",
+      "description": "Грузинская и европейская кухня в самом Абастумани. Подойдёт для обеда между прогулкой и обсерваторией.",
+      "tag": "В Абастумани",
+      "sourceUrl": "https://eikonabastumani.com/restaurants/",
+      "checkedAt": "2026-10-08"
+    }
+  },
+  "groups": {
+    "kvareli": {
+      "placeIds": [
+        "kudigora",
+        "saperavi",
+        "chateau-kvareli"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "mtskheta": {
+      "placeIds": [
+        "ornament",
+        "checkin",
+        "tsiskvili-mtskheta"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "ananuri": {
+      "placeIds": [
+        "ananuri-cafe",
+        "ornament",
+        "tsiskvili-mtskheta"
+      ],
+      "note": "Первый вариант — в Ананури, ещё два — с заездом в Мцхету по дороге обратно. Дополнительный заезд не включён в оценку времени."
+    },
+    "sighnaghi": {
+      "placeIds": [
+        "okros",
+        "pheasant",
+        "lost-ridge"
+      ],
+      "note": "Два места в Сигнахи и одно в соседнем Кедели. Дополнительный заезд и дегустации требуют отдельного времени."
+    },
+    "telavi": {
+      "placeIds": [
+        "doli-telavi",
+        "kapiloni",
+        "bravo"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "kakheti": {
+      "placeIds": [
+        "doli-telavi",
+        "okros",
+        "pheasant"
+      ],
+      "note": "Doli — для первого дня в Телави; два других места — для второго дня в Сигнахи. Обед каждого дня уже учтён в плане."
+    },
+    "kazbegi": {
+      "placeIds": [
+        "maisi",
+        "rooms-kazbegi",
+        "qondari"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "dashbashi": {
+      "placeIds": [
+        "kassland",
+        "pontia",
+        "dzmebi"
+      ],
+      "note": "Два места у каньона и в Цалке; Dzmebi — по дороге через Манглиси. Сверь выбранный заезд со своим маршрутом."
+    },
+    "gori": {
+      "placeIds": [
+        "kera",
+        "shin",
+        "cafe22"
+      ],
+      "note": "Подборка в Гори: запланируй заезд до или после прогулки. Дорога до выбранного кафе сверх основной трассы добавляется к длительности поездки."
+    },
+    "asureti": {
+      "placeIds": [
+        "station",
+        "native",
+        "kolkheti"
+      ],
+      "note": "Station — в Асурети. Ещё два варианта подойдут при возвращении через Кикети и Коджори; это другой путь, закладывай дополнительное время."
+    },
+    "kojori": {
+      "placeIds": [
+        "kolkheti",
+        "native",
+        "tsiskvili-tskneti"
+      ],
+      "note": "Места в окрестностях Коджори. Кикети и Цкнети требуют дополнительных заездов; их время не входит в основной план."
+    },
+    "manglisi": {
+      "placeIds": [
+        "dzmebi",
+        "lulus",
+        "native"
+      ],
+      "note": "Первые два места — в Манглиси. Native — дополнительная остановка в Кикети на пути обратно; добавь время на заезд."
+    },
+    "borjomi": {
+      "placeIds": [
+        "pesvebi",
+        "myhouse",
+        "oldbar"
+      ],
+      "note": "Два варианта для первого дня в Боржоми и один — для дня в Ахалцихе. Выбирай под свою остановку."
+    },
+    "north-tbilisi": {
+      "placeIds": [
+        "kakhelebi",
+        "tsiskvili",
+        "ethnographer"
+      ],
+      "note": "Эти три места — в Тбилиси после возвращения, не у леса или озера. Возьми перекус на прогулку; городской заезд к кафе может увеличить время поездки."
+    },
+    "bolnisi": {
+      "placeIds": [
+        "germanmill",
+        "bolnisi-marani",
+        "bolnisi-khinkali"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "udabno": {
+      "placeIds": [
+        "oasis",
+        "udabno-terrace",
+        "blackhorse"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "lagodekhi": {
+      "placeIds": [
+        "wald",
+        "givisi",
+        "wisqvili"
+      ],
+      "note": "Все три места — до или после тропы. На пеший маршрут к водопаду обязательно возьми еду и воду с собой."
+    },
+    "vardzia": {
+      "placeIds": [
+        "vardzia-resort",
+        "valodia",
+        "chiko"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "kutaisi": {
+      "placeIds": [
+        "palaty",
+        "doli-kutaisi",
+        "bikentia"
+      ],
+      "note": "Подборка в Кутаиси. Для дня в Цхалтубо и у пещеры используй поиск кафе на картах рядом с нужной остановкой."
+    },
+    "martvili": {
+      "placeIds": [
+        "oda",
+        "odo",
+        "sanapiro"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "zugdidi": {
+      "placeIds": [
+        "diaroni",
+        "iberia",
+        "pancake"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "racha": {
+      "placeIds": [
+        "metekhara",
+        "cafe-racha",
+        "nobar"
+      ],
+      "note": "Три идеи для обеда. Перед поездкой проверь меню, часы работы и наличие столиков."
+    },
+    "surami": {
+      "placeIds": [
+        "kartli",
+        "chalet",
+        "kera"
+      ],
+      "note": "Первые два варианта — в Сурами; KE&RA — с заездом в Гори по дороге обратно. Время заезда добавляется отдельно."
+    },
+    "abastumani": {
+      "placeIds": [
+        "ifani",
+        "oldbar",
+        "pesvebi"
+      ],
+      "note": "Ifani — в Абастумани; Old Bar — по пути в Ахалцихе; Pesvebi — при заезде в Боржоми. Дополнительные остановки планируй отдельно."
+    }
+  },
+  "routes": {
+    "sabaduri-sioni": "north-tbilisi",
+    "mtskheta-jvari": "mtskheta",
+    "ananuri": "ananuri",
+    "sighnaghi-bodbe": "sighnaghi",
+    "dashbashi": "dashbashi",
+    "uplistsikhe": "gori",
+    "kakheti-weekend": "kakheti",
+    "kazbegi-weekend": "kazbegi",
+    "asureti": "asureti",
+    "manglisi-algeti": "manglisi",
+    "borjomi-rabati-weekend": "borjomi",
+    "tbilisi-sea": "north-tbilisi",
+    "kojori-fortress": "kojori",
+    "martkopi": "north-tbilisi",
+    "shiomgvime": "mtskheta",
+    "bolnisi-dmanisi": "bolnisi",
+    "david-gareji": "udabno",
+    "telavi-gombori": "telavi",
+    "kvareli-ilia": "kvareli",
+    "lagodekhi-weekend": "lagodekhi",
+    "bateti-lake": "gori",
+    "vardzia-weekend": "vardzia",
+    "kutaisi-tskaltubo-weekend": "kutaisi",
+    "martvili-okatse-weekend": "martvili",
+    "zugdidi-weekend": "zugdidi",
+    "racha-weekend": "racha",
+    "surami": "surami",
+    "abastumani-weekend": "abastumani"
+  }
+}
