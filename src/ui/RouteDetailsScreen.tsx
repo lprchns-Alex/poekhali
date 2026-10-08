@@ -25,7 +25,7 @@ function Stat({ label, value, note }: { label: string; value: string; note: stri
   const { colors } = useApp();
   return <View style={{ flex: 1, padding: 14, borderRadius: 12, backgroundColor: colors.surface, minWidth: 0 }}>
     <Txt muted style={{ fontSize: 12, lineHeight: 18, marginBottom: 14 }}>{label}</Txt>
-    <Txt numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.65} style={{ fontSize: 38, lineHeight: 44, letterSpacing: -1.8, fontWeight: '400', fontVariant: ['tabular-nums'] }}>{value}</Txt>
+    <Txt adjustsFontSizeToFit minimumFontScale={0.65} style={{ fontSize: value.length >= 7 ? 28 : 38, lineHeight: 44, letterSpacing: -1.8, fontWeight: '400', fontVariant: ['tabular-nums'] }}>{value}</Txt>
     <Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 5 }}>{note}</Txt>
   </View>;
 }
@@ -140,7 +140,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
         <Txt style={{ color: panel.muted, fontSize: 16, lineHeight: 22 }}>{short ? 'Сабадури · только лес' : route.subtitle}</Txt>
         <View style={{ marginTop: 24, paddingTop: 15, borderTopWidth: 1, borderTopColor: 'rgba(21,22,16,0.27)', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}><Txt style={{ color: panel.ink, fontSize: 14, lineHeight: 20 }}>Старт из Тбилиси</Txt><Txt style={{ color: panel.ink, fontSize: 14, lineHeight: 20 }}>{stops.length} {stops.length === 1 ? 'остановка' : stops.length < 5 ? 'остановки' : 'остановок'}</Txt></View>
       </View>
-      <View style={{ flexDirection: 'row', gap: 8, marginTop: 8, marginBottom: 21 }}><Stat value={durationValue} label="ПРИМЕРНО ЧАСОВ" note={route.days === 2 ? 'включая ночёвку и еду' : 'с дорогой и обедом'} /><Stat value={short ? 'Меньше' : `${route.walkingKm.join('–')} км`} label="ПЕШКОМ" note={short ? 'короткая прогулка' : route.difficulty.toLowerCase()} /></View>
+      <View style={{ flexDirection: 'row', gap: 8, marginTop: 8, marginBottom: 21 }}><Stat value={durationValue} label="ПРИМЕРНО ЧАСОВ" note={route.days === 2 ? 'включая ночёвку и еду' : 'с дорогой и обедом'} /><Stat value={short ? 'Меньше' : `${route.walkingKm.map(value => String(value).replace('.', ',')).join('–')} км`} label="ПЕШКОМ" note={short ? 'короткая прогулка' : route.difficulty.toLowerCase()} /></View>
       <View style={{ paddingHorizontal: 4 }}>
         <Txt style={{ fontSize: 16, lineHeight: 24, marginBottom: 23 }}>{short ? 'Прогуляться среди буков и вернуться в город пораньше.' : route.description}</Txt>
         {route.shortVariant && <View style={{ marginBottom: 25 }}><SectionLabel>ТВОЙ ТЕМП</SectionLabel><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}><Chip label="Лес + озеро" selected={!short} onPress={() => setShort(false)} /><Chip label="Только лес" selected={short} onPress={() => setShort(true)} /></View>{short && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginTop: 10 }}>{route.shortVariant.description}</Txt>}</View>}
