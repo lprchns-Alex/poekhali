@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { existsSync } from 'node:fs';
 import { DEFAULT_FILTERS, ROUTES, addDays, filterRoutes, getStopDate, getTripEndDate, getTripHours, isValidDate, nextSaturday, tbilisiToday, validSavedIds } from '../src/model';
 
 test('date is based on Georgia timezone rather than host timezone', () => {
@@ -10,13 +11,13 @@ test('date is based on Georgia timezone rather than host timezone', () => {
 
 test('time filter respects the full upper estimate and combines with mood and walking', () => {
   const results = filterRoutes({ mood: 'История', days: 1, maxHours: 7, easyOnly: true });
-  assert.deepEqual(results.map(route => route.id), ['mtskheta-jvari', 'ananuri']);
+  assert.deepEqual(results.map(route => route.id), ['mtskheta-jvari', 'ananuri', 'asureti', 'shiomgvime']);
   assert.equal(filterRoutes({ ...DEFAULT_FILTERS, maxHours: 3 }).length, 0);
 });
 
 test('six-hour limit covers the complete trip with stops and chosen meal', () => {
   const filters = { ...DEFAULT_FILTERS, maxHours: 6 };
-  assert.deepEqual(filterRoutes(filters, '', 'cafe').map(route => route.id), ['mtskheta-jvari']);
+  assert.deepEqual(filterRoutes(filters, '', 'cafe').map(route => route.id), ['mtskheta-jvari', 'asureti', 'tbilisi-sea', 'kojori-fortress', 'martkopi', 'shiomgvime']);
   const sevenHourFilters = { ...filters, maxHours: 6.5 };
   assert.equal(filterRoutes(sevenHourFilters, '', 'cafe').some(route => route.id === 'ananuri'), false);
   assert.equal(filterRoutes(sevenHourFilters, '', 'picnic').some(route => route.id === 'ananuri'), true);
@@ -27,11 +28,11 @@ test('six-hour limit covers the complete trip with stops and chosen meal', () =>
 
 test('two-day plans are distinct from day trips and obey combined filters', () => {
   const weekends = filterRoutes({ ...DEFAULT_FILTERS, days: 2, maxHours: 48 });
-  assert.deepEqual(weekends.map(route => route.id), ['kakheti-weekend', 'kazbegi-weekend']);
+  assert.deepEqual(weekends.map(route => route.id), ['kakheti-weekend', 'kazbegi-weekend', 'borjomi-rabati-weekend', 'lagodekhi-weekend', 'vardzia-weekend', 'kutaisi-tskaltubo-weekend', 'martvili-okatse-weekend', 'zugdidi-weekend', 'racha-weekend', 'abastumani-weekend']);
   assert.equal(filterRoutes({ ...DEFAULT_FILTERS, maxHours: 48 }).every(route => route.days === 1), true);
   assert.deepEqual(filterRoutes({ ...DEFAULT_FILTERS, days: 2, maxHours: 36, mood: 'Город' }, 'Телави', 'cafe').map(route => route.id), ['kakheti-weekend']);
   assert.equal(filterRoutes({ ...DEFAULT_FILTERS, days: 2, maxHours: 6 }).length, 0);
-  assert.equal(filterRoutes({ ...DEFAULT_FILTERS, days: 2, maxHours: 48, easyOnly: true }).length, 0);
+  assert.deepEqual(filterRoutes({ ...DEFAULT_FILTERS, days: 2, maxHours: 48, easyOnly: true }).map(route => route.id), ['zugdidi-weekend', 'racha-weekend']);
 });
 
 test('search finds place names, regardless of whitespace or case', () => {
@@ -81,4 +82,33 @@ test('catalogue has an ordered, non-empty itinerary for each day and overnight e
 test('persisted saved routes discard unknown IDs, duplicates, and invalid structures', () => {
   assert.deepEqual(validSavedIds(['ananuri', 'removed-route', 'ananuri', 4]), ['ananuri']);
   assert.deepEqual(validSavedIds({ route: 'ananuri' }), []);
+});
+
+test('all catalogue entries have bundled credited photos and valid planning data', () => {
+  for (const route of ROUTES) {
+    assert.ok(['jpg', 'png'].some(extension => existsSync(new URL(`../assets/photos/${route.photo.id}.${extension}`, import.meta.url))), route.id);
+    assert.ok(route.photo.author && route.photo.license && route.photo.credit && route.photoCaption, route.id);
+    assert.equal(new URL(route.photo.sourceUrl).hostname, 'commons.wikimedia.org');
+    assert.ok(route.sources.length > 0 && route.sources.every(source => new URL(source.source).protocol === 'https:'), route.id);
+    for (const range of [route.durationHours, route.driveMinutes, route.walkingKm, route.walkingMinutes, route.budgetGel]) {
+      assert.equal(range.length, 2, route.id);
+      assert.ok(range.every(Number.isFinite) && range[0] > 0 && range[1] >= range[0], route.id);
+    }
+    // The upper trip estimate must at least fit the driving, planned stops and a meal each day.
+    assert.ok(route.durationHours[1] * 60 >= route.driveMinutes[1] + route.stops.reduce((sum, stop) => sum + stop.durationMinutesEstimate, 0) + 60 * route.days, route.id);
+    for (const stop of route.stops) {
+      assert.ok(stop.latitude > 40 && stop.latitude < 44 && stop.longitude > 40 && stop.longitude < 47, route.id);
+      assert.ok(stop.coordinateSource && stop.coordinateKind, route.id);
+    }
+  }
+});
+
+test('new destinations remain searchable with their intended day filter', () => {
+  for (const [query, id, days] of [
+    ['Коджори', 'kojori-fortress', 1], ['Батети', 'bateti-lake', 1],
+    ['Кварели', 'kvareli-ilia', 1], ['Ниносхеви', 'lagodekhi-weekend', 2],
+    ['Вардзия', 'vardzia-weekend', 2], ['Шаори', 'racha-weekend', 2],
+  ] as const) {
+    assert.ok(filterRoutes({ ...DEFAULT_FILTERS, days, maxHours: days === 1 ? 12 : 48 }, query).some(route => route.id === id), query);
+  }
 });

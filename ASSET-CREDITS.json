@@ -113,5 +113,385 @@
     "reuse": "CC0. Указание источника сохранено для прозрачности. Лицензия Flickr подтверждена Commons 2026-07-21.",
     "localFile": "assets/photos/uplistsikhe.jpg",
     "modifications": "Уменьшено до 1200 px по длинной стороне, сжато в JPEG; кадрируется при отображении."
+  },
+  {
+    "id": "asureti",
+    "title": "2023-10-22 Lutheran church in Asureti.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2023-10-22_Lutheran_church_in_Asureti.jpg/1280px-2023-10-22_Lutheran_church_in_Asureti.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-10-22_Lutheran_church_in_Asureti.jpg",
+    "author": "Alexey Komarov",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Alexey Komarov / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "Taken on 22 October 2023, 13:05:13",
+    "size": [
+      3609,
+      5413
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется.",
+    "localFile": "assets/photos/asureti.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "manglisi",
+    "title": "Manglisi Cathedral in 2022.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Manglisi_Cathedral_in_2022.jpg/1280px-Manglisi_Cathedral_in_2022.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manglisi_Cathedral_in_2022.jpg",
+    "author": "DerFuchs",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "DerFuchs / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2022-06-19 18:24:37",
+    "size": [
+      3024,
+      4032
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется.",
+    "localFile": "assets/photos/manglisi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "rabati",
+    "title": "Akhalcikhe, old city general view.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Akhalcikhe%2C_old_city_general_view.jpg/1280px-Akhalcikhe%2C_old_city_general_view.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akhalcikhe,_old_city_general_view.jpg",
+    "author": "I kynitsky",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "I kynitsky / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2016-08-16 12:44:20",
+    "size": [
+      4608,
+      3072
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется.",
+    "localFile": "assets/photos/rabati.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "martkopi",
+    "title": "Martkopi_monastery_as_seen_from_St_Anton's_Tower.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg/960px-Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg",
+    "author": "Aleksey Muhranoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "Aleksey Muhranoff / Wikimedia Commons / CC BY-SA 3.0",
+    "takenAt": "2011-10-05",
+    "size": [
+      1067,
+      848
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/martkopi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "shiomgvime",
+    "title": "Shio_Mghvime.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Shio_Mghvime.jpg/960px-Shio_Mghvime.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shio_Mghvime.jpg",
+    "author": "George Melashvili",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "George Melashvili / Wikimedia Commons / CC BY-SA 3.0",
+    "takenAt": "2019-04-09",
+    "size": [
+      5850,
+      3900
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/shiomgvime.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "bolnisi",
+    "title": "Bolnisi_Sioni_Cathedral.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Bolnisi_Sioni_Cathedral.jpg/960px-Bolnisi_Sioni_Cathedral.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolnisi_Sioni_Cathedral.jpg",
+    "author": "Diaoha",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "Diaoha / Wikimedia Commons / CC BY-SA 3.0",
+    "takenAt": "2011-04-21",
+    "size": [
+      4255,
+      2834
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/bolnisi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "gareji",
+    "title": "David_Gareja_Monastery,_Georgia.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/David_Gareja_Monastery%2C_Georgia.jpg/960px-David_Gareja_Monastery%2C_Georgia.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Gareja_Monastery,_Georgia.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "credit": "Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+    "takenAt": "Taken on 26 June 2014, 13:34:18",
+    "size": [
+      4912,
+      3264
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/gareji.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "telavi",
+    "title": "Rustaveli_Street,_Telavi.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Rustaveli_Street%2C_Telavi.jpg/960px-Rustaveli_Street%2C_Telavi.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rustaveli_Street,_Telavi.jpg",
+    "author": "Jelger Groeneveld",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "credit": "Jelger Groeneveld / Wikimedia Commons / CC BY 2.0",
+    "takenAt": "2018-05-19 18:15:17",
+    "size": [
+      3872,
+      2592
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/telavi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "kvareli",
+    "title": "Kvareli_Town_Center.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Kvareli_Town_Center.jpg/960px-Kvareli_Town_Center.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kvareli_Town_Center.jpg",
+    "author": "Gaga.vaa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Gaga.vaa / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2015-06-10 07:20:49",
+    "size": [
+      2592,
+      1552
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/kvareli.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "lagodekhi",
+    "title": "Ninoskhevi_waterfall_10.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ninoskhevi_waterfall_10.jpg/960px-Ninoskhevi_waterfall_10.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ninoskhevi_waterfall_10.jpg",
+    "author": "Paata vardanashvili",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Paata vardanashvili / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2016-10-02 15:26:14",
+    "size": [
+      1333,
+      2000
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/lagodekhi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "bateti",
+    "title": "Bateti_lake.png",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bateti_lake.png/960px-Bateti_lake.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateti_lake.png",
+    "author": "Dito dolidze",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Dito dolidze / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2016-09-11",
+    "size": [
+      4288,
+      2848
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/bateti.png",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "vardzia",
+    "title": "2025-05-25_Vardzia_9.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2025-05-25_Vardzia_9.jpg/960px-2025-05-25_Vardzia_9.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-25_Vardzia_9.jpg",
+    "author": "Alexkom000",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "credit": "Alexkom000 / Wikimedia Commons / CC BY 4.0",
+    "takenAt": "Taken on 25 May 2025, 16:37:35",
+    "size": [
+      4934,
+      3290
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/vardzia.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "kutaisi",
+    "title": "Downtown_Kutaisi_&_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg/960px-Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
+    "author": "Kober",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "Kober / Wikimedia Commons / CC BY-SA 3.0",
+    "takenAt": "2011-08-21",
+    "size": [
+      2891,
+      2098
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/kutaisi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "martvili",
+    "title": "Martvili_29.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Martvili_29.jpg/960px-Martvili_29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martvili_29.jpg",
+    "author": "Paata vardanashvili",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Paata vardanashvili / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2013-06-30 13:26:14",
+    "size": [
+      1333,
+      2000
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/martvili.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "zugdidi",
+    "title": "ზუგდიდის_დადიანების_სასახლე_და_მუზეუმი.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg/960px-%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg",
+    "author": "Natia an",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Natia an / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2023-08-04 13:52:15",
+    "size": [
+      5891,
+      3928
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/zugdidi.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "surami",
+    "title": "Surami fortress 2017.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Surami_fortress_2017.jpg/960px-Surami_fortress_2017.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surami_fortress_2017.jpg",
+    "author": "Max Benidze",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "credit": "Max Benidze / Wikimedia Commons / CC BY-SA 2.0",
+    "takenAt": "2017-07-01 16:47:47",
+    "size": [
+      4002,
+      2465
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/surami.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "abastumani",
+    "title": "Abastumani_(14715217071).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Abastumani_%2814715217071%29.jpg/960px-Abastumani_%2814715217071%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abastumani_(14715217071).jpg",
+    "author": "Sarah Murray from South Bend, IN, USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "credit": "Sarah Murray from South Bend, IN, USA / Wikimedia Commons / CC BY-SA 2.0",
+    "takenAt": "2014-06-13 09:42",
+    "size": [
+      4288,
+      2848
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения.",
+    "localFile": "assets/photos/abastumani.jpg",
+    "modifications": "Загружена миниатюра Wikimedia Commons; изображение кадрируется при отображении."
+  },
+  {
+    "id": "chronicle",
+    "title": "Chronicle of Georgia - Fragment.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Chronicle_of_Georgia_-_Fragment.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chronicle_of_Georgia_-_Fragment.jpg",
+    "author": "Eka Samkharadze",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Eka Samkharadze / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2025-02-12",
+    "size": [
+      932,
+      963
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения.",
+    "localFile": "assets/photos/chronicle.jpg",
+    "modifications": "Миниатюра Wikimedia Commons; кадрируется при отображении."
+  },
+  {
+    "id": "kojori",
+    "title": "Kojori Fortress 1.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kojori_Fortress_1.jpg/960px-Kojori_Fortress_1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kojori_Fortress_1.jpg",
+    "author": "Yasuhiro Kojima",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "credit": "Yasuhiro Kojima / Wikimedia Commons / CC BY-SA 4.0",
+    "takenAt": "2019-03-21 14:00:01",
+    "size": [
+      4595,
+      3063
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения.",
+    "localFile": "assets/photos/kojori.jpg",
+    "modifications": "Миниатюра Wikimedia Commons; кадрируется при отображении."
+  },
+  {
+    "id": "shaori",
+    "title": "Shaori reservoir - panoramio.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Shaori_reservoir_-_panoramio.jpg/960px-Shaori_reservoir_-_panoramio.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shaori_reservoir_-_panoramio.jpg",
+    "author": "G.N.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "credit": "G.N. / Wikimedia Commons / CC BY-SA 3.0",
+    "takenAt": "Taken on 6 November 2009",
+    "size": [
+      3264,
+      1383
+    ],
+    "urlStatus": "downloaded_for_local_bundle",
+    "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения.",
+    "localFile": "assets/photos/shaori.jpg",
+    "modifications": "Миниатюра Wikimedia Commons; кадрируется при отображении."
   }
 ]

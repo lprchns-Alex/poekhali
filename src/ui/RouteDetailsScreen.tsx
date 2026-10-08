@@ -146,7 +146,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
         {route.shortVariant && <View style={{ marginBottom: 25 }}><SectionLabel>ТВОЙ ТЕМП</SectionLabel><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}><Chip label="Лес + озеро" selected={!short} onPress={() => setShort(false)} /><Chip label="Только лес" selected={short} onPress={() => setShort(true)} /></View>{short && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginTop: 10 }}>{route.shortVariant.description}</Txt>}</View>}
       </View>
       <ForecastPanel endDate={getTripEndDate(date, route)} result={result} onCalendar={() => setCalendar(true)} onRetry={() => setRetry(value => value + 1)} />
-      <View style={{ marginBottom: 28 }}><Photo source={routePhoto(route)} caption={route.days === 2 ? (route.id === 'kakheti-weekend' ? 'Сигнахи' : 'Ананури') : route.subtitle} height={150} style={{ borderRadius: 12 }} /><Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 7, paddingHorizontal: 4 }}>{short ? 'На фото — Сиони, часть полного маршрута.' : route.days === 2 ? (route.id === 'kakheti-weekend' ? 'На фото — Сигнахи, второй день поездки.' : 'На фото — Ананури, первый день поездки.') : route.subtitle}</Txt></View>
+      <View style={{ marginBottom: 28 }}><Photo source={routePhoto(route)} caption={route.photoCaption} height={150} style={{ borderRadius: 12 }} /><Txt muted style={{ fontSize: 12, lineHeight: 18, marginTop: 7, paddingHorizontal: 4 }}>{short ? 'На фото — Сиони, часть полного маршрута.' : `На фото — ${route.photoCaption}.`}</Txt></View>
       <View style={{ paddingHorizontal: 4 }}>
         <SectionLabel>ПЕРЕРЫВ НА ОБЕД</SectionLabel>
         <Title style={{ fontSize: 29, lineHeight: 33, marginBottom: 15 }}>Где поедим?</Title>
@@ -154,6 +154,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
         <View style={{ backgroundColor: colors.surface, padding: 16, borderRadius: 12, marginBottom: 32 }}>
           <Txt style={{ fontWeight: '700', fontSize: 20, lineHeight: 24, letterSpacing: -0.5, marginBottom: 10 }}>{foodTitle}</Txt>
           <Txt style={{ fontSize: 15, lineHeight: 22, marginBottom: 16 }}>{meal === 'cafe' ? `Заложим около часа на обед${route.days === 2 ? ' каждый день' : ''}. Выбери кафе на карте — там можно проверить меню и часы работы перед выездом.` : 'Заложим около 30–45 минут на перерыв. Возьми воду и перекус, а место для обеда выбери по условиям на месте.'}</Txt>
+          <Txt muted style={{ fontSize: 13, lineHeight: 20, marginBottom: 16 }}>{route.foodNote}</Txt>
           {meal === 'cafe' ? <Button icon="open-outline" onPress={openCafe}>Найти кафе в картах</Button> : <View style={{ flexDirection: 'row', gap: 7, alignItems: 'center' }}><Icon name="checkmark" size={18} /><Txt style={{ fontSize: 13, lineHeight: 19, flex: 1 }}>{route.days === 2 ? 'Обед каждого дня включён в расчёт времени' : 'Перерыв уже включён в план дня'}</Txt></View>}
           {linkError && <Txt muted style={{ fontSize: 13, marginTop: 10 }}>Не удалось открыть карты. Попробуй ещё раз.</Txt>}
         </View>
@@ -168,7 +169,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
             {route.days === 2 && <SectionLabel>ДЕНЬ {day} / {formatDate(getStopDate(date, { day })).toLocaleUpperCase('ru-RU')}</SectionLabel>}
             {dayStops.map((stop, index) => <React.Fragment key={`${stop.name}-${index}`}>
               <TimelineStep icon={stop.kind === 'lake' ? 'water-outline' : stop.kind === 'forest' ? 'leaf-outline' : stop.kind === 'town' ? 'business-outline' : 'location-outline'} title={stop.name} subtitle={`≈ ${stop.durationMinutesEstimate} мин на остановку`} body={stop.text} link={placeSearchUrl(stop)} />
-              {index === mealIndex && <TimelineStep icon={meal === 'cafe' ? 'restaurant-outline' : 'basket-outline'} title={route.days === 2 ? (meal === 'cafe' ? 'Обед в кафе' : 'Обед с собой') : foodTitle} subtitle={meal === 'cafe' ? '≈ 1 час' : '≈ 30–45 мин'} body={meal === 'cafe' ? 'Конкретное заведение выбираем в картах. Заезд и часы работы стоит проверить заранее.' : 'Неспешный перерыв с едой и водой, которые взяли с собой.'} />}
+              {index === mealIndex && <TimelineStep icon={meal === 'cafe' ? 'restaurant-outline' : 'basket-outline'} title={route.days === 2 ? (meal === 'cafe' ? 'Перерыв на обед' : 'Обед с собой') : foodTitle} subtitle={meal === 'cafe' ? '≈ 1 час' : '≈ 30–45 мин'} body={meal === 'cafe' ? 'Учти рекомендации в разделе «Где поедим?». Кафе выбираем заранее; для пеших троп может понадобиться еда с собой.' : 'Неспешный перерыв с едой и водой, которые взяли с собой.'} />}
             </React.Fragment>)}
             {day === 1 && route.overnight && <TimelineStep icon="bed-outline" title={`Ночуем: ${route.overnight.location}`} subtitle="1 ночь · жильё бронируется отдельно" body={route.overnight.note} link={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hotels ${route.overnight.location} Georgia`)}`} />}
           </React.Fragment>;

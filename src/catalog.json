@@ -91,7 +91,7 @@
     ],
     "mealLabel": "Пикник у озера",
     "foodSearchQuery": "restaurants near Sioni Reservoir, Mtskheta-Mtianeti, Georgia",
-    "foodNote": "Для варианта «кафе» показать поиск на картах, без выдуманного заведения или часов работы.",
+    "foodNote": "Для кафе у Сиони проверь часы работы до выезда. В коротком варианте выбери место возле Сабадури или по дороге домой.",
     "preferredMeal": "picnic",
     "weatherNote": "После дождя учитывать состояние лесной тропы; ветер у озера оценивать отдельно.",
     "shortVariant": {
@@ -100,7 +100,8 @@
     },
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Озеро Сиони"
   },
   {
     "id": "mtskheta-jvari",
@@ -199,7 +200,8 @@
     "shortVariant": null,
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Собор Светицховели в Мцхете"
   },
   {
     "id": "ananuri",
@@ -297,7 +299,8 @@
     "shortVariant": null,
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Крепость Ананури"
   },
   {
     "id": "sighnaghi-bodbe",
@@ -390,13 +393,14 @@
     ],
     "mealLabel": "Долгий обед в Сигнахи",
     "foodSearchQuery": "restaurants Sighnaghi Georgia",
-    "foodNote": "Меню, цены, бронирование и часы работы в seed отсутствуют.",
+    "foodNote": "Выбери кафе в Сигнахи и заранее уточни меню, цены и наличие столика.",
     "preferredMeal": "cafe",
     "weatherNote": "В ясную погоду лучше видна долина; летом прогулку можно сместить на утро и поздний день.",
     "shortVariant": null,
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Сигнахи"
   },
   {
     "id": "dashbashi",
@@ -475,13 +479,14 @@
     ],
     "mealLabel": "Перерыв на обед",
     "foodSearchQuery": "restaurants Tsalka Georgia",
-    "foodNote": "Можно взять еду с собой либо выбрать кафе в Цалке. Не заявлять возможность пикника внутри платной территории без проверки правил.",
+    "foodNote": "Можно взять еду с собой либо выбрать кафе в Цалке. Возможность пикника внутри платной территории уточни у оператора.",
     "preferredMeal": "picnic",
     "weatherNote": "При дожде учитывать скользкие участки. Доступ к мосту и тропе подтверждается оператором, а не прогнозом.",
     "shortVariant": null,
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Каньон Дашбаши"
   },
   {
     "id": "uplistsikhe",
@@ -560,13 +565,14 @@
     ],
     "mealLabel": "Обед в Гори",
     "foodSearchQuery": "restaurants Gori Georgia",
-    "foodNote": "Заезд в Гори и выбор конкретного ресторана должны войти в расчёт поездки после подключения маршрутизации.",
+    "foodNote": "Для обеда можно заехать в Гори. Проверь расположение кафе и заложи запас на заезд и ожидание.",
     "preferredMeal": "cafe",
     "weatherNote": "Открытая местность: учитывать солнце, жару и ветер; мокрый камень может быть скользким.",
     "shortVariant": null,
     "verifiedAt": "2026-10-06",
     "days": 1,
-    "overnight": null
+    "overnight": null,
+    "photoCaption": "Уплисцихе"
   },
   {
     "id": "kakheti-weekend",
@@ -703,7 +709,8 @@
     "overnight": {
       "location": "Телави",
       "note": "Одна ночь. Выберите жильё заранее; конкретный отель и наличие номеров не подтверждены."
-    }
+    },
+    "photoCaption": "Сигнахи"
   },
   {
     "id": "kazbegi-weekend",
@@ -827,6 +834,1900 @@
     "overnight": {
       "location": "Степанцминда",
       "note": "Одна ночь. Жильё бронируется отдельно; конкретный отель и наличие номеров не подтверждены."
-    }
+    },
+    "photoCaption": "Крепость Ананури"
+  },
+  {
+    "id": "asureti",
+    "title": "Маленькая Германия рядом",
+    "subtitle": "Асурети · старые улицы и кирха",
+    "description": "Неспешно пройтись среди домов бывшего Элизабетталя, увидеть лютеранскую кирху и пообедать без дальнего переезда.",
+    "tags": [
+      "Близко",
+      "История",
+      "Город"
+    ],
+    "photo": {
+      "id": "asureti",
+      "title": "2023-10-22 Lutheran church in Asureti.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2023-10-22_Lutheran_church_in_Asureti.jpg/1280px-2023-10-22_Lutheran_church_in_Asureti.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-10-22_Lutheran_church_in_Asureti.jpg",
+      "author": "Alexey Komarov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Alexey Komarov / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "Taken on 22 October 2023, 13:05:13",
+      "size": [
+        3609,
+        5413
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется."
+    },
+    "durationHours": [
+      4,
+      6
+    ],
+    "driveMinutes": [
+      100,
+      150
+    ],
+    "walkingKm": [
+      1.5,
+      3
+    ],
+    "walkingMinutes": [
+      60,
+      100
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      35,
+      70
+    ],
+    "budgetBasis": "Редакционный ориентир на человека: топливо при поездке вдвоём и обед. Без аренды машины, дегустаций и платных экскурсий.",
+    "stops": [
+      {
+        "name": "Асурети: кирха и старые улицы",
+        "mapSearchQuery": "Asureti Lutheran Church, Asureti, Tetritskaro, Georgia",
+        "kind": "town",
+        "latitude": 41.595,
+        "longitude": 44.669167,
+        "coordinateKind": "place_center_not_parking",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q745622",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Начни с кирхи и пройдись по старым улицам бывшей немецкой колонии. Это прогулка снаружи; доступ внутрь церкви уточни на месте.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Асурети: немецкое наследие, кирха и ориентир около 50 минут от Тбилиси.",
+        "source": "https://georgia.travel/villages/asureti"
+      }
+    ],
+    "mealLabel": "Обед в Асурети",
+    "foodSearchQuery": "restaurants Asureti, Tetritskaro, Georgia",
+    "foodNote": "Кафе, наличие мест и часы работы проверь в картах перед выездом.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Прогулка по улицам подходит для спокойного темпа. В дождь выбирай обувь для мокрой брусчатки. 4–6 часов — оценка всей поездки с дорогой и обедом.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Лютеранская кирха в Асурети"
+  },
+  {
+    "id": "manglisi-algeti",
+    "title": "День среди сосен",
+    "subtitle": "Манглиси → лес Алгети",
+    "description": "Старинный собор, лесная прогулка и обед в Манглиси. Подходит, когда хочется провести день на природе без ночёвки.",
+    "tags": [
+      "Природа",
+      "Лес",
+      "История"
+    ],
+    "photo": {
+      "id": "manglisi",
+      "title": "Manglisi Cathedral in 2022.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Manglisi_Cathedral_in_2022.jpg/1280px-Manglisi_Cathedral_in_2022.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manglisi_Cathedral_in_2022.jpg",
+      "author": "DerFuchs",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "DerFuchs / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2022-06-19 18:24:37",
+      "size": [
+        3024,
+        4032
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется."
+    },
+    "durationHours": [
+      6,
+      8
+    ],
+    "driveMinutes": [
+      150,
+      210
+    ],
+    "walkingKm": [
+      3,
+      5
+    ],
+    "walkingMinutes": [
+      100,
+      160
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      45,
+      85
+    ],
+    "budgetBasis": "Редакционный ориентир на человека: топливо при поездке вдвоём и обед. Без аренды машины, гида и верёвочного парка.",
+    "stops": [
+      {
+        "name": "Манглисский Сиони",
+        "mapSearchQuery": "Manglisi Sioni Cathedral, Manglisi, Georgia",
+        "kind": "monastery",
+        "latitude": 41.698333,
+        "longitude": 44.355,
+        "coordinateKind": "place_center_not_parking",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Manglisi_Cathedral",
+        "navigationReady": false,
+        "durationMinutesEstimate": 30,
+        "text": "Осмотри собор и его окрестности перед прогулкой. Действующий храм: учитывай богослужения и правила посещения.",
+        "day": 1
+      },
+      {
+        "name": "Алгети: прогулка от Манглиси",
+        "mapSearchQuery": "Manglisi Sioni Cathedral, Manglisi, Georgia",
+        "kind": "forest",
+        "latitude": 41.698333,
+        "longitude": 44.355,
+        "coordinateKind": "cathedral_area_near_park_entrance",
+        "coordinateSource": "https://apa.gov.ge/en/protected-areas/cattestone/algeTis-erovnuli-parki",
+        "navigationReady": false,
+        "durationMinutesEstimate": 150,
+        "text": "Вход в парк находится у собора. В визит-центре на улице Курорти, 4 уточни открытый участок тропы; заложи прогулку туда и обратно на 2–2,5 часа. Полный маршрут по хребту Самепо в этот план не включён.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Алгети: вход у собора, визит-центр и условия посещения.",
+        "source": "https://apa.gov.ge/en/protected-areas/cattestone/algeTis-erovnuli-parki"
+      },
+      {
+        "text": "Манглисский Сиони и посёлок Манглиси.",
+        "source": "https://georgia.travel/manglisi-sioni"
+      },
+      {
+        "text": "Тропа Самепо: описание и контакт парка для уточнения доступного участка.",
+        "source": "https://www.nationalparks.ge/en/site/algetinp/tripsInner/1"
+      }
+    ],
+    "mealLabel": "Обед в Манглиси",
+    "foodSearchQuery": "restaurants Manglisi, Tetritskaro, Georgia",
+    "foodNote": "Кафе, наличие мест и часы работы проверь в картах перед выездом.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В лесу есть уклоны и грунтовые участки. После дождя будет скользко; при снеге сначала уточни доступность у администрации парка. Длина прогулки — ориентир, а не размеченный трек.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Манглисский Сиони"
+  },
+  {
+    "id": "borjomi-rabati-weekend",
+    "title": "Боржоми и крепость Рабати",
+    "subtitle": "Боржоми → Ахалцихе / Рабати",
+    "description": "Первый день — парк и неспешный вечер в Боржоми. После ночёвки — дворы и башни Рабати, обед в Ахалцихе и возвращение в Тбилиси.",
+    "tags": [
+      "История",
+      "Природа",
+      "Город"
+    ],
+    "photo": {
+      "id": "rabati",
+      "title": "Akhalcikhe, old city general view.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Akhalcikhe%2C_old_city_general_view.jpg/1280px-Akhalcikhe%2C_old_city_general_view.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akhalcikhe,_old_city_general_view.jpg",
+      "author": "I kynitsky",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "I kynitsky / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2016-08-16 12:44:20",
+      "size": [
+        4608,
+        3072
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "CC BY-SA 4.0: указать автора, источник и лицензию; производное изображение сохраняет ту же лицензию. Фото уменьшено Wikimedia, в приложении кадрируется."
+    },
+    "durationHours": [
+      32,
+      38
+    ],
+    "driveMinutes": [
+      360,
+      480
+    ],
+    "walkingKm": [
+      4,
+      7
+    ],
+    "walkingMinutes": [
+      150,
+      240
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      180,
+      300
+    ],
+    "budgetBasis": "Редакционный ориентир на человека: топливо при поездке вдвоём, питание, одна ночь при двухместном размещении и запас на входные билеты. Без аренды машины; тарифы жилья и достопримечательностей уточняются отдельно.",
+    "stops": [
+      {
+        "name": "Боржоми: центр и парк",
+        "mapSearchQuery": "Borjomi Central Park, Borjomi, Georgia",
+        "kind": "town",
+        "latitude": 41.838889,
+        "longitude": 43.379167,
+        "coordinateKind": "town_center_not_park_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Borjomi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 180,
+        "text": "Погуляй по центру и Центральному парку. Время работы, доступ к источнику и стоимость входа проверь перед поездкой. Ночь проведи в Боржоми.",
+        "day": 1
+      },
+      {
+        "name": "Крепость Рабати",
+        "mapSearchQuery": "Rabati Castle, Akhaltsikhe, Georgia",
+        "kind": "fortress",
+        "latitude": 41.642667,
+        "longitude": 42.977056,
+        "coordinateKind": "place_center_not_parking",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Akhaltsikhe_Castle",
+        "navigationReady": false,
+        "durationMinutesEstimate": 180,
+        "text": "Во второй день переезжай в Ахалцихе. На крепость заложи 2–3 часа, затем пообедай и возвращайся в Тбилиси. В башнях есть лестницы; режим работы музея и билеты уточни отдельно.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Боржоми: парк, минеральный источник и варианты размещения.",
+        "source": "https://georgia.travel/resorts/borjomi"
+      },
+      {
+        "text": "Рабати: крепость, музей и кафе в нижней части комплекса.",
+        "source": "https://georgia.travel/akhaltsikhe-castle"
+      },
+      {
+        "text": "Ахалцихе и дорога через Боржомское ущелье.",
+        "source": "https://georgia.travel/cities-towns/akhaltsikhe"
+      }
+    ],
+    "mealLabel": "Обеды в Боржоми и Ахалцихе",
+    "foodSearchQuery": "restaurants Borjomi, Samtskhe-Javakheti, Georgia",
+    "foodNote": "Кафе, наличие мест и часы работы проверь в картах перед выездом.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Время 32–38 часов включает ночь и обе дороги, а не только активную часть. В дождь лестницы крепости могут быть скользкими; зимой учитывай снег и короткий световой день.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Боржоми",
+      "note": "Забронируй одну ночь в Боржоми отдельно. Утром второго дня переезд в Ахалцихе; ужин и завтрак согласуй с жильём или выбери кафе в городе."
+    },
+    "photoCaption": "Крепость Рабати в Ахалцихе"
+  },
+  {
+    "id": "tbilisi-sea",
+    "title": "Своё маленькое море",
+    "subtitle": "Хроники Грузии · вид на Тбилисское море",
+    "description": "Подняться к огромным колоннам, посмотреть на водохранилище и устроить обед на северной стороне города.",
+    "tags": [
+      "Близко",
+      "История",
+      "У воды",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "chronicle",
+      "title": "Chronicle of Georgia - Fragment.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Chronicle_of_Georgia_-_Fragment.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chronicle_of_Georgia_-_Fragment.jpg",
+      "author": "Eka Samkharadze",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Eka Samkharadze / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2025-02-12",
+      "size": [
+        932,
+        963
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения."
+    },
+    "durationHours": [
+      3.5,
+      5
+    ],
+    "driveMinutes": [
+      60,
+      100
+    ],
+    "walkingKm": [
+      1,
+      2
+    ],
+    "walkingMinutes": [
+      45,
+      75
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      25,
+      50
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Хроники Грузии",
+        "mapSearchQuery": "Chronicle of Georgia, Tbilisi, Georgia",
+        "kind": "viewpoint",
+        "latitude": 41.770503,
+        "longitude": 44.810438,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Chronicle_of_Georgia",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Осмотри рельефы и панораму водохранилища. К монументу ведёт лестница. Это прогулка наверху; спуск к пляжу и купание в план не включены.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Тбилисское море и монумент над северо-западным берегом",
+        "source": "https://georgia.travel/tbilisi-sea"
+      }
+    ],
+    "mealLabel": "Обед в Тбилиси",
+    "foodSearchQuery": "restaurants near Chronicle of Georgia, Tbilisi, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "На открытой площадке бывает ветрено. После дождя лестница может быть скользкой.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Рельефы монумента «Хроники Грузии»"
+  },
+  {
+    "id": "kojori-fortress",
+    "title": "Крепость над облаками",
+    "subtitle": "Коджори → крепость Агарани",
+    "description": "Лесной воздух, короткий подъём к скале и панорамы совсем рядом с городом.",
+    "tags": [
+      "Близко",
+      "Природа",
+      "История",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "kojori",
+      "title": "Kojori Fortress 1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Kojori_Fortress_1.jpg/960px-Kojori_Fortress_1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kojori_Fortress_1.jpg",
+      "author": "Yasuhiro Kojima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Yasuhiro Kojima / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2019-03-21 14:00:01",
+      "size": [
+        4595,
+        3063
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения."
+    },
+    "durationHours": [
+      4,
+      6
+    ],
+    "driveMinutes": [
+      80,
+      120
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      90,
+      150
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      30,
+      60
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Коджорская крепость — Агарани",
+        "mapSearchQuery": "Kojori Fortress, Kojori, Tetritskaro, Georgia",
+        "kind": "viewpoint",
+        "latitude": 41.640465,
+        "longitude": 44.691997,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q12861341",
+        "navigationReady": false,
+        "durationMinutesEstimate": 130,
+        "text": "Прогулка к крепости и обратно. Есть крутые участки и лестницы; верхний подъём оцени на месте. Точку парковки уточни заранее. Длинная тропа к водопаду Кабени в этот план не входит.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Коджорская крепость и прогулки вокруг неё",
+        "source": "https://georgia.travel/kojori-fortress"
+      }
+    ],
+    "mealLabel": "Обед в Коджори",
+    "foodSearchQuery": "restaurants Kojori, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Для скальных участков выбирай сухую погоду. При тумане панорама может быть закрыта.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Руины Коджорской крепости"
+  },
+  {
+    "id": "martkopi",
+    "title": "Монастырь среди леса",
+    "subtitle": "Марткопи · виды на Кахетию",
+    "description": "Небольшая поездка по лесной дороге к монастырскому комплексу на склоне горы.",
+    "tags": [
+      "Близко",
+      "История",
+      "Природа"
+    ],
+    "photo": {
+      "id": "martkopi",
+      "title": "Martkopi_monastery_as_seen_from_St_Anton's_Tower.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg/960px-Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martkopi_monastery_as_seen_from_St_Anton%27s_Tower.jpg",
+      "author": "Aleksey Muhranoff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "Aleksey Muhranoff / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2011-10-05",
+      "size": [
+        1067,
+        848
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      4,
+      6
+    ],
+    "driveMinutes": [
+      100,
+      150
+    ],
+    "walkingKm": [
+      1,
+      2.5
+    ],
+    "walkingMinutes": [
+      60,
+      100
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      30,
+      65
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Марткопский монастырь",
+        "mapSearchQuery": "Martkopi Monastery, Norio, Gardabani, Georgia",
+        "kind": "monastery",
+        "latitude": 41.827433,
+        "longitude": 44.968005,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q12866626",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Осмотри доступную территорию действующего монастыря и виды с его площадок. Подъём к столпу Антона необязателен и в расчёт не включён. Уточни состояние последнего участка дороги.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Марткопи: монастырский комплекс и автомобильный подъезд",
+        "source": "https://georgia.travel/martkopi-monastery"
+      }
+    ],
+    "mealLabel": "Обед по возвращении",
+    "foodSearchQuery": "restaurants Gldani, Tbilisi, Georgia",
+    "foodNote": "В план заложен обед в Тбилиси после возвращения. У монастыря наличие работающего кафе не подтверждено.",
+    "preferredMeal": "cafe",
+    "weatherNote": "После сильного дождя сначала уточни состояние лесной дороги; прогулка проходит по неровному рельефу.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Марткопский монастырь"
+  },
+  {
+    "id": "shiomgvime",
+    "title": "Тишина в скальной долине",
+    "subtitle": "Шиомгвиме · обед в Мцхете",
+    "description": "Спокойно осмотреть монастырь среди светлых скал и закончить выезд обедом в Мцхете.",
+    "tags": [
+      "Близко",
+      "История"
+    ],
+    "photo": {
+      "id": "shiomgvime",
+      "title": "Shio_Mghvime.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Shio_Mghvime.jpg/960px-Shio_Mghvime.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shio_Mghvime.jpg",
+      "author": "George Melashvili",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "George Melashvili / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2019-04-09",
+      "size": [
+        5850,
+        3900
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      4,
+      6
+    ],
+    "driveMinutes": [
+      100,
+      150
+    ],
+    "walkingKm": [
+      1,
+      2
+    ],
+    "walkingMinutes": [
+      45,
+      75
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      30,
+      60
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Монастырь Шиомгвиме",
+        "mapSearchQuery": "Shio Mgvime Monastery, Mtskheta, Georgia",
+        "kind": "monastery",
+        "latitude": 41.8625,
+        "longitude": 44.64027778,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Shio-Mgvime_Monastery",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Прогулка по основной территории действующего монастыря. Есть ступени. Пещеры в скалах за комплексом и подъём на хребет не включены.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Шиомгвиме: расположение, монастырь и дорога из Мцхеты",
+        "source": "https://georgia.travel/shio-mghvime-monastery"
+      }
+    ],
+    "mealLabel": "Обед в Мцхете",
+    "foodSearchQuery": "restaurants Mtskheta, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В жару возьми воду; после дождя учитывай мокрые каменные ступени.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Монастырь Шиомгвиме"
+  },
+  {
+    "id": "bolnisi-dmanisi",
+    "title": "История длиной в миллион лет",
+    "subtitle": "Болнисский Сиони → Дманиси",
+    "description": "Один из древнейших храмов Грузии и археологический город на скальном мысе.",
+    "tags": [
+      "История",
+      "Город"
+    ],
+    "photo": {
+      "id": "bolnisi",
+      "title": "Bolnisi_Sioni_Cathedral.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Bolnisi_Sioni_Cathedral.jpg/960px-Bolnisi_Sioni_Cathedral.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bolnisi_Sioni_Cathedral.jpg",
+      "author": "Diaoha",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "Diaoha / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2011-04-21",
+      "size": [
+        4255,
+        2834
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      8,
+      10
+    ],
+    "driveMinutes": [
+      240,
+      300
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      100,
+      160
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      55,
+      95
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Болнисский Сиони",
+        "mapSearchQuery": "Bolnisi Sioni Cathedral, Kvemo Kartli, Georgia",
+        "kind": "monastery",
+        "latitude": 41.388889,
+        "longitude": 44.5125,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Bolnisi_Sioni",
+        "navigationReady": false,
+        "durationMinutesEstimate": 50,
+        "text": "Посмотри фасады и резьбу базилики; посещение внутри зависит от служб и доступности.",
+        "day": 1
+      },
+      {
+        "name": "Городище Дманиси",
+        "mapSearchQuery": "Dmanisi Museum Reserve, Patara Dmanisi, Georgia",
+        "kind": "town",
+        "latitude": 41.332171,
+        "longitude": 44.198253,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://map.georgia.travel/markers.php?object_lookup=10",
+        "navigationReady": false,
+        "durationMinutesEstimate": 130,
+        "text": "Запланируй осмотр средневековых руин и археологического участка. Сезон работы, доступ к раскопкам, экскурсию и билеты подтверди у музея до выезда.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Болнисский Сиони",
+        "source": "https://georgia.travel/bolnisi-sioni"
+      },
+      {
+        "text": "Археологический участок Дманиси",
+        "source": "https://georgia.travel/dmanisi-home-to-the-first-europeans"
+      }
+    ],
+    "mealLabel": "Обед в Болниси",
+    "foodSearchQuery": "restaurants Bolnisi, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "На городище мало тени. Для мокрых камней нужна обувь с цепкой подошвой.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Болнисский Сиони"
+  },
+  {
+    "id": "david-gareji",
+    "title": "День в полупустыне",
+    "subtitle": "Давид-Гареджи · нижняя лавра",
+    "description": "Сменить город на сухие холмы и высеченный в скале монастырь.",
+    "tags": [
+      "История",
+      "Природа",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "gareji",
+      "title": "David_Gareja_Monastery,_Georgia.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/David_Gareja_Monastery%2C_Georgia.jpg/960px-David_Gareja_Monastery%2C_Georgia.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Gareja_Monastery,_Georgia.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "credit": "Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+      "takenAt": "Taken on 26 June 2014, 13:34:18",
+      "size": [
+        4912,
+        3264
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      8,
+      10
+    ],
+    "driveMinutes": [
+      240,
+      330
+    ],
+    "walkingKm": [
+      1.5,
+      3
+    ],
+    "walkingMinutes": [
+      75,
+      120
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      55,
+      95
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Давид-Гареджи: лавра",
+        "mapSearchQuery": "David Gareji Lavra, Sagarejo, Kakheti, Georgia",
+        "kind": "monastery",
+        "latitude": 41.4473,
+        "longitude": 45.3765,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/David_Gareji_monastery_complex",
+        "navigationReady": false,
+        "durationMinutesEstimate": 120,
+        "text": "План ограничен доступной частью нижней лавры. До поездки уточни текущий доступ и подъезд. Переход по приграничному хребту и пещеры Удабно в маршрут не включены.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Давид-Гареджи: монастырский комплекс в полупустыне",
+        "source": "https://georgia.travel/davit-gareja"
+      }
+    ],
+    "mealLabel": "Обед в Удабно",
+    "foodSearchQuery": "restaurants Udabno, Sagarejo, Georgia",
+    "foodNote": "Заранее проверь, открыто ли выбранное кафе в Удабно. На случай закрытия возьми еду с собой.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Открытая местность без тени: летом выезжай рано, возьми запас воды. После дождя проверь состояние дороги.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Монастырь Давид-Гареджи"
+  },
+  {
+    "id": "telavi-gombori",
+    "title": "Телави через перевал",
+    "subtitle": "Гомбори → старый Телави",
+    "description": "Живописная дорога, улицы кахетинской столицы и обед без спешки.",
+    "tags": [
+      "Город",
+      "История",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "telavi",
+      "title": "Rustaveli_Street,_Telavi.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Rustaveli_Street%2C_Telavi.jpg/960px-Rustaveli_Street%2C_Telavi.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rustaveli_Street,_Telavi.jpg",
+      "author": "Jelger Groeneveld",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "credit": "Jelger Groeneveld / Wikimedia Commons / CC BY 2.0",
+      "takenAt": "2018-05-19 18:15:17",
+      "size": [
+        3872,
+        2592
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      8,
+      10
+    ],
+    "driveMinutes": [
+      240,
+      330
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      90,
+      140
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      55,
+      90
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Телави: центр и Батонис-цихе",
+        "mapSearchQuery": "Batonis Tsikhe, Telavi, Kakheti, Georgia",
+        "kind": "town",
+        "latitude": 41.91666667,
+        "longitude": 45.48333333,
+        "coordinateKind": "town_center_not_palace_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Telavi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 180,
+        "text": "Погуляй по центру, осмотри крепостные стены и платан. Посещение музея во дворце — после проверки расписания и билета. Координата на обзорной карте обозначает центр Телави.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Дорога в Телави через Гомбори",
+        "source": "https://georgia.travel/gombori-pass-the-magnificent-road-to-kakheti"
+      },
+      {
+        "text": "Дворец и крепость в Телави",
+        "source": "https://georgia.travel/batoni-fortress"
+      }
+    ],
+    "mealLabel": "Кахетинский обед в Телави",
+    "foodSearchQuery": "restaurants Telavi, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "На Гомбори возможны туман, снег и гололёд. Оценка рассчитана на открытый перевал; объезд увеличит время.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Улица Руставели в Телави"
+  },
+  {
+    "id": "kvareli-ilia",
+    "title": "Кахетия у воды",
+    "subtitle": "Кварели → озеро Ильи",
+    "description": "Пройтись по небольшому городу и провести вторую половину дня у озера в предгорьях.",
+    "tags": [
+      "Город",
+      "У воды",
+      "Природа"
+    ],
+    "photo": {
+      "id": "kvareli",
+      "title": "Kvareli_Town_Center.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Kvareli_Town_Center.jpg/960px-Kvareli_Town_Center.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kvareli_Town_Center.jpg",
+      "author": "Gaga.vaa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Gaga.vaa / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2015-06-10 07:20:49",
+      "size": [
+        2592,
+        1552
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      9,
+      11
+    ],
+    "driveMinutes": [
+      300,
+      390
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      90,
+      150
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      65,
+      105
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Кварели",
+        "mapSearchQuery": "Kvareli town center, Kakheti, Georgia",
+        "kind": "town",
+        "latitude": 41.95,
+        "longitude": 45.81527778,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Kvareli",
+        "navigationReady": false,
+        "durationMinutesEstimate": 60,
+        "text": "Короткая прогулка по центру и обед. Музеи и винные экскурсии можно забронировать отдельно; их время в план не заложено.",
+        "day": 1
+      },
+      {
+        "name": "Озеро Ильи",
+        "mapSearchQuery": "Ilia Lake, Kvareli, Kakheti, Georgia",
+        "kind": "lake",
+        "latitude": 41.95453,
+        "longitude": 45.792996,
+        "coordinateKind": "lake_overview_not_access_point",
+        "coordinateSource": "https://yandex.com.ge/maps/155468/kvareli/geo/2028601406/",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Отдых у воды и прогулка по доступной части берега. Это озеро Ильи, а не отдельное озеро отеля Kvareli Lake Resort. Подъезд и доступ к выбранной зоне уточни заранее.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Озеро Ильи возле Кварели",
+        "source": "https://georgia.travel/ilias-lake-in-kvareli"
+      },
+      {
+        "text": "Кварели: город и достопримечательности",
+        "source": "https://georgia.travel/cities-towns/kvareli"
+      }
+    ],
+    "mealLabel": "Обед в Кварели",
+    "foodSearchQuery": "restaurants Kvareli, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "У воды учитывай ветер; в жару выбирай утреннюю или вечернюю прогулку.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Центр Кварели"
+  },
+  {
+    "id": "lagodekhi-weekend",
+    "title": "Лес и большой водопад",
+    "subtitle": "Лагодехи → Ниносхеви",
+    "description": "Ночь у леса и отдельный день для пешей тропы к водопаду.",
+    "tags": [
+      "Природа",
+      "Лес",
+      "У воды"
+    ],
+    "photo": {
+      "id": "lagodekhi",
+      "title": "Ninoskhevi_waterfall_10.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ninoskhevi_waterfall_10.jpg/960px-Ninoskhevi_waterfall_10.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ninoskhevi_waterfall_10.jpg",
+      "author": "Paata vardanashvili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Paata vardanashvili / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2016-10-02 15:26:14",
+      "size": [
+        1333,
+        2000
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      34,
+      40
+    ],
+    "driveMinutes": [
+      330,
+      420
+    ],
+    "walkingKm": [
+      10,
+      12
+    ],
+    "walkingMinutes": [
+      300,
+      420
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      160,
+      260
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Услуги гида оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Лагодехи: знакомство с парком",
+        "mapSearchQuery": "Lagodekhi Protected Areas Visitor Center, 197 Vashlovani Street, Lagodekhi, Georgia",
+        "kind": "forest",
+        "latitude": 41.82222222,
+        "longitude": 46.275,
+        "coordinateKind": "town_center_not_visitor_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Lagodekhi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Зайди в визит-центр на Вашловани, 197, уточни состояние тропы Ниносхеви и прогуляйся по короткой познавательной тропе. На карте — центр города, не ворота парка.",
+        "day": 1
+      },
+      {
+        "name": "Пешая тропа к Ниносхеви",
+        "mapSearchQuery": "Gurgeniani Information Center, Lagodekhi, Georgia",
+        "kind": "forest",
+        "latitude": 41.89765,
+        "longitude": 46.26784,
+        "coordinateKind": "waterfall_not_trailhead",
+        "coordinateSource": "https://mapcarta.com/N4415921197",
+        "navigationReady": false,
+        "durationMinutesEstimate": 360,
+        "text": "Начало пешего маршрута — информационный центр Гургениани, не главный вход в Лагодехи. По APA: 8,5 км и 4–6 часов. На карте отмечен сам водопад, до него идут пешком. Возьми перекус; после сильных дождей согласуй выход с сотрудниками парка.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Тропа Ниносхеви: 8,5 км, 4–6 часов, старт в Гургениани",
+        "source": "https://apa.gov.ge/en/eco-tourism/Trails/lagodexis-daculi-teritoriebis-turistuli-bilikebi/2-ninosxevis-chanchqeri-didi-chanchqeri"
+      },
+      {
+        "text": "Познавательная тропа у визит-центра",
+        "source": "https://apa.gov.ge/en/eco-tourism/Trails/lagodexis-daculi-teritoriebis-turistuli-bilikebi/bunebis-shemecnebiti-biliki"
+      }
+    ],
+    "mealLabel": "Еда в Лагодехи",
+    "foodSearchQuery": "restaurants Lagodekhi, Georgia",
+    "foodNote": "Кафе — до или после прогулок. Во второй день обед и воду неси с собой: по пути к водопаду кафе не предусмотрено.",
+    "preferredMeal": "cafe",
+    "weatherNote": "У воды камни скользкие; паводок может сделать тропу недоступной. Для второго дня нужен ранний старт.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Лагодехи",
+      "note": "Забронируй одну ночь: Лагодехи. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Водопад Ниносхеви"
+  },
+  {
+    "id": "bateti-lake",
+    "title": "Озеро внутри леса",
+    "subtitle": "Долина Дзама → озеро Батети",
+    "description": "Пройти лесной дорогой к небольшому озеру и устроить привал у воды.",
+    "tags": [
+      "Природа",
+      "Лес",
+      "У воды"
+    ],
+    "photo": {
+      "id": "bateti",
+      "title": "Bateti_lake.png",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bateti_lake.png/960px-Bateti_lake.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateti_lake.png",
+      "author": "Dito dolidze",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Dito dolidze / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2016-09-11",
+      "size": [
+        4288,
+        2848
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      8,
+      10
+    ],
+    "driveMinutes": [
+      240,
+      300
+    ],
+    "walkingKm": [
+      6,
+      7
+    ],
+    "walkingMinutes": [
+      180,
+      240
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      45,
+      80
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Озеро Батети",
+        "mapSearchQuery": "Bateti Lake, Kareli, Shida Kartli, Georgia",
+        "kind": "lake",
+        "latitude": 41.89611111,
+        "longitude": 43.76833333,
+        "coordinateKind": "lake_center_not_parking",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Bateti_Lake",
+        "navigationReady": false,
+        "durationMinutesEstimate": 220,
+        "text": "От конца асфальта к озеру около 3 км в одну сторону: план предусматривает путь туда и обратно пешком. Точку начала и состояние дороги уточни до поездки. По данным Georgia Travel, купание и рыбалка запрещены.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Озеро Батети: пеший подход и правила посещения",
+        "source": "https://georgia.travel/bateti-lake"
+      }
+    ],
+    "mealLabel": "Обед по дороге и перекус у озера",
+    "foodSearchQuery": "restaurants Kareli, Georgia",
+    "foodNote": "Полноценный обед запланируй в Карели до или после похода. На прогулку возьми воду и перекус.",
+    "preferredMeal": "cafe",
+    "weatherNote": "После дождя лесная дорога становится грязной; зимой озеро замерзает. Не рассчитывай на подъезд обычной машины к самому берегу.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Озеро Батети"
+  },
+  {
+    "id": "vardzia-weekend",
+    "title": "Город в скале",
+    "subtitle": "Хертвиси → Вардзия",
+    "description": "Крепость над слиянием рек и утро среди пещерных залов Вардзии.",
+    "tags": [
+      "История",
+      "Природа",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "vardzia",
+      "title": "2025-05-25_Vardzia_9.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/2025-05-25_Vardzia_9.jpg/960px-2025-05-25_Vardzia_9.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025-05-25_Vardzia_9.jpg",
+      "author": "Alexkom000",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "credit": "Alexkom000 / Wikimedia Commons / CC BY 4.0",
+      "takenAt": "Taken on 25 May 2025, 16:37:35",
+      "size": [
+        4934,
+        3290
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      34,
+      40
+    ],
+    "driveMinutes": [
+      480,
+      600
+    ],
+    "walkingKm": [
+      3,
+      5
+    ],
+    "walkingMinutes": [
+      180,
+      250
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      180,
+      300
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Крепость Хертвиси",
+        "mapSearchQuery": "Khertvisi Fortress, Aspindza, Georgia",
+        "kind": "viewpoint",
+        "latitude": 41.47666667,
+        "longitude": 43.28583333,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Khertvisi_Fortress",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Остановись у крепости на пути в долину. Подъём пешком; часы доступа и билет уточни перед поездкой.",
+        "day": 1
+      },
+      {
+        "name": "Пещерный комплекс Вардзия",
+        "mapSearchQuery": "Vardzia Cave Monastery, Aspindza, Georgia",
+        "kind": "monastery",
+        "latitude": 41.38091667,
+        "longitude": 43.28376111,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Vardzia",
+        "navigationReady": false,
+        "durationMinutesEstimate": 180,
+        "text": "Выдели утро на основные залы и переходы. Здесь лестницы, перепады высоты и узкие проходы. Расписание и доступные участки проверь заранее; после обеда возвращение в Тбилиси.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Хертвиси: крепость и пеший доступ",
+        "source": "https://georgia.travel/khertvisi-fortress"
+      },
+      {
+        "text": "Пещерный комплекс Вардзия",
+        "source": "https://georgia.travel/vardzia"
+      }
+    ],
+    "mealLabel": "Еда в долине Вардзии",
+    "foodSearchQuery": "restaurants Vardzia, Aspindza, Georgia",
+    "foodNote": "Заранее уточни ужин и завтрак у хозяев жилья; для обеда проверь кафе в долине. Бронирование жилья в приложении пока не выполняется.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В открытых переходах жарко на солнце и скользко после дождя. Планируй обратную дорогу с запасом светлого времени.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "окрестности Вардзии",
+      "note": "Забронируй одну ночь: окрестности Вардзии. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Пещерный комплекс Вардзия"
+  },
+  {
+    "id": "kutaisi-tskaltubo-weekend",
+    "title": "Город, парк и подземные залы",
+    "subtitle": "Кутаиси → Цхалтубо → пещера Прометея",
+    "description": "Вечер у Риони, зелёные аллеи и прогулка по оборудованной пещере.",
+    "tags": [
+      "Город",
+      "Природа",
+      "У воды"
+    ],
+    "photo": {
+      "id": "kutaisi",
+      "title": "Downtown_Kutaisi_&_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg/960px-Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_%28August_2011%29-cropped.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Downtown_Kutaisi_%26_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg",
+      "author": "Kober",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "Kober / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "2011-08-21",
+      "size": [
+        2891,
+        2098
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      34,
+      40
+    ],
+    "driveMinutes": [
+      420,
+      540
+    ],
+    "walkingKm": [
+      4,
+      7
+    ],
+    "walkingMinutes": [
+      180,
+      270
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      180,
+      300
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Кутаиси: старый центр",
+        "mapSearchQuery": "White Bridge, Kutaisi, Imereti, Georgia",
+        "kind": "town",
+        "latitude": 42.25,
+        "longitude": 42.7,
+        "coordinateKind": "town_center_not_bridge",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Kutaisi",
+        "navigationReady": false,
+        "durationMinutesEstimate": 150,
+        "text": "Прогулка у Риони, Белого моста и по центру. На карте — обзорная точка города. После ужина ночёвка в Кутаиси.",
+        "day": 1
+      },
+      {
+        "name": "Центральный парк Цхалтубо",
+        "mapSearchQuery": "Tskaltubo Central Park, Imereti, Georgia",
+        "kind": "forest",
+        "latitude": 42.326389,
+        "longitude": 42.600556,
+        "coordinateKind": "town_center_not_park_entrance",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q227156",
+        "navigationReady": false,
+        "durationMinutesEstimate": 60,
+        "text": "Прогуляйся по аллеям парка. Заход в заброшенные санатории не предусмотрен; на карте — обзорная точка города.",
+        "day": 2
+      },
+      {
+        "name": "Пещера Прометея",
+        "mapSearchQuery": "Prometheus Cave, Kumistavi, Tskaltubo, Georgia",
+        "kind": "viewpoint",
+        "latitude": 42.37666667,
+        "longitude": 42.60055556,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Prometheus_Cave_Natural_Monument",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Посещение оборудованной пещеры по правилам оператора. Проверь расписание, билеты и доступность экскурсии. Лодочная часть необязательна и не включена в план.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Цхалтубо: центральный парк и окрестности",
+        "source": "https://georgia.travel/cities-towns/tskaltubo"
+      },
+      {
+        "text": "Пещера Прометея: официальный порядок посещения",
+        "source": "https://www.apa.gov.ge/en/eco-tourism/servisebi-da-tarifebi/Prometheuscave"
+      },
+      {
+        "text": "Пещера и её расположение рядом с Кутаиси",
+        "source": "https://kutaisi.travel/en/5905/prometheus-cave-en/"
+      }
+    ],
+    "mealLabel": "Имеретинский ужин в Кутаиси",
+    "foodSearchQuery": "restaurants Kutaisi, Georgia",
+    "foodNote": "Первый день — кафе Кутаиси; на второй день выбери обед в Цхалтубо перед обратной дорогой.",
+    "preferredMeal": "cafe",
+    "weatherNote": "В пещере прохладно и влажно даже летом. Перед выездом проверь работу объекта после сильных дождей.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Кутаиси",
+      "note": "Забронируй одну ночь: Кутаиси. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Кутаиси и Белый мост"
+  },
+  {
+    "id": "martvili-okatse-weekend",
+    "title": "Два каньона за выходные",
+    "subtitle": "Мартвили → Окаце",
+    "description": "Бирюзовая вода в первый день и подвесная тропа над ущельем во второй.",
+    "tags": [
+      "Природа",
+      "У воды",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "martvili",
+      "title": "Martvili_29.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Martvili_29.jpg/960px-Martvili_29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martvili_29.jpg",
+      "author": "Paata vardanashvili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Paata vardanashvili / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2013-06-30 13:26:14",
+      "size": [
+        1333,
+        2000
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      38,
+      44
+    ],
+    "driveMinutes": [
+      570,
+      690
+    ],
+    "walkingKm": [
+      7,
+      9
+    ],
+    "walkingMinutes": [
+      220,
+      300
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      210,
+      350
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Каньон Мартвили",
+        "mapSearchQuery": "Martvili Canyon Visitor Centre, Inchkhuri, Georgia",
+        "kind": "viewpoint",
+        "latitude": 42.45672222,
+        "longitude": 42.37572222,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Gachedili_Canyon_Natural_Monument",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Базовый план — оборудованная круговая тропа около 700 м с лестницами. Лодку можно добавить отдельно при работе сервиса; в дождь и снег прогулки на лодке не проводятся.",
+        "day": 1
+      },
+      {
+        "name": "Каньон Окаце",
+        "mapSearchQuery": "Okatse Canyon Visitor Centre, Gordi, Georgia",
+        "kind": "viewpoint",
+        "latitude": 42.45130556,
+        "longitude": 42.55005556,
+        "coordinateKind": "canyon_overview_not_visitor_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Okatse_Canyon_Natural_Monument",
+        "navigationReady": false,
+        "durationMinutesEstimate": 180,
+        "text": "Начинай от визит-центра в Горди. Полный пеший маршрут около 6 км, включает много лестниц и подвесной участок. Проверь ограничения для детей и текущий доступ. На карте — каньон, не парковка.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Мартвили: пешая тропа и ограничения лодочной прогулки",
+        "source": "https://apa.gov.ge/en/eco-tourism/servisebi-da-tarifebi/martvilis-kanioni"
+      },
+      {
+        "text": "Окаце: маршрут от визит-центра в Горди",
+        "source": "https://nationalparks.ge/en/site/okatsecanyon/tripsInner/91"
+      }
+    ],
+    "mealLabel": "Ужин в Мартвили",
+    "foodSearchQuery": "restaurants Martvili, Georgia",
+    "foodNote": "Заранее выбери ужин в Мартвили. Во второй день возьми перекус для Окаце и запланируй обед после прогулки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Оба объекта зависят от погоды. При сильном дожде перенеси поездку; подвесная тропа не подойдёт при боязни высоты.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Мартвили",
+      "note": "Забронируй одну ночь: Мартвили. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Каньон Мартвили"
+  },
+  {
+    "id": "zugdidi-weekend",
+    "title": "Дворец и мегрельский обед",
+    "subtitle": "Зугдиди · Дадиани и ботанический сад",
+    "description": "Неспешные выходные среди дворцовых фасадов, садовых аллей и мегрельской кухни.",
+    "tags": [
+      "Город",
+      "История",
+      "Природа"
+    ],
+    "photo": {
+      "id": "zugdidi",
+      "title": "ზუგდიდის_დადიანების_სასახლე_და_მუზეუმი.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg/960px-%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E1%83%96%E1%83%A3%E1%83%92%E1%83%93%E1%83%98%E1%83%93%E1%83%98%E1%83%A1_%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A1%E1%83%90%E1%83%A1%E1%83%90%E1%83%AE%E1%83%9A%E1%83%94_%E1%83%93%E1%83%90_%E1%83%9B%E1%83%A3%E1%83%96%E1%83%94%E1%83%A3%E1%83%9B%E1%83%98.jpg",
+      "author": "Natia an",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "credit": "Natia an / Wikimedia Commons / CC BY-SA 4.0",
+      "takenAt": "2023-08-04 13:52:15",
+      "size": [
+        5891,
+        3928
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      36,
+      42
+    ],
+    "driveMinutes": [
+      540,
+      660
+    ],
+    "walkingKm": [
+      3,
+      5
+    ],
+    "walkingMinutes": [
+      120,
+      200
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      190,
+      310
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Дворец Дадиани",
+        "mapSearchQuery": "Dadiani Palace Museum, Zugdidi, Georgia",
+        "kind": "town",
+        "latitude": 42.51222222,
+        "longitude": 41.87416667,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Dadiani_Palace",
+        "navigationReady": false,
+        "durationMinutesEstimate": 120,
+        "text": "Осмотри дворцовый ансамбль и музей, если он открыт. Рабочие дни, доступные залы и билет проверь до выезда.",
+        "day": 1
+      },
+      {
+        "name": "Ботанический сад Зугдиди",
+        "mapSearchQuery": "Zugdidi Botanical Garden, Zugdidi, Georgia",
+        "kind": "forest",
+        "latitude": 42.51138889,
+        "longitude": 41.87805556,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Zugdidi_Botanical_Garden",
+        "navigationReady": false,
+        "durationMinutesEstimate": 100,
+        "text": "Утренняя прогулка по саду рядом с дворцом. Часы работы и условия входа проверь на сайте сада; после обеда возвращение в Тбилиси.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Зугдиди: дворец Дадиани и город",
+        "source": "https://georgia.travel/cities-towns/zugdidi"
+      },
+      {
+        "text": "Официальный сайт ботанического сада",
+        "source": "https://zbg.ge/?lang=en"
+      }
+    ],
+    "mealLabel": "Мегрельская кухня в Зугдиди",
+    "foodSearchQuery": "restaurants Zugdidi, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "План хорошо подходит для спокойных прогулок; при дожде сократи время в саду.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Зугдиди",
+      "note": "Забронируй одну ночь: Зугдиди. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Дворец Дадиани в Зугдиди"
+  },
+  {
+    "id": "racha-weekend",
+    "title": "Рача: вода, лес и резной камень",
+    "subtitle": "Шаори → Никорцминда → Амбролаури",
+    "description": "Проехать к лесному водохранилищу, переночевать в Раче и заглянуть в древний храм.",
+    "tags": [
+      "Природа",
+      "У воды",
+      "История"
+    ],
+    "photo": {
+      "id": "shaori",
+      "title": "Shaori reservoir - panoramio.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Shaori_reservoir_-_panoramio.jpg/960px-Shaori_reservoir_-_panoramio.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shaori_reservoir_-_panoramio.jpg",
+      "author": "G.N.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "credit": "G.N. / Wikimedia Commons / CC BY-SA 3.0",
+      "takenAt": "Taken on 6 November 2009",
+      "size": [
+        3264,
+        1383
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, лицензию и кадрирование; сохранять лицензию CC BY-SA для изображения."
+    },
+    "durationHours": [
+      36,
+      42
+    ],
+    "driveMinutes": [
+      540,
+      690
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      100,
+      170
+    ],
+    "difficulty": "Легко",
+    "easy": true,
+    "budgetGel": [
+      190,
+      320
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Водохранилище Шаори",
+        "mapSearchQuery": "Shaori Reservoir, Ambrolauri, Racha, Georgia",
+        "kind": "lake",
+        "latitude": 42.422869,
+        "longitude": 43.076865,
+        "coordinateKind": "reservoir_center_not_access_point",
+        "coordinateSource": "https://www.geonames.org/advanced-search.html?country=GE&featureClass=H&q=&startRow=100",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Остановка у доступного берега и прогулка. Точку съезда с дороги уточни заранее; на карте центр водоёма, а не место парковки.",
+        "day": 1
+      },
+      {
+        "name": "Никорцминда",
+        "mapSearchQuery": "Nikortsminda Cathedral, Ambrolauri, Racha, Georgia",
+        "kind": "monastery",
+        "latitude": 42.4594,
+        "longitude": 43.0878,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Nikortsminda_Cathedral",
+        "navigationReady": false,
+        "durationMinutesEstimate": 60,
+        "text": "Осмотри резные фасады храма и доступную территорию. Внутреннее посещение зависит от служб. После обеда возвращайся в Тбилиси.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Никорцминда и окрестности Шаори",
+        "source": "https://georgia.travel/villages/nikortsminda"
+      },
+      {
+        "text": "Амбролаури и Рача",
+        "source": "https://georgia.travel/cities-towns/ambrolauri"
+      }
+    ],
+    "mealLabel": "Рачинский ужин в Амбролаури",
+    "foodSearchQuery": "restaurants Ambrolauri, Georgia",
+    "foodNote": "Ужин и завтрак можно согласовать с гостевым домом. Винные дегустации — отдельно и только для пассажиров.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Время рассчитано на дорогу через Ткибули и Шаори. На перевале Накерала проверь туман, снег и состояние дороги.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Амбролаури",
+      "note": "Забронируй одну ночь: Амбролаури. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Водохранилище Шаори"
+  },
+  {
+    "id": "surami",
+    "title": "За назуки и видом с крепости",
+    "subtitle": "Сурами · крепость и старые улицы",
+    "description": "Выбраться на день к лесному курорту, посмотреть крепость и попробовать местный сладкий хлеб.",
+    "tags": [
+      "История",
+      "Город",
+      "Природа"
+    ],
+    "photo": {
+      "id": "surami",
+      "title": "Surami fortress 2017.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Surami_fortress_2017.jpg/960px-Surami_fortress_2017.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surami_fortress_2017.jpg",
+      "author": "Max Benidze",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "credit": "Max Benidze / Wikimedia Commons / CC BY-SA 2.0",
+      "takenAt": "2017-07-01 16:47:47",
+      "size": [
+        4002,
+        2465
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      7,
+      9
+    ],
+    "driveMinutes": [
+      240,
+      300
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      90,
+      140
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      50,
+      85
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Сурами и крепость",
+        "mapSearchQuery": "Surami Fortress, Surami, Shida Kartli, Georgia",
+        "kind": "town",
+        "latitude": 42.019444,
+        "longitude": 43.5625,
+        "coordinateKind": "town_center_not_fortress_entrance",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q2474275",
+        "navigationReady": false,
+        "durationMinutesEstimate": 150,
+        "text": "Прогуляйся по улицам и поднимись к крепости, если склон сухой. Время включает прогулку и остановку за назуки; обзорная точка на карте обозначает посёлок.",
+        "day": 1
+      }
+    ],
+    "sources": [
+      {
+        "text": "Крепость Сурами",
+        "source": "https://georgia.travel/surami-fortress"
+      },
+      {
+        "text": "Сурами и местный хлеб назуки",
+        "source": "https://georgia.travel/resorts/surami"
+      }
+    ],
+    "mealLabel": "Обед и назуки в Сурами",
+    "foodSearchQuery": "restaurants Surami, Georgia",
+    "foodNote": "Выбери кафе на карте и проверь часы работы перед выездом. Время на еду включено в оценку поездки.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Подъём к крепости неровный; после дождя можно ограничиться видом снизу.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 1,
+    "overnight": null,
+    "photoCaption": "Крепость Сурами"
+  },
+  {
+    "id": "abastumani-weekend",
+    "title": "Сосны днём, звёзды вечером",
+    "subtitle": "Абастумани · обсерватория на Канобили",
+    "description": "Два дня в горном посёлке с прогулкой по долине и заранее согласованным визитом в обсерваторию.",
+    "tags": [
+      "Природа",
+      "Город",
+      "Панорамы"
+    ],
+    "photo": {
+      "id": "abastumani",
+      "title": "Abastumani_(14715217071).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Abastumani_%2814715217071%29.jpg/960px-Abastumani_%2814715217071%29.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abastumani_(14715217071).jpg",
+      "author": "Sarah Murray from South Bend, IN, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "credit": "Sarah Murray from South Bend, IN, USA / Wikimedia Commons / CC BY-SA 2.0",
+      "takenAt": "2014-06-13 09:42",
+      "size": [
+        4288,
+        2848
+      ],
+      "urlStatus": "downloaded_for_local_bundle",
+      "reuse": "Указать автора, источник, ссылку на лицензию и кадрирование; для CC BY-SA сохранить ту же лицензию изображения."
+    },
+    "durationHours": [
+      36,
+      42
+    ],
+    "driveMinutes": [
+      540,
+      660
+    ],
+    "walkingKm": [
+      2,
+      4
+    ],
+    "walkingMinutes": [
+      100,
+      180
+    ],
+    "difficulty": "Средне",
+    "easy": false,
+    "budgetGel": [
+      190,
+      320
+    ],
+    "budgetBasis": "Редакционная оценка на человека: топливо при поездке вдвоём + еда + одна ночь в двухместном номере. Без аренды машины. Входные билеты оплачиваются отдельно.",
+    "stops": [
+      {
+        "name": "Абастумани",
+        "mapSearchQuery": "Abastumani, Adigeni, Georgia",
+        "kind": "town",
+        "latitude": 41.7525,
+        "longitude": 42.83194444,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Abastumani",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Прогулка по посёлку и сосновой долине после заселения. Приезжай через Ахалцихе; горный проезд через Зекари не является частью плана.",
+        "day": 1
+      },
+      {
+        "name": "Абастуманская обсерватория",
+        "mapSearchQuery": "Abastumani Astrophysical Observatory, Mount Kanobili, Georgia",
+        "kind": "viewpoint",
+        "latitude": 41.7542,
+        "longitude": 42.8194,
+        "coordinateKind": "landmark_overview_not_entrance",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Georgian_National_Astrophysical_Observatory",
+        "navigationReady": false,
+        "durationMinutesEstimate": 90,
+        "text": "Вечерний визит только по предварительному согласованию с обсерваторией. Наблюдения зависят от облачности и программы; билет и время подтвердить до бронирования поездки.",
+        "day": 1
+      },
+      {
+        "name": "Утро в Абастумани",
+        "mapSearchQuery": "Abastumani, Adigeni, Georgia",
+        "kind": "town",
+        "latitude": 41.7525,
+        "longitude": 42.83194444,
+        "coordinateKind": "town_center",
+        "coordinateSource": "https://en.wikipedia.org/wiki/Abastumani",
+        "navigationReady": false,
+        "durationMinutesEstimate": 75,
+        "text": "Завтрак и короткая прогулка перед обратной дорогой через Ахалцихе.",
+        "day": 2
+      }
+    ],
+    "sources": [
+      {
+        "text": "Абастумани и астрофизическая обсерватория",
+        "source": "https://georgia.travel/resorts/abastumani"
+      }
+    ],
+    "mealLabel": "Ужин в Абастумани",
+    "foodSearchQuery": "restaurants Abastumani, Georgia",
+    "foodNote": "Ужин лучше согласовать с жильём, особенно вне сезона. Подстрой его время под подтверждённый сеанс в обсерватории.",
+    "preferredMeal": "cafe",
+    "weatherNote": "Для наблюдений нужно ясное небо. Даже летом вечером прохладно; зимой уточни состояние подъезда.",
+    "shortVariant": null,
+    "verifiedAt": "2026-10-08",
+    "days": 2,
+    "overnight": {
+      "location": "Абастумани",
+      "note": "Забронируй одну ночь: Абастумани. Общая длительность включает ночёвку, дорогу из Тбилиси и возвращение."
+    },
+    "photoCaption": "Абастуманская обсерватория"
   }
 ]
