@@ -49,8 +49,8 @@ function CalendarContent({ onClose, tripDays }: { onClose: () => void; tripDays?
   const days = new Date(Date.UTC(year, index + 1, 0)).getUTCDate();
   const currentMonth = `${year}-${String(index + 1).padStart(2, '0')}`;
   const moveMonth = (offset: number) => setMonth(new Date(Date.UTC(year, index + offset, 1, 12)));
-  return <Sheet visible title="Когда поедем?" onClose={onClose} footer={<Button icon="calendar-outline" onPress={() => { setDate(draft); onClose(); }}>Выбрать · {formatDate(draft)}{daysInTrip === 2 ? ` — ${formatDate(addDays(draft, 1))}` : ''}</Button>}>
-    <Txt muted style={{ marginBottom: 16 }}>{daysInTrip === 2 ? 'Выбери день выезда. Возвращение — на следующий день.' : 'Покажем прогноз и мероприятия на день поездки.'}</Txt>
+  return <Sheet visible title="Когда поедем?" onClose={onClose} footer={<Button icon="calendar-outline" onPress={() => { setDate(draft); onClose(); }}>Выбрать · {formatDate(draft)}{daysInTrip > 1 ? ` — ${formatDate(addDays(draft, daysInTrip - 1))}` : ''}</Button>}>
+    <Txt muted style={{ marginBottom: 16 }}>{daysInTrip > 1 ? `Выбери день выезда. Поездка на ${daysInTrip} дня.` : 'Покажем прогноз и мероприятия на день поездки.'}</Txt>
     <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 16 }}>
       <IconButton name="chevron-back" label="Предыдущий месяц" disabled={currentMonth <= today.slice(0, 7)} onPress={() => moveMonth(-1)} />
       <Txt style={{ flex: 1, textAlign: 'center', fontWeight: '700', textTransform: 'capitalize' }}>{month.toLocaleDateString('ru-RU', { month: 'long', year: 'numeric', timeZone: 'UTC' }).replace(' г.', '')}</Txt>
@@ -62,7 +62,7 @@ function CalendarContent({ onClose, tripDays }: { onClose: () => void; tripDays?
       if (number <= 0) return <View key={`empty-${i}`} style={{ width: '14.2857%', height: 48 }} />;
       const value = isoDate(new Date(Date.UTC(year, index, number, 12)));
       const selected = value === draft;
-      const secondDay = daysInTrip === 2 && value === addDays(draft, 1);
+      const secondDay = daysInTrip > 1 && value > draft && value <= addDays(draft, daysInTrip - 1);
       const disabled = value < today;
       return <Pressable key={value} accessibilityRole="button" accessibilityLabel={formatDate(value, true)} accessibilityState={{ selected, disabled }} disabled={disabled} onPress={() => setDraft(value)} style={({ pressed }) => ({ width: '14.2857%', minHeight: 48, paddingVertical: 11, alignItems: 'center', justifyContent: 'center', borderRadius: 8, backgroundColor: selected || secondDay ? colors.accent : pressed ? colors.soft : 'transparent', borderWidth: value === today && !selected ? 1 : 0, borderColor: colors.muted, opacity: disabled ? 0.28 : 1 })}><Txt style={{ fontWeight: selected ? '700' : '500', color: selected || secondDay ? '#141511' : colors.text, fontVariant: ['tabular-nums'] }}>{number}</Txt></Pressable>;
     })}</View>

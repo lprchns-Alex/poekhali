@@ -44,7 +44,7 @@ function TimelineStep({ icon, title, subtitle, body, last = false, link }: { ico
       <Txt style={{ fontWeight: '700', fontSize: 18, lineHeight: 22, letterSpacing: -0.4 }}>{title}</Txt>
       {subtitle && <Txt muted style={{ fontSize: 13, lineHeight: 19, marginTop: 4 }}>{subtitle}</Txt>}
       {body && <Txt style={{ fontSize: 15, lineHeight: 22, marginTop: 9 }}>{body}</Txt>}
-      {link && <ExternalLink url={link}>Открыть в Google Maps</ExternalLink>}
+      {link && <ExternalLink url={link}>Открыть в картах</ExternalLink>}
     </View>
   </View>;
 }
@@ -142,6 +142,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
         <Txt style={{ fontSize: 16, lineHeight: 24, marginBottom: 23 }}>{short ? 'Прогуляться среди буков и вернуться в город пораньше.' : route.description}</Txt>
         {route.shortVariant && <View style={{ marginBottom: 25 }}><SectionLabel>ТВОЙ ТЕМП</SectionLabel><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}><Chip label="Лес + озеро" selected={!short} onPress={() => setShort(false)} /><Chip label="Только лес" selected={short} onPress={() => setShort(true)} /></View>{short && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginTop: 10 }}>{route.shortVariant.description}</Txt>}</View>}
       </View>
+        <Button icon="options-outline" style={{ marginBottom: 24 }} onPress={() => router.push({ pathname: "/plan/[id]", params: { id: route.id } })}>Собрать свою поездку</Button>
       <ForecastPanel endDate={getTripEndDate(date, route)} result={result} onCalendar={() => setCalendar(true)} onRetry={() => setRetry(value => value + 1)} />
       <PhotoGallery route={route} short={short} />
       <View style={{ paddingHorizontal: 4 }}>
@@ -171,7 +172,7 @@ function RouteDetails({ route }: { route: (typeof ROUTES)[number] }) {
           </React.Fragment>;
         })}
         <TimelineStep icon="home-outline" title="Возвращаемся домой" subtitle={`${hoursLabel(duration)} на всю поездку`} last />
-        <Info icon="trail-sign-outline">Откроется Google Maps: проверь место и подъезд, затем нажми «Маршрут». Парковки и входы здесь пока не отмечены.</Info>
+        <Info icon="trail-sign-outline">Выбери Google или Яндекс Карты: проверь место и подъезд, затем нажми «Маршрут». Парковки и входы здесь пока не отмечены.</Info>
         <View style={{ marginTop: 28 }}><EventsSection route={route} /></View>
         <View style={{ marginTop: 28 }}>
           <SectionLabel>ПЕРЕД ПОЕЗДКОЙ</SectionLabel>

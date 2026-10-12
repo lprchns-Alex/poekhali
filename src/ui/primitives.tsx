@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ActivityIndicator, Image, ImageSourcePropType, KeyboardAvoidingView, Linking, Modal, Platform, Pressable, ScrollView, StyleProp, StyleSheet, Text, TextProps, TextStyle, View, ViewStyle } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { mapQuery, mapSearch } from '../maps';
 import { useApp } from './AppProvider';
 
 export type IconName = React.ComponentProps<typeof Ionicons>['name'];
@@ -49,9 +50,11 @@ function PhotoContent({ uri, source, caption, height = 215, resizeMode = 'cover'
   </View>;
 }
 export function ExternalLink({ url, children }: { url: string; children: React.ReactNode }) {
+  const [chooseMap, setChooseMap] = useState(false);
+  const query = mapQuery(url);
   const { colors } = useApp();
   const [failed, setFailed] = useState(false);
-  return <View><Pressable accessibilityRole="link" onPress={() => { setFailed(false); Linking.openURL(url).catch(() => setFailed(true)); }} style={({ pressed }) => ({ minHeight: 48, paddingVertical: 12, opacity: pressed ? 0.6 : 1, flexDirection: 'row', gap: 8, alignItems: 'center' })}><Txt style={{ color: colors.primary, fontSize: 14, lineHeight: 20, fontWeight: '500', flex: 1 }}>{children}</Txt><Icon name="open-outline" size={16} color={colors.primary} /></Pressable>{failed && <Txt muted style={{ fontSize: 13 }}>Не удалось открыть ссылку. Проверьте подключение.</Txt>}</View>;
+  return <View><Pressable accessibilityRole="link" onPress={() => { if (query) { setChooseMap(true); return; } setFailed(false); Linking.openURL(url).catch(() => setFailed(true)); }} style={({ pressed }) => ({ minHeight: 48, paddingVertical: 12, opacity: pressed ? 0.6 : 1, flexDirection: 'row', gap: 8, alignItems: 'center' })}><Txt style={{ color: colors.primary, fontSize: 14, lineHeight: 20, fontWeight: '500', flex: 1 }}>{children}</Txt><Icon name="open-outline" size={16} color={colors.primary} /></Pressable>{failed && <Txt muted style={{ fontSize: 13 }}>Не удалось открыть ссылку. Проверьте подключение.</Txt>}<MapChoice query={chooseMap ? query : null} onClose={() => setChooseMap(false)} /></View>;
 }
 export function Sheet({ visible, title, onClose, children, footer }: { visible: boolean; title: string; onClose: () => void; children: React.ReactNode; footer?: React.ReactNode }) {
   const { colors } = useApp();
@@ -67,4 +70,14 @@ export function Sheet({ visible, title, onClose, children, footer }: { visible: 
       </View>
     </KeyboardAvoidingView>
   </Modal>;
+}
+
+export function MapChoice({ query, onClose }: { query: string | null; onClose: () => void }) {
+  const [error, setError] = useState(false);
+  const open = (provider: 'google' | 'yandex') => {
+    if (!query) return;
+    setError(false);
+    Linking.openURL(mapSearch(query, provider)).then(onClose).catch(() => setError(true));
+  };
+  return <Sheet visible={!!query} title="Открыть в картах" onClose={onClose}><View style={{ gap: 12 }}><Txt muted>{query}</Txt><Button icon="map-outline" onPress={() => open('google')}>Google Карты</Button><Button secondary icon="navigate-outline" onPress={() => open('yandex')}>Яндекс Карты</Button><Txt muted style={{ fontSize: 13 }}>Выбери место в картах и нажми «Маршрут». Уточни подъезд или парковку перед поездкой.</Txt>{error && <Txt>Не удалось открыть карты. Попробуй ещё раз.</Txt>}</View></Sheet>;
 }

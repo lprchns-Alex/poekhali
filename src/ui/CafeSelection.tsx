@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import { Linking, View } from 'react-native';
+import { View } from 'react-native';
 import { routeCafes, cafeMapsUrl } from '../cafes';
 import { foodSearchUrl, Route } from '../model';
 import { useApp } from './AppProvider';
-import { Button, Icon, Txt } from './primitives';
+import { MapChoice, Button, Icon, Txt } from './primitives';
+import { mapQuery } from '../maps';
 import { PagedCarousel } from './PagedCarousel';
 
 export function CafeSelection({ route, short }: { route: Route; short: boolean }) {
   const { colors } = useApp();
   const { places, note } = routeCafes(route);
-  const [error, setError] = useState(false);
-  const open = (url: string) => {
-    setError(false);
-    Linking.openURL(url).catch(() => setError(true));
-  };
+  const [query, setQuery] = useState<string | null>(null);
+  const open = (url: string) => setQuery(mapQuery(url));
   return <View style={{ marginBottom: 32, gap: 14 }}>
     <Txt muted style={{ fontSize: 14, lineHeight: 21 }}>{note}</Txt>
     {places.length > 0 && <PagedCarousel items={places} label="Места для обеда" renderItem={(cafe, index, active) => <View style={{ flex: 1, backgroundColor: colors.surface, padding: 18, borderRadius: 12, gap: 12 }}>
@@ -28,6 +26,6 @@ export function CafeSelection({ route, short }: { route: Route; short: boolean }
     </View>} />}
     <Button icon="open-outline" onPress={() => open(foodSearchUrl(route, short))}>Найти кафе на картах</Button>
     <Txt muted style={{ fontSize: 12, lineHeight: 18 }}>Подборка по расположению и формату · проверена 8 октября 2026. Обед{route.days === 2 ? ' каждого дня' : ''} учтён в плане; дополнительные заезды — отдельно.</Txt>
-    {error && <Txt accessibilityLiveRegion="polite" style={{ fontSize: 13 }}>Не удалось открыть карты. Попробуй ещё раз.</Txt>}
+    <MapChoice query={query} onClose={() => setQuery(null)} />
   </View>;
 }
