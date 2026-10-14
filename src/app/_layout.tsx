@@ -17,6 +17,6 @@ function Navigation() {
 export default function RootLayout() {
   const ready = useSyncExternalStore(subscribeToClient, () => true, () => Platform.OS !== 'web');
   // Dates, preferences and the map origin belong to the visitor, not the static build.
-  if (!ready) return <View style={{ flex: 1, backgroundColor: '#CECECA', justifyContent: 'center', alignItems: 'center', gap: 16 }}><ActivityIndicator color="#161713" /><Text style={{ fontSize: 24, fontWeight: '700', color: '#161713' }}>Поехали</Text></View>;
+  if (!ready) return <View style={{ flex: 1, backgroundColor: '#F4F5F2', justifyContent: 'center', alignItems: 'center', gap: 16 }}><ActivityIndicator color="#161713" /><Text style={{ fontSize: 24, fontWeight: '700', color: '#161713' }}>Поехали</Text></View>;
   return <SafeAreaProvider><AppProvider><Navigation /></AppProvider></SafeAreaProvider>;
 }

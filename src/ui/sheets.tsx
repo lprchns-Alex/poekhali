@@ -14,7 +14,7 @@ function FilterContent({ onClose }: { onClose: () => void }) {
   return <Sheet visible title="Какая поездка?" onClose={onClose} footer={<Button onPress={() => { setFilters(draft); setMeal(draftMeal); onClose(); }}>Показать маршруты · {count}</Button>}>
     <Txt muted style={{ marginBottom: 20 }}>На машине из Тбилиси. Считаем всю поездку: дорогу, прогулки и еду.</Txt>
     <Txt style={{ fontWeight: '700', marginBottom: 12 }}>На сколько дней</Txt>
-    <View style={{ flexDirection: 'row', gap: 6, marginBottom: 20 }}>
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginBottom: 20 }}>
       {([1, 2] as const).map(days => <Chip key={days} label={days === 1 ? '1 день' : '2 дня · с ночёвкой'} selected={draft.days === days} onPress={() => setDraft({ ...draft, days, maxHours: days === 1 ? 12 : 48 })} />)}
     </View>
     <Txt style={{ fontWeight: '700', marginBottom: 12 }}>{draft.days === 1 ? 'Вся поездка займёт' : 'Время с ночёвкой'}</Txt>
@@ -27,7 +27,7 @@ function FilterContent({ onClose }: { onClose: () => void }) {
     <Txt style={{ fontWeight: '700', marginBottom: 12 }}>За чем едем</Txt>
     <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, paddingBottom: 20, marginBottom: 20, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: colors.border }}>{MOODS.map(mood => <Chip key={mood} label={mood} selected={draft.mood === mood} onPress={() => setDraft({ ...draft, mood })} />)}</View>
     <Txt style={{ fontWeight: '700', marginBottom: 12 }}>Прогулка</Txt>
-    <Pressable accessibilityRole="checkbox" aria-checked={draft.easyOnly} accessibilityState={{ checked: draft.easyOnly }} onPress={() => setDraft({ ...draft, easyOnly: !draft.easyOnly })} style={({ pressed }) => ({ backgroundColor: colors.surface, minHeight: 76, borderRadius: 10, padding: 14, flexDirection: 'row', alignItems: 'center', gap: 12, opacity: pressed ? 0.7 : 1 })}>
+    <Pressable accessibilityRole="checkbox" aria-checked={draft.easyOnly} accessibilityState={{ checked: draft.easyOnly }} onPress={() => setDraft({ ...draft, easyOnly: !draft.easyOnly })} style={({ pressed }) => ({ backgroundColor: colors.surface, minHeight: 76, borderRadius: 22, padding: 14, flexDirection: 'row', alignItems: 'center', gap: 12, opacity: pressed ? 0.7 : 1 })}>
       <View style={{ width: 25, height: 25, borderRadius: 5, borderWidth: draft.easyOnly ? 0 : 1.5, borderColor: colors.muted, backgroundColor: draft.easyOnly ? colors.primary : 'transparent', justifyContent: 'center', alignItems: 'center' }}>{draft.easyOnly && <Icon name="checkmark" size={18} color={colors.onPrimary} />}</View>
       <View style={{ flex: 1 }}><Txt style={{ fontWeight: '500' }}>Без сложных подъёмов</Txt><Txt muted style={{ fontSize: 14, lineHeight: 20 }}>Спокойный темп и лёгкая прогулка</Txt></View>
     </Pressable>
@@ -64,8 +64,8 @@ function CalendarContent({ onClose, tripDays }: { onClose: () => void; tripDays?
       const selected = value === draft;
       const secondDay = daysInTrip > 1 && value > draft && value <= addDays(draft, daysInTrip - 1);
       const disabled = value < today;
-      return <Pressable key={value} accessibilityRole="button" accessibilityLabel={formatDate(value, true)} accessibilityState={{ selected, disabled }} disabled={disabled} onPress={() => setDraft(value)} style={({ pressed }) => ({ width: '14.2857%', minHeight: 48, paddingVertical: 11, alignItems: 'center', justifyContent: 'center', borderRadius: 8, backgroundColor: selected || secondDay ? colors.accent : pressed ? colors.soft : 'transparent', borderWidth: value === today && !selected ? 1 : 0, borderColor: colors.muted, opacity: disabled ? 0.28 : 1 })}><Txt style={{ fontWeight: selected ? '700' : '500', color: selected || secondDay ? '#141511' : colors.text, fontVariant: ['tabular-nums'] }}>{number}</Txt></Pressable>;
+      return <Pressable key={value} accessibilityRole="button" accessibilityLabel={formatDate(value, true)} accessibilityState={{ selected, disabled }} disabled={disabled} onPress={() => setDraft(value)} style={({ pressed }) => ({ width: '14.2857%', minHeight: 48, paddingVertical: 11, alignItems: 'center', justifyContent: 'center', borderRadius: 16, backgroundColor: selected || secondDay ? colors.accent : pressed ? colors.soft : 'transparent', borderWidth: value === today && !selected ? 1 : 0, borderColor: colors.muted, opacity: disabled ? 0.28 : 1 })}><Txt style={{ fontWeight: selected ? '700' : '500', color: selected || secondDay ? '#141511' : colors.text, fontVariant: ['tabular-nums'] }}>{number}</Txt></Pressable>;
     })}</View>
-    <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 9, marginTop: 20, padding: 14, backgroundColor: colors.surface, borderRadius: 10 }}><Icon name="cloud-outline" size={20} color={colors.muted} /><Txt muted style={{ fontSize: 14, lineHeight: 21, flex: 1 }}>Прогноз доступен примерно на две недели вперёд. Для более поздних дат он появится ближе к поездке.</Txt></View>
+    <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 9, marginTop: 20, padding: 14, backgroundColor: colors.surface, borderRadius: 22 }}><Icon name="cloud-outline" size={20} color={colors.muted} /><Txt muted style={{ fontSize: 14, lineHeight: 21, flex: 1 }}>Прогноз доступен примерно на две недели вперёд. Для более поздних дат он появится ближе к поездке.</Txt></View>
   </Sheet>;
 }

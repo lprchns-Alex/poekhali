@@ -12,13 +12,13 @@ function EventCard({ event, route, suggestDate = false }: { event: TripEvent; ro
   const scheduled = event.schedule.kind === 'dated' ? event.schedule : null;
   // Open a route on the day that actually places the traveler at this event.
   const departure = scheduled && target ? addDays(scheduled.startDate, 1 - (event.routeDays?.[target.id] ?? 1)) : date;
-  return <View style={{ backgroundColor: scheduled ? colors.accent : colors.surface, borderRadius: 12, padding: 17, marginBottom: 8 }}>
+  return <View style={{ backgroundColor: scheduled ? colors.accent : colors.surface, borderRadius: 24, padding: 17, marginBottom: 8 }}>
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 16 }}><Icon name={scheduled ? 'calendar-outline' : 'sparkles-outline'} color={scheduled ? '#151610' : colors.text} size={18} /><Txt style={{ flex: 1, fontSize: 12, lineHeight: 18, fontWeight: '700', color: scheduled ? '#51491D' : colors.muted }}>{scheduled ? formatDate(scheduled.startDate, true).toLocaleUpperCase('ru-RU') : 'ПО ДОГОВОРЁННОСТИ'} / {event.category.toLocaleUpperCase('ru-RU')}</Txt></View>
     <Title style={{ fontSize: 25, lineHeight: 28, letterSpacing: -0.8, color: scheduled ? '#151610' : colors.text }}>{event.title}</Title>
     <Txt style={{ fontSize: 13, lineHeight: 19, marginTop: 7, color: scheduled ? '#51491D' : colors.muted }}>{event.location}{scheduled?.timeLabel ? `\n${scheduled.timeLabel}` : ''}</Txt>
     <Txt style={{ fontSize: 15, lineHeight: 22, marginTop: 14, color: scheduled ? '#151610' : colors.text }}>{event.description}</Txt>
     <Txt style={{ fontSize: 13, lineHeight: 20, marginTop: 12, color: scheduled ? '#51491D' : colors.muted }}>{event.bookingNote}</Txt>
-    <View style={{ backgroundColor: colors.surface, paddingHorizontal: 10, borderRadius: 8, marginTop: 12 }}><ExternalLink url={event.bookingUrl}>Программа и запись ↗</ExternalLink>{event.bookingUrl !== event.sourceUrl && <ExternalLink url={event.sourceUrl}>Источник: {event.sourceName}</ExternalLink>}</View>
+    <View style={{ backgroundColor: colors.surface, paddingHorizontal: 10, borderRadius: 16, marginTop: 12 }}><ExternalLink url={event.bookingUrl}>Программа и запись ↗</ExternalLink>{event.bookingUrl !== event.sourceUrl && <ExternalLink url={event.sourceUrl}>Источник: {event.sourceName}</ExternalLink>}</View>
     {!route && target && <View style={{ marginTop: 12 }}><Button secondary icon="navigate-outline" onPress={() => {
       if (scheduled) setDate(departure);
       setFilters({ ...filters, days: target.days as TripDays, maxHours: target.days === 2 ? 48 : 12 });
@@ -43,8 +43,8 @@ export function EventsSection({ route }: { route?: Route }) {
     {dated.map(event => <EventCard key={event.id} event={event} route={route} />)}
     {dated.length === 0 && !search && <Txt muted style={{ fontSize: 14, lineHeight: 21, marginBottom: 18 }}>Подтверждённых событий на эти даты{route ? ' по этому маршруту' : ''} пока нет.</Txt>}
     {byArrangement.length > 0 && <><Txt style={{ fontSize: 12, fontWeight: '700', letterSpacing: 1, marginTop: 12, marginBottom: 12 }}>ЗАНЯТИЯ ПО ЗАПИСИ</Txt>{byArrangement.map(event => <EventCard key={event.id} event={event} route={route} />)}</>}
-    {noSearchResults && <View style={{ backgroundColor: colors.surface, borderRadius: 10, padding: 16, gap: 14 }}><Title style={{ fontSize: 25, lineHeight: 29 }}>Ничего не нашлось.</Title><Txt muted>Попробуй другое название, место или занятие.</Txt><Button onPress={() => setQuery('')}>Сбросить поиск</Button></View>}
-    {!hasAny && !search && <View style={{ backgroundColor: colors.surface, borderRadius: 10, padding: 16 }}><Txt muted>Новые события появятся после проверки дат у организаторов.</Txt></View>}
+    {noSearchResults && <View style={{ backgroundColor: colors.surface, borderRadius: 22, padding: 16, gap: 14 }}><Title style={{ fontSize: 25, lineHeight: 29 }}>Ничего не нашлось.</Title><Txt muted>Попробуй другое название, место или занятие.</Txt><Button onPress={() => setQuery('')}>Сбросить поиск</Button></View>}
+    {!hasAny && !search && <View style={{ backgroundColor: colors.surface, borderRadius: 22, padding: 16 }}><Txt muted>Новые события появятся после проверки дат у организаторов.</Txt></View>}
     {next.length > 0 && <><Txt style={{ fontSize: 12, fontWeight: '700', letterSpacing: 1, marginTop: 20, marginBottom: 12 }}>БЛИЖАЙШИЕ ДАТЫ</Txt>{next.map(event => <EventCard key={event.id} event={event} suggestDate />)}</>}
     <Txt muted style={{ fontSize: 11, lineHeight: 17, marginTop: 10 }}>Подборка проверена 7 октября 2026. Наличие билетов и мест уточняется у организатора.</Txt>
   </View>;

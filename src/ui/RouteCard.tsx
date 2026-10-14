@@ -4,9 +4,9 @@ import { router } from 'expo-router';
 import { getTripHours, Route, ROUTES } from '../model';
 import { fetchRouteWeather, WeatherResult, weatherSummary } from '../services/weather';
 import { useApp } from './AppProvider';
-import { Icon, Txt } from './primitives';
+import { Icon, Photo, Txt } from './primitives';
 import { DotWeather } from './InstrumentGraphics';
-import { routePanel } from './theme';
+import { galleryPhotoSource, routeGallery } from '../photos';
 
 export function useForecast(route: Route, date: string, short = false, retry = 0) {
   const requestKey = `${route.id}:${date}:${short}:${retry}`;
@@ -33,30 +33,36 @@ export function WeatherBadge({ route }: { route: Route }) {
 }
 
 export function RouteCard({ route, compact = false }: { route: Route; compact?: boolean }) {
-  const { saved, toggleSaved, storageReady, date, meal } = useApp();
+  const { colors, saved, toggleSaved, storageReady, date, meal } = useApp();
   const favorite = saved.includes(route.id);
   const duration = getTripHours(route, meal);
-  const panel = routePanel(route.id);
   const result = useForecast(route, date);
   const point = result?.status === 'ready' ? result.points[0] : undefined;
+  const photo = routeGallery(route)[0];
   const index = ROUTES.findIndex(item => item.id === route.id) + 1;
-  const weatherText = point ? weatherSummary(point) : !result ? 'Загружаем' : result.status === 'out_of_range' ? 'Прогноз позже' : 'Нет прогноза';
-  return <View style={{ backgroundColor: panel.background, borderRadius: 13, overflow: 'hidden', marginBottom: 8 }}>
-    <Pressable accessibilityRole="button" accessibilityLabel={`Открыть маршрут: ${route.title}`} onPress={() => router.push(`/route/${route.id}`)} style={({ pressed }) => ({ padding: 18, paddingTop: 16, minHeight: compact ? 210 : 244, opacity: pressed ? 0.72 : 1 })}>
-      <Txt style={{ color: panel.ink, fontSize: 11, lineHeight: 16, fontWeight: '700', letterSpacing: 0.8, marginBottom: 18, paddingRight: 42 }}>{String(index).padStart(2, '0')} / {route.tags[0].toLocaleUpperCase('ru-RU')}</Txt>
-      <Txt style={{ color: panel.ink, fontSize: compact ? 29 : 33, lineHeight: compact ? 31 : 35, fontWeight: '600', letterSpacing: -1.3, marginBottom: 7 }}>{route.title}</Txt>
-      <Txt style={{ color: panel.muted, fontSize: 12, lineHeight: 17 }}>{route.subtitle}</Txt>
-      <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', gap: 12, marginTop: 25 }}>
-        <View style={{ flex: 1, minWidth: 0 }}>
-          <View style={{ flexDirection: 'row', alignItems: 'baseline', gap: 5 }}><Txt numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.7} style={{ color: panel.ink, fontSize: route.days === 2 ? 46 : 40, lineHeight: 49, letterSpacing: -2, fontWeight: '400' }}>{route.days === 2 ? '2' : duration.map(value => String(value).replace('.', ',')).join('–')}</Txt><Txt style={{ color: panel.ink, fontSize: 17 }}>{route.days === 2 ? 'дня' : 'ч'}</Txt></View>
-          <Txt style={{ color: panel.muted, fontSize: 11, lineHeight: 17 }}>{route.days === 2 ? `1 ночь · ≈ ${duration.join('–')} ч всего` : `≈ с дорогой и обедом`}</Txt>
-        </View>
-        <View style={{ alignItems: 'flex-end', maxWidth: '47%' }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}><DotWeather code={point?.code ?? null} color={panel.ink} size={42} /><Txt style={{ color: panel.ink, fontSize: 31, lineHeight: 38, letterSpacing: -1.5 }}>{point?.temperatureC == null ? '—' : `${Math.round(point.temperatureC)}°`}</Txt></View>
-          <Txt style={{ color: panel.muted, fontSize: 11, lineHeight: 17, textAlign: 'right' }}>{route.days === 2 ? 'День 1 · ' : ''}{weatherText}</Txt>
+  const weatherText = point ? weatherSummary(point) : !result ? 'Загружаем погоду' : result.status === 'out_of_range' ? 'Прогноз позже' : 'Нет прогноза';
+  return <View style={{ backgroundColor: colors.surface, borderRadius: 28, overflow: 'hidden', marginBottom: 16 }}>
+    <Pressable accessibilityRole="button" accessibilityLabel={`Открыть маршрут: ${route.title}`} onPress={() => router.push(`/route/${route.id}`)} style={({ pressed }) => ({ opacity: pressed ? 0.76 : 1 })}>
+      <View>
+        <Photo source={galleryPhotoSource(photo)} caption={photo.caption} height={compact ? 130 : 174} />
+        <View style={{ position: 'absolute', top: 14, left: 14, backgroundColor: '#C5F933', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 6 }}><Txt style={{ color: '#171A15', fontSize: 12, lineHeight: 18, fontWeight: '600' }}>{String(index).padStart(2, '0')} · {route.tags[0]}</Txt></View>
+      </View>
+      <View style={{ padding: 18, gap: 10 }}>
+        <Txt style={{ color: colors.text, fontSize: 27, lineHeight: 30, fontWeight: '500', letterSpacing: -0.9 }}>{route.title}</Txt>
+        <Txt muted style={{ fontSize: 13, lineHeight: 20 }}>{route.subtitle}</Txt>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 4 }}>
+          <View style={{ flex: 1, gap: 6 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}><Icon name="time-outline" size={17} /><Txt style={{ fontSize: 13, lineHeight: 19, fontWeight: '600' }}>{route.days === 2 ? '2 дня · 1 ночь' : `≈ ${duration.map(value => String(value).replace('.', ',')).join('–')} ч`}</Txt></View>
+            <Txt muted style={{ fontSize: 11, lineHeight: 16 }}>{route.days === 2 ? `≈ ${duration.join('–')} ч всего` : 'С дорогой и обедом'}</Txt>
+          </View>
+          <View style={{ flex: 1, minWidth: 0, gap: 6 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}><DotWeather code={point?.code ?? null} size={20} color={colors.text} /><Txt style={{ fontSize: 13, lineHeight: 19, fontWeight: '600' }}>{point?.temperatureC == null ? 'Погода' : `${Math.round(point.temperatureC)}°${route.days === 2 ? ' · день 1' : ''}`}</Txt></View>
+            <Txt muted style={{ fontSize: 11, lineHeight: 16 }}>{weatherText}</Txt>
+          </View>
+          <View style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: colors.soft, alignItems: 'center', justifyContent: 'center' }}><Icon name="arrow-forward-outline" size={22} color={colors.text} /></View>
         </View>
       </View>
     </Pressable>
-    <Pressable accessibilityRole="button" accessibilityLabel={favorite ? `Удалить ${route.title} из сохранённого` : `Сохранить ${route.title}`} accessibilityState={{ selected: favorite, disabled: !storageReady }} disabled={!storageReady} onPress={() => toggleSaved(route.id)} style={({ pressed }) => ({ position: 'absolute', right: 8, top: 2, width: 48, height: 48, alignItems: 'center', justifyContent: 'center', opacity: pressed ? 0.5 : 1 })}><Icon name={favorite ? 'heart' : 'heart-outline'} color={panel.ink} size={23} /></Pressable>
+    <Pressable accessibilityRole="button" accessibilityLabel={favorite ? `Удалить ${route.title} из сохранённого` : `Сохранить ${route.title}`} accessibilityState={{ selected: favorite, disabled: !storageReady }} disabled={!storageReady} onPress={() => toggleSaved(route.id)} style={({ pressed }) => ({ position: 'absolute', top: 10, right: 10, width: 48, height: 48, borderRadius: 24, backgroundColor: favorite ? colors.accent : '#FFFFFF', alignItems: 'center', justifyContent: 'center', opacity: !storageReady ? 0.4 : pressed ? 0.7 : 1 })}><Icon name={favorite ? 'heart' : 'heart-outline'} size={23} color="#171A15" /></Pressable>
   </View>;
 }
